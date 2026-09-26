@@ -9,7 +9,7 @@ export const contactPageData = {
 
     buttonText: "Talk to Our Team",
 
-    backgroundImage: "/images/contact/contact-hero.jpg",
+    backgroundImage: "/images/contact/hero.jpg",
 
     imageAlt:
       "Luxury farmhouse surrounded by nature and mountains",
@@ -138,7 +138,7 @@ export const contactPageData = {
 
   buttonText: "Plan a Site Visit",
 
-  image: "/images/contact/office-visit.jpg",
+  image: "/images/contact/office-visit1.jpg",
 
   imageAlt:
     "ParamShree office and farmhouse entrance",

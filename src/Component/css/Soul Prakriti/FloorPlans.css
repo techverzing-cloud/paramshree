@@ -116,7 +116,7 @@
 }
 
 .soul-floor-plan-card__image {
-  object-fit: contain;
+  object-fit: cover;
   padding: 38px;
 
   transition:

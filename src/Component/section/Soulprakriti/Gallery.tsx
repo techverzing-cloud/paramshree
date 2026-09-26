@@ -15,17 +15,14 @@ import "../../css/Soul Prakriti/Gallery.css";
 export default function Gallery() {
   const { gallery } = soulPrakritiData;
 
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("northzone");
   const [selectedImage, setSelectedImage] = useState<
     (typeof gallery.images)[number] | null
   >(null);
 
-  const filteredImages =
-    activeFilter === "all"
-      ? gallery.images
-      : gallery.images.filter(
-          (image) => image.category === activeFilter
-        );
+const filteredImages = gallery.images.filter(
+  (image) => image.category === activeFilter
+);
 
   const selectedIndex = selectedImage
     ? filteredImages.findIndex(

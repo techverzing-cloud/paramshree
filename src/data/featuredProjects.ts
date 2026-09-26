@@ -12,10 +12,10 @@ export const featuredProjects: FeaturedProject[] = [
   {
     id: 1,
     name: "Soul Prakriti",
-    category: "Farmhouse Project",
+    category: "Villa Project",
     description:
       "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
-    image: "/homehero/hero1.jpg",
+    image: "/images/home/featuredimages/soulprakritivilla.jpeg",
     href: "/soulprakritipage",
   },
 
@@ -25,19 +25,19 @@ export const featuredProjects: FeaturedProject[] = [
     category: "Farmhouse Project",
     description:
       "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
-    image: "/images/gallery/soul-prakriti-1.jpg",
+    image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
     href: "https://soulprakriti.com",
   },
 
-  {
-    id: 3,
-    name: "Soul Prakriti",
-    category: "Farmhouse Project",
-    description:
-      "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
-    image: "/images/gallery/soul-prakriti-2.jpg",
-    href: "https://soulprakriti.com",
-  },
+  // {
+  //   id: 3,
+  //   name: "Soul Prakriti",
+  //   category: "Farmhouse Project",
+  //   description:
+  //     "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
+  //   image: "/images/home/featureimages/soul-prakriti.jpg",
+  //   href: "https://soulprakriti.com",
+  // },
 
 
 

@@ -252,28 +252,18 @@ projects: {
       type: "Farmhouse Community",
       description:
         "A serene countryside destination designed around open spaces, greenery and a relaxed lifestyle.",
-      image: "/images/soul-agro-farms/project-prakriti.jpg",
+      image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
       link: "/soulprakritipage",
     },
     {
       number: "02",
-      name: "Soul Greens",
+      name: "Soul Prakriti",
       location: "Delhi NCR",
-      type: "Luxury Farmhouses",
+      type: "Luxury Villa",
       description:
         "Private nature-inspired residences that bring together modern comfort and peaceful surroundings.",
-      image: "/images/soul-agro-farms/project-greens.jpg",
+      image: "/images/home/featuredimages/soulprakritivilla.jpeg",
       link: "/projects/soul-greens",
-    },
-    {
-      number: "03",
-      name: "Soul Estates",
-      location: "Delhi NCR",
-      type: "Premium Estates",
-      description:
-        "Expansive spaces planned for families looking to create their own private retreat away from the city.",
-      image: "/images/soul-agro-farms/project-estates.jpg",
-      link: "/projects/soul-estates",
     },
   ],
 
