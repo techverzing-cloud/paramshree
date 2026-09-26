@@ -1,0 +1,798 @@
+/* =========================================
+   EMAIL SUBSCRIPTION
+========================================= */
+
+.contact-subscription {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-block: clamp(
+    65px,
+    7vw,
+    95px
+  );
+
+  background:
+    linear-gradient(
+      115deg,
+      var(--color-plum) 0%,
+      #51213a 48%,
+      var(--color-terracotta) 150%
+    );
+
+  color: var(--color-white);
+
+  isolation: isolate;
+}
+
+/* =========================================
+   BACKGROUND DECORATION
+========================================= */
+
+.contact-subscription__background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.contact-subscription__glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(1px);
+
+  opacity: 0.2;
+}
+
+.contact-subscription__glow--one {
+  width: 420px;
+  height: 420px;
+
+  top: -250px;
+  left: -100px;
+
+  border: 1px solid
+    rgba(245, 241, 233, 0.45);
+
+  box-shadow:
+    0 0 100px
+    rgba(245, 241, 233, 0.1);
+}
+
+.contact-subscription__glow--two {
+  width: 350px;
+  height: 350px;
+
+  right: -130px;
+  bottom: -250px;
+
+  border: 1px solid
+    rgba(245, 241, 233, 0.4);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-subscription__content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  animation:
+    subscriptionReveal
+    900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.contact-subscription__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color:
+    rgba(245, 241, 233, 0.75);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+
+  line-height: 1.5;
+}
+
+.contact-subscription__eyebrow::before,
+.contact-subscription__eyebrow::after {
+  content: "";
+
+  width: 25px;
+  height: 1px;
+
+  background:
+    rgba(245, 241, 233, 0.45);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.contact-subscription__title {
+  margin-top: 13px;
+
+  color: var(--color-ivory);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(
+    30px,
+    4vw,
+    48px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.contact-subscription__description {
+  max-width: 570px;
+
+  margin-top: 12px;
+
+  color:
+    rgba(245, 241, 233, 0.78);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-subscription__form {
+  width: min(
+    100%,
+    540px
+  );
+
+  display: grid;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap: 9px;
+
+  margin-top: 27px;
+}
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.contact-subscription__input-wrapper {
+  position: relative;
+}
+
+/* =========================================
+   INPUT
+========================================= */
+
+.contact-subscription__input {
+  width: 100%;
+
+  height: 48px;
+
+  padding:
+    0 42px 0 17px;
+
+  border: 1px solid
+    rgba(245, 241, 233, 0.45);
+
+  border-radius: 4px;
+
+  outline: none;
+
+  background:
+    rgba(255, 255, 255, 0.95);
+
+  color: var(--color-charcoal);
+
+  font-size: 11px;
+
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    background 250ms ease;
+}
+
+.contact-subscription__input::placeholder {
+  color: #9b938d;
+}
+
+.contact-subscription__input:focus {
+  border-color:
+    var(--color-ivory);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(245, 241, 233, 0.13);
+
+  background:
+    var(--color-white);
+}
+
+.contact-subscription__input--error {
+  border-color:
+    #e0a28c;
+}
+
+/* =========================================
+   CLEAR BUTTON
+========================================= */
+
+.contact-subscription__clear {
+  position: absolute;
+
+  top: 50%;
+  right: 12px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background:
+    var(--color-ivory-dark);
+
+  color: var(--color-plum);
+
+  cursor: pointer;
+
+  transition:
+    background 200ms ease,
+    transform 200ms ease;
+}
+
+.contact-subscription__clear:hover {
+  background:
+    var(--color-border);
+
+  transform:
+    translateY(-50%) scale(1.05);
+}
+
+/* =========================================
+   SUBSCRIBE BUTTON
+========================================= */
+
+.contact-subscription__button {
+  min-width: 125px;
+
+  height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding-inline: 20px;
+
+  border: 1px solid
+    var(--color-ivory);
+
+  border-radius: 4px;
+
+  background:
+    var(--color-ivory);
+
+  color: var(--color-plum);
+
+  font-family: var(--font-body);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.contact-subscription__button svg {
+  transition:
+    transform 250ms ease;
+}
+
+.contact-subscription__button:hover {
+  background:
+    transparent;
+
+  color: var(--color-white);
+
+  border-color:
+    var(--color-ivory);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 8px 25px
+    rgba(35, 13, 25, 0.18);
+}
+
+.contact-subscription__button:hover svg {
+  transform:
+    translateX(3px);
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.contact-subscription__error {
+  margin-top: 9px;
+
+  color:
+    #f3c0aa;
+
+  font-size: 10px;
+
+  animation:
+    subscriptionError 250ms ease both;
+}
+
+/* =========================================
+   PRIVACY
+========================================= */
+
+.contact-subscription__privacy {
+  margin-top: 13px;
+
+  color:
+    rgba(245, 241, 233, 0.52);
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   SUCCESS POPUP
+========================================= */
+
+.subscription-success {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  animation:
+    popupFadeIn
+    250ms
+    ease
+    both;
+}
+
+/* =========================================
+   POPUP BACKDROP
+========================================= */
+
+.subscription-success__backdrop {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+
+  background:
+    rgba(35, 20, 28, 0.58);
+
+  backdrop-filter:
+    blur(5px);
+
+  cursor: default;
+}
+
+/* =========================================
+   POPUP MODAL
+========================================= */
+
+.subscription-success__modal {
+  position: relative;
+
+  z-index: 1;
+
+  width: min(
+    100%,
+    430px
+  );
+
+  padding:
+    42px 38px 36px;
+
+  border:
+    1px solid
+    var(--color-border);
+
+  border-radius: 5px;
+
+  background:
+    var(--color-ivory-light);
+
+  box-shadow:
+    0 25px 70px
+    rgba(35, 20, 28, 0.25);
+
+  text-align: center;
+
+  animation:
+    popupScaleIn
+    450ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   CLOSE
+========================================= */
+
+.subscription-success__close {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    var(--color-border);
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--color-plum);
+
+  cursor: pointer;
+
+  transition:
+    background 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.subscription-success__close:hover {
+  background:
+    var(--color-plum);
+
+  color:
+    var(--color-white);
+
+  transform:
+    rotate(90deg);
+}
+
+/* =========================================
+   SUCCESS ICON
+========================================= */
+
+.subscription-success__icon {
+  width: 54px;
+  height: 54px;
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    var(--color-terracotta);
+
+  border-radius: 50%;
+
+  background:
+    rgba(166, 95, 66, 0.08);
+
+  color:
+    var(--color-terracotta);
+
+  animation:
+    successIconReveal
+    600ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    150ms
+    both;
+}
+
+/* =========================================
+   SUCCESS EYEBROW
+========================================= */
+
+.subscription-success__eyebrow {
+  display: block;
+
+  margin-top: 20px;
+
+  color:
+    var(--color-terracotta);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+}
+
+/* =========================================
+   SUCCESS TITLE
+========================================= */
+
+.subscription-success__title {
+  margin-top: 7px;
+
+  color:
+    var(--color-plum);
+
+  font-family:
+    var(--font-heading);
+
+  font-size: 34px;
+
+  font-weight: 400;
+
+  line-height: 1.15;
+}
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.subscription-success__message {
+  max-width: 320px;
+
+  margin:
+    12px auto 0;
+
+  color:
+    var(--color-muted);
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   SUCCESS BUTTON
+========================================= */
+
+.subscription-success__button {
+  margin-top: 25px;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes subscriptionReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes subscriptionError {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupScaleIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px)
+      scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+@keyframes successIconReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      scale(0.5)
+      rotate(-15deg);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      scale(1)
+      rotate(0);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+  .contact-subscription__form {
+    width: min(
+      100%,
+      500px
+    );
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+  .contact-subscription {
+    padding-block: 55px;
+  }
+
+  .contact-subscription__title {
+    font-size: 31px;
+  }
+
+  .contact-subscription__description {
+    font-size: 11px;
+  }
+
+  .contact-subscription__form {
+    grid-template-columns: 1fr;
+
+    width: 100%;
+
+    gap: 9px;
+  }
+
+  .contact-subscription__button {
+    width: 100%;
+  }
+
+  .subscription-success__modal {
+    padding:
+      38px 25px 30px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .contact-subscription__title {
+    font-size: 28px;
+  }
+
+  .subscription-success__title {
+    font-size: 30px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-subscription__content,
+  .contact-subscription__error,
+  .subscription-success,
+  .subscription-success__modal,
+  .subscription-success__icon {
+    animation: none;
+  }
+
+  .contact-subscription__button,
+  .contact-subscription__input,
+  .contact-subscription__clear,
+  .subscription-success__close {
+    transition: none;
+  }
+}

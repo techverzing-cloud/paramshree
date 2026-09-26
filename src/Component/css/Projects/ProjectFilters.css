@@ -1,0 +1,571 @@
+/* =========================================================
+   PROJECT FILTERS
+========================================================= */
+
+.project-filters {
+  position: relative;
+
+  padding-block: 34px 42px;
+
+  background: var(--color-ivory);
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.project-filters__container {
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.project-filters__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.project-filters__heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-filters__eyebrow {
+  color: var(--color-terracotta);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+
+  white-space: nowrap;
+}
+
+.project-filters__heading h2 {
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 400;
+
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.project-filters__header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  color: var(--color-plum);
+
+  transition:
+    background 250ms ease,
+    color 250ms ease,
+    transform 250ms ease;
+}
+
+.project-filters__header-icon:hover {
+  background: var(--color-plum);
+  color: var(--color-white);
+
+  transform: rotate(15deg);
+}
+
+
+/* =========================================================
+   FILTER CONTROLS
+========================================================= */
+
+.project-filters__controls {
+  display: grid;
+
+  grid-template-columns:
+    minmax(190px, 1fr)
+    minmax(190px, 1fr)
+    minmax(190px, 1fr)
+    minmax(210px, 1.1fr)
+    auto;
+
+  gap: 10px;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   INDIVIDUAL FILTER
+========================================================= */
+
+.project-filter {
+  position: relative;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   FILTER TRIGGER
+========================================================= */
+
+.project-filter__trigger {
+  width: 100%;
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 14px;
+
+  padding: 9px 14px 9px 17px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  background: var(--color-ivory-light);
+  color: var(--color-charcoal);
+
+  text-align: left;
+
+  transition:
+    border-color 250ms ease,
+    background 250ms ease,
+    box-shadow 250ms ease,
+    transform 250ms ease;
+}
+
+.project-filter__trigger:hover {
+  border-color: var(--color-terracotta);
+
+  background: var(--color-white);
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 18px rgba(53, 31, 39, 0.06);
+}
+
+
+/* =========================================================
+   OPEN STATE
+========================================================= */
+
+.project-filter--open
+.project-filter__trigger {
+  border-color: var(--color-plum);
+
+  background: var(--color-white);
+
+  box-shadow:
+    0 8px 25px rgba(66, 24, 47, 0.1);
+}
+
+
+/* =========================================================
+   SELECTED STATE
+========================================================= */
+
+.project-filter--selected
+.project-filter__trigger {
+  border-color: rgba(166, 95, 66, 0.55);
+}
+
+
+/* =========================================================
+   TRIGGER CONTENT
+========================================================= */
+
+.project-filter__trigger-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1px;
+}
+
+.project-filter__label {
+  color: var(--color-muted);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  line-height: 1.4;
+}
+
+.project-filter__value {
+  overflow: hidden;
+
+  color: var(--color-plum);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   CHEVRON
+========================================================= */
+
+.project-filter__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 26px;
+  height: 26px;
+
+  border-radius: 50%;
+
+  color: var(--color-plum);
+
+  background: var(--color-ivory-dark);
+
+  transition:
+    transform 300ms ease,
+    background 250ms ease,
+    color 250ms ease;
+}
+
+.project-filter--open
+.project-filter__chevron {
+  transform: rotate(180deg);
+
+  background: var(--color-plum);
+
+  color: var(--color-white);
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.project-filter__dropdown {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 0;
+
+  width: 100%;
+
+  min-width: 220px;
+
+  padding: 5px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+
+  background: rgba(251, 249, 245, 0.98);
+
+  box-shadow:
+    0 16px 45px rgba(53, 31, 39, 0.14);
+
+  backdrop-filter: blur(12px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translateY(-8px)
+    scale(0.98);
+
+  transform-origin: top center;
+
+  transition:
+    opacity 200ms ease,
+    visibility 200ms ease,
+    transform 220ms ease;
+
+  z-index: 100;
+}
+
+.project-filter__dropdown--open {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+
+/* =========================================================
+   DROPDOWN INNER
+========================================================= */
+
+.project-filter__dropdown-inner {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 270px;
+
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color:
+    var(--color-border)
+    transparent;
+}
+
+
+/* =========================================================
+   OPTIONS
+========================================================= */
+
+.project-filter__option {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 11px 12px;
+
+  border: 0;
+  border-radius: 4px;
+
+  background: transparent;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+
+  text-align: left;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    padding-left 180ms ease;
+}
+
+.project-filter__option:hover {
+  padding-left: 16px;
+
+  background: var(--color-ivory-dark);
+
+  color: var(--color-plum);
+}
+
+.project-filter__option--active {
+  background: rgba(66, 24, 47, 0.07);
+
+  color: var(--color-plum);
+
+  font-weight: 500;
+}
+
+.project-filter__option--active svg {
+  color: var(--color-terracotta);
+}
+
+
+/* =========================================================
+   CLEAR ALL
+========================================================= */
+
+.project-filters__clear {
+  min-height: 58px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding-inline: 18px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  background: transparent;
+
+  color: var(--color-muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition:
+    border-color 250ms ease,
+    color 250ms ease,
+    background 250ms ease,
+    transform 250ms ease;
+}
+
+.project-filters__clear:not(:disabled):hover {
+  border-color: var(--color-terracotta);
+
+  background: rgba(166, 95, 66, 0.06);
+
+  color: var(--color-terracotta);
+
+  transform: translateY(-1px);
+}
+
+.project-filters__clear--active {
+  border-color: var(--color-terracotta);
+
+  color: var(--color-terracotta);
+}
+
+.project-filters__clear svg {
+  transition: transform 350ms ease;
+}
+
+.project-filters__clear:not(:disabled):hover svg {
+  transform: rotate(-45deg);
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.project-filters__summary {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 13px;
+
+  color: var(--color-muted);
+
+  font-size: 10px;
+}
+
+.project-filters__summary-dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--color-sage);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .project-filters__controls {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+  .project-filters__clear {
+    min-height: 52px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+  .project-filters {
+    padding-block: 30px 36px;
+  }
+
+  .project-filters__header {
+    margin-bottom: 16px;
+  }
+
+  .project-filters__heading {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+  .project-filters__heading h2 {
+    font-size: 27px;
+  }
+
+  .project-filters__header-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .project-filters__controls {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .project-filter__trigger {
+    min-height: 56px;
+  }
+
+  .project-filter__dropdown {
+    position: absolute;
+
+    min-width: 100%;
+  }
+
+  .project-filters__clear {
+    width: 100%;
+  }
+
+  .project-filters__summary {
+    justify-content: center;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-filter__trigger,
+  .project-filter__chevron,
+  .project-filter__dropdown,
+  .project-filter__option,
+  .project-filters__clear,
+  .project-filters__clear svg,
+  .project-filters__header-icon {
+    transition: none;
+  }
+}

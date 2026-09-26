@@ -1,0 +1,415 @@
+/* =========================================
+   CONTACT CTA
+========================================= */
+
+.contact-cta {
+  position: relative;
+
+  min-height: 155px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  color: var(--color-white);
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.contact-cta__background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -3;
+
+  overflow: hidden;
+}
+
+.contact-cta__background img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center 58%;
+
+  transform: scale(1.02);
+
+  transition:
+    transform 1.2s
+      cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-cta:hover
+  .contact-cta__background img {
+  transform: scale(1.06);
+}
+
+/* =========================================
+   COLOR OVERLAY
+========================================= */
+
+.contact-cta__overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(66, 24, 47, 0.78) 0%,
+      rgba(66, 24, 47, 0.62) 40%,
+      rgba(66, 24, 47, 0.38) 72%,
+      rgba(66, 24, 47, 0.48) 100%
+    );
+
+  mix-blend-mode: multiply;
+}
+
+/* =========================================
+   SOFT IVORY WASH
+========================================= */
+
+.contact-cta__texture {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(166, 95, 66, 0.22),
+      transparent 60%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-cta .container {
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+}
+
+.contact-cta__content {
+  min-height: 155px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding-block: 30px;
+
+  animation: contactCtaReveal 850ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.contact-cta__text {
+  max-width: 650px;
+}
+
+.contact-cta__title {
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(
+    28px,
+    3.2vw,
+    43px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+
+  text-shadow:
+    0 2px 15px
+    rgba(0, 0, 0, 0.1);
+}
+
+.contact-cta__description {
+  margin-top: 8px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.contact-cta__button {
+  flex-shrink: 0;
+
+  min-width: 126px;
+
+  background: var(--color-plum);
+
+  border-color: var(--color-plum);
+
+  box-shadow:
+    0 8px 25px
+    rgba(36, 11, 25, 0.2);
+
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.contact-cta__button:hover {
+  background: var(--color-plum-light);
+
+  border-color: var(--color-plum-light);
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(36, 11, 25, 0.28);
+}
+
+/* =========================================
+   DECORATIVE LEAF
+========================================= */
+
+.contact-cta__leaf {
+  position: absolute;
+
+  right: 12px;
+  bottom: -25px;
+
+  width: 75px;
+  height: 125px;
+
+  opacity: 0.65;
+
+  pointer-events: none;
+
+  transform:
+    rotate(10deg);
+
+  animation: ctaLeafReveal 1100ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    300ms
+    both;
+}
+
+.contact-cta__leaf::before {
+  content: "";
+
+  position: absolute;
+
+  left: 35px;
+  bottom: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background:
+    rgba(166, 95, 66, 0.7);
+
+  transform:
+    rotate(-8deg);
+}
+
+.contact-cta__leaf span {
+  position: absolute;
+
+  width: 28px;
+  height: 13px;
+
+  border: 1px solid
+    rgba(166, 95, 66, 0.7);
+
+  border-radius:
+    100% 0 100% 0;
+
+  transform:
+    rotate(-35deg);
+}
+
+.contact-cta__leaf span:nth-child(1) {
+  top: 18px;
+  left: 7px;
+}
+
+.contact-cta__leaf span:nth-child(2) {
+  top: 45px;
+  left: 38px;
+
+  transform:
+    rotate(140deg);
+}
+
+.contact-cta__leaf span:nth-child(3) {
+  top: 70px;
+  left: 3px;
+}
+
+.contact-cta__leaf span:nth-child(4) {
+  top: 92px;
+  left: 37px;
+
+  transform:
+    rotate(140deg);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes contactCtaReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes ctaLeafReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translate(20px, 20px)
+      rotate(10deg);
+  }
+
+  to {
+    opacity: 0.65;
+
+    transform:
+      translate(0, 0)
+      rotate(10deg);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .contact-cta__content {
+    gap: 35px;
+  }
+
+  .contact-cta__title {
+    font-size: 34px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .contact-cta {
+    min-height: auto;
+  }
+
+  .contact-cta__content {
+    min-height: auto;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding-block: 45px;
+  }
+
+  .contact-cta__title {
+    font-size: 34px;
+  }
+
+  .contact-cta__description {
+    max-width: 400px;
+  }
+
+  .contact-cta__button {
+    min-width: 135px;
+  }
+
+  .contact-cta__leaf {
+    right: -5px;
+    bottom: -25px;
+
+    opacity: 0.4;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .contact-cta__content {
+    padding-block: 40px;
+  }
+
+  .contact-cta__title {
+    font-size: 30px;
+  }
+
+  .contact-cta__description {
+    font-size: 10.5px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-cta__content,
+  .contact-cta__leaf {
+    animation: none;
+  }
+
+  .contact-cta__background img,
+  .contact-cta__button {
+    transition: none;
+  }
+}

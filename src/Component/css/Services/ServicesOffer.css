@@ -1,0 +1,438 @@
+/* =========================================
+   SERVICES - WHAT WE OFFER
+========================================= */
+
+.services-offer {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-block: clamp(70px, 7vw, 105px);
+
+  background: var(--color-ivory-light);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.services-offer__container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.services-offer__header {
+  max-width: 620px;
+
+  margin-bottom: 28px;
+
+  animation: servicesOfferHeaderIn 800ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.services-offer__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 10px;
+
+  color: var(--color-terracotta);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+.services-offer__eyebrow-line {
+  width: 32px;
+  height: 1px;
+
+  background: currentColor;
+
+  transform-origin: left;
+
+  animation: servicesOfferLineReveal 700ms
+    300ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.services-offer__title {
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 3.2vw, 46px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.services-offer__description {
+  max-width: 560px;
+
+  margin-top: 10px;
+
+  color: var(--color-muted);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.services-offer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 14px 24px;
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.services-offer__card {
+  position: relative;
+
+  min-height: 152px;
+
+  padding: 15px 20px 18px 20px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+
+  background: rgba(251, 249, 245, 0.55);
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 350ms ease,
+    border-color 350ms ease,
+    background 350ms ease,
+    box-shadow 350ms ease;
+
+  animation: servicesOfferCardIn 700ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.services-offer__card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(166, 95, 66, 0.45);
+
+  background: var(--color-white);
+
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.services-offer__icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 9px;
+
+  border-radius: 50%;
+
+  color: var(--color-plum);
+
+  background: rgba(166, 95, 66, 0.12);
+
+  transition:
+    transform 350ms ease,
+    background 350ms ease,
+    color 350ms ease;
+}
+
+.services-offer__card:hover .services-offer__icon {
+  transform: translateY(-2px);
+
+  background: var(--color-plum);
+
+  color: var(--color-ivory);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.services-offer__card-content {
+  padding-right: 22px;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.services-offer__card-title {
+  color: var(--color-charcoal);
+
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.services-offer__card-description {
+  max-width: 290px;
+
+  margin-top: 5px;
+
+  color: var(--color-muted);
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.services-offer__arrow {
+  position: absolute;
+
+  right: 15px;
+  bottom: 13px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+
+  color: var(--color-plum);
+
+  background: transparent;
+
+  transition:
+    transform 300ms ease,
+    color 300ms ease;
+}
+
+.services-offer__arrow:hover {
+  transform: translate(3px, -3px);
+
+  color: var(--color-terracotta);
+}
+
+
+/* =========================================
+   DECORATIVE BOTANICAL
+========================================= */
+
+.services-offer__decoration {
+  position: absolute;
+
+  z-index: 1;
+
+  top: 5px;
+  right: -8px;
+
+  width: 155px;
+  height: 275px;
+
+  color: rgba(166, 95, 66, 0.22);
+
+  pointer-events: none;
+
+  animation: servicesOfferDecorationIn 1200ms
+    300ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.services-offer__decoration svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes servicesOfferHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes servicesOfferCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes servicesOfferLineReveal {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes servicesOfferDecorationIn {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .services-offer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .services-offer__decoration {
+    opacity: 0.65;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+  .services-offer {
+    padding-block: 65px;
+  }
+
+  .services-offer__header {
+    margin-bottom: 25px;
+  }
+
+  .services-offer__title {
+    font-size: 34px;
+  }
+
+  .services-offer__description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .services-offer__grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .services-offer__card {
+    min-height: 158px;
+
+    padding: 16px 20px 18px;
+  }
+
+  .services-offer__decoration {
+    top: 0;
+    right: -45px;
+
+    width: 130px;
+    height: 230px;
+
+    opacity: 0.45;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-offer__header,
+  .services-offer__eyebrow-line,
+  .services-offer__card,
+  .services-offer__decoration {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .services-offer__card,
+  .services-offer__icon,
+  .services-offer__arrow {
+    transition: none;
+  }
+}

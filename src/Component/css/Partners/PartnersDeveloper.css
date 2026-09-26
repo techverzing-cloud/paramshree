@@ -1,0 +1,746 @@
+/* =========================================
+   PARTNERS DEVELOPER
+========================================= */
+
+.partners-developer {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--color-ivory-dark);
+
+  color: var(--color-text);
+
+  padding-block: clamp(70px, 8vw, 105px);
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.partners-developer__container {
+  position: relative;
+
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(250px, 0.85fr)
+    minmax(260px, 0.9fr);
+
+  align-items: center;
+
+  column-gap: clamp(35px, 5vw, 75px);
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.partners-developer__content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 520px;
+
+  animation:
+    partnersDeveloperContentReveal
+    900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.partners-developer__eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  color: var(--color-terracotta);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.partners-developer__eyebrow-line {
+  width: 36px;
+
+  height: 1px;
+
+  background: currentColor;
+
+  transform-origin: left center;
+
+  animation:
+    partnersDeveloperLineReveal
+    700ms
+    ease-out
+    450ms
+    both;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.partners-developer__title {
+  margin: 0;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(36px, 3.5vw, 49px);
+
+  font-weight: 400;
+
+  line-height: 1.12;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.partners-developer__subtitle {
+  margin-top: 12px;
+
+  color: var(--color-plum);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.25em;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.partners-developer__description {
+  max-width: 520px;
+
+  margin-top: 20px;
+
+  color: var(--color-muted);
+
+  font-size: 13px;
+
+  line-height: 1.85;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.partners-developer__button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 42px;
+
+  margin-top: 25px;
+
+  padding: 10px 21px;
+
+  border: 1px solid var(--color-terracotta);
+
+  border-radius: 999px;
+
+  color: var(--color-plum);
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.partners-developer__button svg {
+  transition:
+    transform var(--transition);
+}
+
+.partners-developer__button:hover {
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  border-color: var(--color-plum);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(66, 24, 47, 0.13);
+}
+
+.partners-developer__button:hover svg {
+  transform:
+    translate(3px, -3px);
+}
+
+/* =========================================
+   CENTER BRAND
+========================================= */
+
+.partners-developer__brand {
+  position: relative;
+
+  min-height: 280px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding-inline: 30px;
+
+  border-left: 1px solid var(--color-border);
+
+  border-right: 1px solid var(--color-border);
+
+  animation:
+    partnersDeveloperBrandReveal
+    1s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    250ms
+    both;
+}
+
+.partners-developer__brand-inner {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+/* =========================================
+   SOUL AGRO LOGO
+========================================= */
+
+.partners-developer__soul-logo {
+  width: min(100%, 220px);
+
+  height: auto;
+
+  object-fit: contain;
+
+  transition:
+    transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.partners-developer__brand:hover
+  .partners-developer__soul-logo {
+  transform: translateY(-5px) scale(1.025);
+}
+
+/* =========================================
+   DEVELOPED BY
+========================================= */
+
+.partners-developer__developed {
+  width: 100%;
+
+  margin-top: 26px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-muted);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+.partners-developer__developed-brand {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+.partners-developer__developed-brand img {
+  width: 34px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+.partners-developer__developed-name {
+  color: var(--color-plum);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+}
+
+/* =========================================
+   RIGHT BENEFITS
+========================================= */
+
+.partners-developer__benefits {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  animation:
+    partnersDeveloperBenefitsReveal
+    900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    400ms
+    both;
+}
+
+.partners-developer__benefit {
+  display: grid;
+
+  grid-template-columns: 52px 1fr;
+
+  align-items: center;
+
+  gap: 15px;
+
+  transition:
+    transform var(--transition);
+}
+
+.partners-developer__benefit:hover {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   BENEFIT ICON
+========================================= */
+
+.partners-developer__benefit-icon {
+  width: 50px;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid var(--color-terracotta);
+
+  border-radius: 50%;
+
+  color: var(--color-terracotta);
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.partners-developer__benefit:hover
+  .partners-developer__benefit-icon {
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  transform: rotate(-5deg);
+}
+
+/* =========================================
+   BENEFIT CONTENT
+========================================= */
+
+.partners-developer__benefit-content h3 {
+  margin: 0;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-body);
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+}
+
+.partners-developer__benefit-content p {
+  max-width: 190px;
+
+  margin-top: 5px;
+
+  color: var(--color-muted);
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   BOTANICAL DECORATION
+========================================= */
+
+.partners-developer__decoration {
+  position: absolute;
+
+  left: -35px;
+
+  bottom: -65px;
+
+  z-index: 0;
+
+  width: 115px;
+
+  height: 190px;
+
+  opacity: 0.48;
+
+  pointer-events: none;
+
+  transform: rotate(-8deg);
+
+  transition:
+    transform 800ms ease,
+    opacity 500ms ease;
+}
+
+.partners-developer__decoration::before {
+  content: "";
+
+  position: absolute;
+
+  left: 55px;
+
+  top: 0;
+
+  width: 1px;
+
+  height: 190px;
+
+  background: var(--color-terracotta);
+
+  transform: rotate(-17deg);
+
+  transform-origin: bottom;
+}
+
+.partners-developer__decoration span {
+  position: absolute;
+
+  width: 42px;
+
+  height: 19px;
+
+  border: 1px solid var(--color-terracotta);
+
+  border-radius: 100% 0 100% 0;
+
+  transform-origin: right center;
+}
+
+.partners-developer__decoration span:nth-child(1) {
+  left: 26px;
+  top: 125px;
+  transform: rotate(-25deg);
+}
+
+.partners-developer__decoration span:nth-child(2) {
+  left: 17px;
+  top: 92px;
+  transform: rotate(25deg) scaleX(-1);
+}
+
+.partners-developer__decoration span:nth-child(3) {
+  left: 35px;
+  top: 65px;
+  transform: rotate(-20deg);
+}
+
+.partners-developer__decoration span:nth-child(4) {
+  left: 30px;
+  top: 37px;
+  transform: rotate(25deg) scaleX(-1);
+}
+
+.partners-developer__decoration span:nth-child(5) {
+  left: 46px;
+  top: 10px;
+  transform: rotate(-15deg);
+}
+
+/* =========================================
+   HOVER DECORATION
+========================================= */
+
+.partners-developer:hover
+  .partners-developer__decoration {
+  opacity: 0.65;
+
+  transform:
+    rotate(-5deg)
+    translateY(-5px);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes partnersDeveloperContentReveal {
+  from {
+    opacity: 0;
+
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes partnersDeveloperBrandReveal {
+  from {
+    opacity: 0;
+
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes partnersDeveloperBenefitsReveal {
+  from {
+    opacity: 0;
+
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes partnersDeveloperLineReveal {
+  from {
+    opacity: 0;
+
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scaleX(1);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .partners-developer__container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(230px, 0.8fr);
+
+    row-gap: 55px;
+  }
+
+  .partners-developer__content {
+    max-width: 600px;
+  }
+
+  .partners-developer__brand {
+    min-height: 250px;
+  }
+
+  .partners-developer__benefits {
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .partners-developer {
+    padding-block: 70px;
+  }
+
+  .partners-developer__container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 45px;
+  }
+
+  .partners-developer__title {
+    font-size: 38px;
+  }
+
+  .partners-developer__subtitle {
+    font-size: 9px;
+
+    letter-spacing: 0.18em;
+  }
+
+  .partners-developer__description {
+    font-size: 13px;
+  }
+
+  .partners-developer__brand {
+    min-height: 240px;
+
+    padding-block: 30px;
+
+    border-top: 1px solid var(--color-border);
+
+    border-bottom: 1px solid var(--color-border);
+
+    border-left: 0;
+
+    border-right: 0;
+  }
+
+  .partners-developer__benefits {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .partners-developer__benefit {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .partners-developer__decoration {
+    left: -50px;
+
+    bottom: -80px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .partners-developer__title {
+    font-size: 34px;
+  }
+
+  .partners-developer__button {
+    width: 100%;
+  }
+
+  .partners-developer__brand {
+    min-height: 220px;
+  }
+
+  .partners-developer__developed-name {
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-developer__content,
+  .partners-developer__brand,
+  .partners-developer__benefits,
+  .partners-developer__eyebrow-line {
+    animation: none;
+  }
+
+  .partners-developer__button,
+  .partners-developer__button svg,
+  .partners-developer__soul-logo,
+  .partners-developer__benefit,
+  .partners-developer__benefit-icon,
+  .partners-developer__decoration {
+    transition: none;
+  }
+}

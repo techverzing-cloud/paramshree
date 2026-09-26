@@ -1,0 +1,617 @@
+/* =========================================
+   WHY PARTNER SECTION
+========================================= */
+
+.partners-why-partner {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--color-ivory-light);
+
+  padding-block: var(--section-spacing);
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.partners-why-partner__container {
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.72fr)
+    minmax(0, 1.55fr);
+
+  align-items: center;
+
+  gap: clamp(45px, 6vw, 85px);
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.partners-why-partner__content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 420px;
+
+  animation:
+    partnersWhyContentReveal
+    900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.partners-why-partner__eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  color: var(--color-terracotta);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.partners-why-partner__eyebrow-line {
+  width: 35px;
+
+  height: 1px;
+
+  background: currentColor;
+
+  transform-origin: left center;
+
+  animation:
+    partnersWhyLineReveal
+    700ms
+    ease-out
+    450ms
+    both;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.partners-why-partner__title {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(38px, 3.8vw, 52px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.03em;
+}
+
+.partners-why-partner__title span {
+  display: block;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.partners-why-partner__description {
+  max-width: 390px;
+
+  margin-top: 20px;
+
+  color: var(--color-muted);
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.partners-why-partner__button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  min-height: 43px;
+
+  margin-top: 27px;
+
+  padding: 10px 22px;
+
+  border: 1px solid var(--color-plum);
+
+  border-radius: 999px;
+
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.partners-why-partner__button svg {
+  transition:
+    transform var(--transition);
+}
+
+.partners-why-partner__button:hover {
+  background: var(--color-plum-light);
+
+  border-color: var(--color-plum-light);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 9px 24px rgba(66, 24, 47, 0.18);
+}
+
+.partners-why-partner__button:hover svg {
+  transform:
+    translate(3px, -3px);
+}
+
+/* =========================================
+   RIGHT VISUAL
+========================================= */
+
+.partners-why-partner__visual {
+  position: relative;
+
+  min-height: 355px;
+
+  overflow: visible;
+
+  animation:
+    partnersWhyVisualReveal
+    1s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    200ms
+    both;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.partners-why-partner__image {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  background: var(--color-ivory-dark);
+}
+
+.partners-why-partner__image img {
+  object-fit: cover;
+
+  object-position: center;
+
+  transform: scale(1.02);
+
+  transition:
+    transform 1.2s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.partners-why-partner__image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(53, 31, 39, 0.08),
+      rgba(53, 31, 39, 0.01)
+    );
+}
+
+.partners-why-partner__visual:hover
+  .partners-why-partner__image img {
+  transform: scale(1.055);
+}
+
+/* =========================================
+   BENEFITS CARD
+========================================= */
+
+.partners-why-partner__benefits {
+  position: absolute;
+
+  z-index: 3;
+
+  left: 12%;
+
+  right: 9%;
+
+  bottom: 32px;
+
+  min-height: 116px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  align-items: stretch;
+
+  padding: 18px 12px;
+
+  background:
+    rgba(251, 249, 245, 0.93);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  box-shadow:
+    0 12px 35px rgba(53, 31, 39, 0.14);
+
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+
+  animation:
+    partnersWhyCardReveal
+    900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    600ms
+    both;
+
+  transition:
+    box-shadow 400ms ease,
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.partners-why-partner__benefits:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 42px rgba(53, 31, 39, 0.18);
+}
+
+/* =========================================
+   INDIVIDUAL BENEFIT
+========================================= */
+
+.partners-why-partner__benefit {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding-inline: 16px;
+
+  border-right: 1px solid var(--color-border);
+
+  text-align: center;
+
+  transition:
+    transform var(--transition),
+    color var(--transition);
+}
+
+.partners-why-partner__benefit:last-child {
+  border-right: 0;
+}
+
+.partners-why-partner__benefit:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   BENEFIT ICON
+========================================= */
+
+.partners-why-partner__benefit-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--color-plum);
+
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.partners-why-partner__benefit:hover
+  .partners-why-partner__benefit-icon {
+  color: var(--color-terracotta);
+
+  transform:
+    translateY(-2px)
+    scale(1.08);
+}
+
+/* =========================================
+   BENEFIT TEXT
+========================================= */
+
+.partners-why-partner__benefit-text {
+  display: flex;
+
+  flex-direction: column;
+
+  color: var(--color-text);
+
+  font-size: 11px;
+
+  line-height: 1.45;
+}
+
+.partners-why-partner__benefit-text span:first-child {
+  font-weight: 500;
+}
+
+.partners-why-partner__benefit-text span:last-child {
+  color: var(--color-muted);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes partnersWhyContentReveal {
+  from {
+    opacity: 0;
+
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes partnersWhyVisualReveal {
+  from {
+    opacity: 0;
+
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes partnersWhyCardReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+@keyframes partnersWhyLineReveal {
+  from {
+    opacity: 0;
+
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scaleX(1);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .partners-why-partner__container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .partners-why-partner__content {
+    max-width: 650px;
+  }
+
+  .partners-why-partner__description {
+    max-width: 570px;
+  }
+
+  .partners-why-partner__visual {
+    min-height: 400px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+  .partners-why-partner {
+    padding-block: 70px;
+  }
+
+  .partners-why-partner__container {
+    gap: 40px;
+  }
+
+  .partners-why-partner__title {
+    font-size: 38px;
+  }
+
+  .partners-why-partner__description {
+    font-size: 13px;
+  }
+
+  .partners-why-partner__button {
+    margin-top: 23px;
+  }
+
+  .partners-why-partner__visual {
+    min-height: 460px;
+  }
+
+  .partners-why-partner__image {
+    height: 360px;
+
+    inset: 0 0 auto 0;
+  }
+
+  .partners-why-partner__benefits {
+    left: 5%;
+
+    right: 5%;
+
+    bottom: 0;
+
+    min-height: auto;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 12px 5px;
+  }
+
+  .partners-why-partner__benefit {
+    min-height: 100px;
+
+    padding-inline: 10px;
+
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .partners-why-partner__benefit:nth-child(2),
+  .partners-why-partner__benefit:nth-child(4) {
+    border-right: 0;
+  }
+
+  .partners-why-partner__benefit:nth-child(3),
+  .partners-why-partner__benefit:nth-child(4) {
+    border-bottom: 0;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .partners-why-partner__title {
+    font-size: 34px;
+  }
+
+  .partners-why-partner__visual {
+    min-height: 500px;
+  }
+
+  .partners-why-partner__image {
+    height: 340px;
+  }
+
+  .partners-why-partner__benefit-text {
+    font-size: 10px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-why-partner__content,
+  .partners-why-partner__visual,
+  .partners-why-partner__benefits,
+  .partners-why-partner__eyebrow-line {
+    animation: none;
+  }
+
+  .partners-why-partner__image img,
+  .partners-why-partner__button,
+  .partners-why-partner__button svg,
+  .partners-why-partner__benefit,
+  .partners-why-partner__benefit-icon,
+  .partners-why-partner__benefits {
+    transition: none;
+  }
+}

@@ -1,0 +1,521 @@
+/* =========================================
+   TESTIMONIALS SECTION
+========================================= */
+
+.soul-testimonials {
+  position: relative;
+  overflow: hidden;
+
+  padding: var(--section-spacing) 0;
+
+  background: var(--color-ivory-light);
+}
+
+.soul-testimonials__container {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 0.82fr 1.18fr;
+
+  gap: clamp(50px, 8vw, 120px);
+
+  align-items: center;
+}
+
+/* =========================================
+   DECOR
+========================================= */
+
+.soul-testimonials__decor {
+  position: absolute;
+
+  border: 1px solid rgba(245, 241, 233, 0.13);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.soul-testimonials__decor--top {
+  width: 360px;
+  height: 360px;
+
+  top: -310px;
+  right: -170px;
+}
+
+.soul-testimonials__decor--bottom {
+  width: 340px;
+  height: 340px;
+
+  bottom: -240px;
+  left: -170px;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.soul-testimonials__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  margin-bottom: 19px;
+
+  color: var(--color-plum);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.soul-testimonials__eyebrow-line {
+  width: 30px;
+  height: 1px;
+
+  background: var(--color-terracotta);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.soul-testimonials__title {
+  margin-bottom: 23px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(40px, 4.7vw, 64px);
+
+  font-weight: 400;
+
+  line-height: 1.03;
+
+  letter-spacing: -0.025em;
+}
+
+.soul-testimonials__title span {
+  display: block;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.soul-testimonials__description {
+  max-width: 440px;
+
+  color: var(--color-plum);
+
+  font-size: 11px;
+
+  line-height: 1.85;
+}
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.soul-testimonials__controls {
+  display: flex;
+  gap: 9px;
+
+  margin-top: 32px;
+}
+
+.soul-testimonials__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: 1px solid rgba(245, 241, 233, 0.35);
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--color-ivory);
+
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.soul-testimonials__arrow:hover {
+  background: var(--color-ivory);
+
+  border-color: var(--color-ivory);
+
+  color: var(--color-plum);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   TESTIMONIAL CONTENT
+========================================= */
+
+.soul-testimonials__content {
+  position: relative;
+
+  min-height: 420px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: clamp(35px, 5vw, 65px);
+
+  background: var(--color-ivory-light);
+
+  border: 1px solid rgba(245, 241, 233, 0.18);
+
+  box-shadow:
+    0 20px 60px rgba(53, 31, 39, 0.12);
+}
+
+/* =========================================
+   QUOTE ICON
+========================================= */
+
+.soul-testimonials__quote-icon {
+  position: absolute;
+
+  top: 30px;
+  right: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  color: var(--color-terracotta);
+
+  opacity: 0.8;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.soul-testimonials__quote {
+  animation: soulTestimonialIn 450ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.soul-testimonials__quote blockquote {
+  max-width: 720px;
+
+  margin: 0 0 40px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(24px, 3vw, 39px);
+
+  font-weight: 400;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.015em;
+}
+
+/* =========================================
+   PERSON
+========================================= */
+
+.soul-testimonials__person {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.soul-testimonials__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  flex: 0 0 46px;
+
+  border: 1px solid var(--color-terracotta);
+
+  border-radius: 50%;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: 13px;
+
+  font-style: italic;
+}
+
+.soul-testimonials__person-info h3 {
+  margin-bottom: 5px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  font-weight: 400;
+}
+
+/* =========================================
+   META
+========================================= */
+
+.soul-testimonials__meta {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.soul-testimonials__meta span {
+  color: var(--color-muted);
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.soul-testimonials__meta span + span {
+  padding-left: 10px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.soul-testimonials__footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 42px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+/* =========================================
+   COUNTER
+========================================= */
+
+.soul-testimonials__counter {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: 15px;
+
+  font-style: italic;
+}
+
+.soul-testimonials__counter-current {
+  color: var(--color-terracotta);
+}
+
+.soul-testimonials__counter-line {
+  width: 25px;
+  height: 1px;
+
+  background: var(--color-terracotta);
+}
+
+.soul-testimonials__counter-total {
+  color: var(--color-muted);
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.soul-testimonials__progress {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  flex: 1;
+
+  max-width: 170px;
+}
+
+.soul-testimonials__progress-item {
+  flex: 1;
+
+  height: 2px;
+
+  padding: 0;
+
+  border: none;
+
+  background: var(--color-border);
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition),
+    transform var(--transition);
+}
+
+.soul-testimonials__progress-item:hover {
+  transform: scaleY(2);
+}
+
+.soul-testimonials__progress-item.is-active {
+  background: var(--color-terracotta);
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes soulTestimonialIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .soul-testimonials__container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .soul-testimonials__intro {
+    max-width: 650px;
+  }
+
+  .soul-testimonials__content {
+    min-height: 390px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .soul-testimonials__title {
+    font-size: 40px;
+  }
+
+  .soul-testimonials__content {
+    min-height: 400px;
+
+    padding: 30px 25px;
+  }
+
+  .soul-testimonials__quote-icon {
+    top: 20px;
+    right: 20px;
+  }
+
+  .soul-testimonials__quote blockquote {
+    font-size: 25px;
+
+    margin-bottom: 32px;
+  }
+
+  .soul-testimonials__footer {
+    margin-top: 32px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .soul-testimonials__content {
+    min-height: 430px;
+  }
+
+  .soul-testimonials__quote blockquote {
+    font-size: 23px;
+  }
+
+  .soul-testimonials__footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .soul-testimonials__progress {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .soul-testimonials__quote {
+    animation: none;
+  }
+
+  .soul-testimonials * {
+    transition-duration: 0.01ms !important;
+  }
+}

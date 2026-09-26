@@ -1,0 +1,685 @@
+
+.desktopActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.callButton,
+.mobileCallButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--color-plum);
+  border-radius: 999px;
+  padding: 11px 17px;
+  color: var(--color-plum);
+  background: transparent;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.callButton:hover,
+.mobileCallButton:hover {
+  color: var(--color-ivory);
+  background: var(--color-plum);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgb(48 30 42 / 13%);
+}
+
+.mobileCallButton {
+  display: none;
+}
+
+/* Popup overlay */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  padding: 24px;
+  background: rgb(27 22 26 / 68%);
+  backdrop-filter: blur(9px);
+  animation: backdropIn 220ms ease both;
+}
+
+/* New split layout, not a copy of the reference dimensions */
+.callbackModal {
+  position: relative;
+  width: min(880px, 100%);
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 24px;
+  background: var(--color-ivory);
+  box-shadow: 0 28px 90px rgb(0 0 0 / 28%);
+  animation: modalIn 320ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  color: var(--color-plum);
+  background: rgb(255 255 255 / 72%);
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.closeButton:hover {
+  color: white;
+  background: var(--color-plum);
+  transform: rotate(90deg);
+}
+
+.modalLayout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  min-height: 540px;
+}
+
+/* Decorative panel */
+.visualPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 540px;
+  overflow: hidden;
+  padding: 34px 32px 28px;
+  color: var(--color-ivory);
+  background:
+    radial-gradient(ellipse at 15% 85%, rgb(184 116 79 / 38%), transparent 36%),
+    linear-gradient(150deg, #493344 0%, #332638 52%, #202c27 100%);
+  isolation: isolate;
+}
+
+.visualPanel::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 70px;
+  right: -115px;
+  width: 310px;
+  height: 310px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 28px rgb(255 255 255 / 3%),
+    0 0 0 58px rgb(255 255 255 / 2%);
+  animation: orbitFloat 9s ease-in-out infinite alternate;
+}
+
+.visualTopline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(255 255 255 / 88%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.visualLogoMark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(255 255 255 / 50%);
+  border-radius: 10px 10px 10px 2px;
+  color: var(--color-ivory);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+.visualArtwork {
+  position: absolute;
+  right: -6px;
+  bottom: 100px;
+  left: -6px;
+  height: 215px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.artSun {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f0c58d, #c77d61);
+  box-shadow: 0 0 48px rgb(240 197 141 / 25%);
+  animation: sunGlow 5s ease-in-out infinite alternate;
+}
+
+.artHillBack,
+.artHillFront {
+  position: absolute;
+  right: -12%;
+  bottom: -48%;
+  left: -12%;
+  height: 180%;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-8deg);
+}
+
+.artHillBack {
+  bottom: -66%;
+  background: linear-gradient(140deg, #8c786b, #5c5b4c 60%, #4a4d3d);
+  transform: rotate(10deg);
+}
+
+.artHillFront {
+  bottom: -92%;
+  background: linear-gradient(145deg, #6d7460, #394c3e 70%);
+  transform: rotate(-9deg);
+}
+
+.artPlant {
+  position: absolute;
+  right: 72px;
+  bottom: 16px;
+  width: 2px;
+  height: 70px;
+  background: #d3b28a;
+  transform-origin: bottom;
+  animation: plantSway 4s ease-in-out infinite alternate;
+}
+
+.artPlant span {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  border: 1px solid rgb(225 208 168 / 80%);
+  border-radius: 100% 0 100% 0;
+}
+
+.artPlant span:nth-child(1) {
+  top: 15px;
+  left: 0;
+  transform: rotate(-28deg);
+}
+
+.artPlant span:nth-child(2) {
+  top: 31px;
+  right: 0;
+  transform: rotate(28deg) scaleX(-1);
+}
+
+.artPlant span:nth-child(3) {
+  top: 44px;
+  left: -18px;
+  transform: rotate(-20deg);
+}
+
+.visualCopy {
+  position: relative;
+  z-index: 1;
+  max-width: 310px;
+  margin-top: auto;
+  padding-top: 185px;
+}
+
+.visualKicker,
+.formEyebrow {
+  display: block;
+  color: var(--color-terracotta);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.17em;
+}
+
+.visualCopy h2 {
+  margin: 10px 0 11px;
+  color: var(--color-ivory);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.08;
+}
+
+.visualCopy p {
+  max-width: 285px;
+  margin: 0;
+  color: rgb(255 255 255 / 74%);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.visualFooter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgb(255 255 255 / 68%);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.footerDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d6a17b;
+  box-shadow: 0 0 0 5px rgb(214 161 123 / 13%);
+}
+
+/* Form panel */
+.formPanel {
+  padding: 58px 42px 34px;
+  background: var(--color-ivory);
+}
+
+.formHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 27px;
+}
+
+.formIcon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: var(--color-plum);
+  background: rgb(111 77 91 / 10%);
+}
+
+.formHeading h2 {
+  margin: 5px 0 5px;
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  line-height: 1.15;
+}
+
+.formHeading p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.callbackForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldLabel {
+  margin: 0 0 8px;
+  color: var(--color-plum);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 49px;
+  margin-bottom: 17px;
+  padding: 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  color: var(--color-muted);
+  background: #fff;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--color-terracotta);
+  box-shadow: 0 0 0 3px rgb(190 112 79 / 12%);
+  transform: translateY(-1px);
+}
+
+.inputWrap input,
+.inputWrap select {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: var(--color-plum);
+  background: transparent;
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.inputWrap input::placeholder,
+.inputWrap select:invalid {
+  color: #938a85;
+}
+
+.inputWrap select {
+  cursor: pointer;
+}
+
+.countryCode {
+  padding-right: 10px;
+  border-right: 1px solid var(--color-border);
+  color: var(--color-plum);
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.submitButton,
+.successButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 49px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 11px;
+  color: #fff;
+  background: linear-gradient(105deg, var(--color-terracotta), #b95e48);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    filter 200ms ease;
+}
+
+.submitButton:hover,
+.successButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgb(130 68 50 / 20%);
+  filter: saturate(1.08);
+}
+
+.submitButton:active,
+.successButton:active {
+  transform: translateY(0);
+}
+
+.submitButton:focus-visible,
+.successButton:focus-visible,
+.closeButton:focus-visible,
+.callButton:focus-visible,
+.mobileCallButton:focus-visible {
+  outline: 3px solid var(--color-terracotta);
+  outline-offset: 3px;
+}
+
+.privacyNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 20px 0 0;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.privacyNote span {
+  color: var(--color-terracotta);
+}
+
+/* Thank-you popup state */
+.successView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 420px;
+  justify-content: center;
+  padding: 60px 38px 42px;
+  text-align: center;
+  animation: successIn 350ms ease both;
+}
+
+.successIcon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 22px;
+  border-radius: 22px;
+  color: #fff;
+  background: var(--color-plum);
+  box-shadow: 0 10px 28px rgb(62 42 55 / 18%);
+}
+
+.successView h2 {
+  margin: 10px 0;
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+}
+
+.successView p {
+  max-width: 370px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.requestedTime {
+  display: inline-block;
+  margin: 16px 0;
+  padding: 10px 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-plum);
+  background: #fff;
+  font-size: 0.83rem;
+}
+
+.successView .successSmall {
+  max-width: 390px;
+  margin-top: 4px;
+  font-size: 0.76rem;
+}
+
+.successButton {
+  min-width: 145px;
+  margin-top: 25px;
+  padding: 0 22px;
+}
+
+/* Animations */
+@keyframes backdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes orbitFloat {
+  from { transform: translateY(-8px) rotate(-8deg); }
+  to { transform: translateY(12px) rotate(8deg); }
+}
+
+@keyframes sunGlow {
+  from { box-shadow: 0 0 32px rgb(240 197 141 / 18%); }
+  to { box-shadow: 0 0 60px rgb(240 197 141 / 38%); }
+}
+
+@keyframes plantSway {
+  from { transform: rotate(-5deg); }
+  to { transform: rotate(5deg); }
+}
+
+@keyframes successIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 900px) {
+  .desktopActions {
+    gap: 7px;
+  }
+
+  .callButton {
+    padding: 10px 13px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktopActions {
+    display: none;
+  }
+
+  .mobileCallButton {
+    display: inline-flex;
+    width: 100%;
+    min-height: 44px;
+    margin-top: 8px;
+  }
+
+  .modalBackdrop {
+    padding: 16px;
+  }
+
+  .callbackModal {
+    width: min(540px, 100%);
+    border-radius: 20px;
+  }
+
+  .modalLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .visualPanel {
+    min-height: 225px;
+    padding: 23px 25px;
+  }
+
+  .visualArtwork {
+    right: 0;
+    bottom: -35px;
+    left: 0;
+    height: 175px;
+    opacity: 0.75;
+  }
+
+  .visualCopy {
+    max-width: 65%;
+    padding-top: 38px;
+  }
+
+  .visualCopy h2 {
+    font-size: 1.65rem;
+  }
+
+  .visualCopy p {
+    font-size: 0.8rem;
+  }
+
+  .visualFooter {
+    display: none;
+  }
+
+  .formPanel {
+    padding: 29px 25px 25px;
+  }
+
+  .formHeading {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalBackdrop {
+    padding: 10px;
+  }
+
+  .visualPanel {
+    min-height: 190px;
+    padding: 19px 20px;
+  }
+
+  .visualCopy {
+    max-width: 75%;
+    padding-top: 28px;
+  }
+
+  .visualCopy p {
+    max-width: 240px;
+  }
+
+  .formPanel {
+    padding: 24px 20px 22px;
+  }
+
+  .formHeading h2 {
+    font-size: 1.45rem;
+  }
+
+  .successView {
+    min-height: 380px;
+    padding: 55px 22px 30px;
+  }
+
+  .successView h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modalBackdrop,
+  .callbackModal,
+  .visualPanel::before,
+  .artSun,
+  .artPlant,
+  .successView {
+    animation: none;
+  }
+
+  .callButton,
+  .mobileCallButton,
+  .closeButton,
+  .inputWrap,
+  .submitButton,
+  .successButton {
+    transition: none;
+  }
+}

@@ -1,0 +1,400 @@
+/* =========================================
+   PARTNERS CTA
+========================================= */
+
+.partners-cta {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--color-plum-light);
+
+  color: var(--color-ivory);
+
+  padding-block: 30px;
+
+  border-top: 1px solid
+    rgba(245, 241, 233, 0.12);
+
+  border-bottom: 1px solid
+    rgba(245, 241, 233, 0.12);
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.partners-cta__container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  min-height: 105px;
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.partners-cta__content {
+  animation:
+    partnersCtaContentReveal
+    850ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.partners-cta__eyebrow {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color:
+    rgba(245, 241, 233, 0.68);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.partners-cta__title {
+  margin: 0;
+
+  color: var(--color-ivory);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(26px, 2.5vw, 36px);
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.02em;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.partners-cta__description {
+  margin-top: 4px;
+
+  color:
+    rgba(245, 241, 233, 0.72);
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.partners-cta__button {
+  position: relative;
+
+  flex-shrink: 0;
+
+  min-width: 150px;
+
+  min-height: 43px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 10px 24px;
+
+  border: 1px solid
+    rgba(245, 241, 233, 0.7);
+
+  border-radius: 999px;
+
+  color: var(--color-ivory);
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  overflow: hidden;
+
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.partners-cta__button::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: var(--color-ivory);
+
+  transform:
+    scaleX(0);
+
+  transform-origin: right center;
+
+  transition:
+    transform 450ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.partners-cta__button span,
+.partners-cta__button svg {
+  position: relative;
+
+  z-index: 1;
+}
+
+.partners-cta__button svg {
+  transition:
+    transform var(--transition);
+}
+
+.partners-cta__button:hover {
+  color: var(--color-plum);
+
+  border-color: var(--color-ivory);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.16);
+}
+
+.partners-cta__button:hover::before {
+  transform:
+    scaleX(1);
+
+  transform-origin: left center;
+}
+
+.partners-cta__button:hover svg {
+  transform:
+    translate(3px, -3px);
+}
+
+/* =========================================
+   DECORATIVE BOTANICAL ELEMENTS
+========================================= */
+
+.partners-cta__decoration {
+  position: absolute;
+
+  z-index: 1;
+
+  color: var(--color-terracotta);
+
+  opacity: 0.22;
+
+  pointer-events: none;
+
+  transition:
+    transform 1s ease,
+    opacity 500ms ease;
+}
+
+.partners-cta__decoration--left {
+  left: -18px;
+
+  bottom: -48px;
+
+  transform:
+    rotate(-25deg);
+}
+
+.partners-cta__decoration--right {
+  right: -18px;
+
+  top: -45px;
+
+  transform:
+    rotate(155deg);
+}
+
+.partners-cta:hover
+  .partners-cta__decoration--left {
+  opacity: 0.35;
+
+  transform:
+    rotate(-18deg)
+    translateY(-6px);
+}
+
+.partners-cta:hover
+  .partners-cta__decoration--right {
+  opacity: 0.35;
+
+  transform:
+    rotate(148deg)
+    translateY(6px);
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes partnersCtaContentReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .partners-cta {
+    padding-block: 32px;
+  }
+
+  .partners-cta__container {
+    min-height: 110px;
+
+    gap: 30px;
+  }
+
+  .partners-cta__title {
+    font-size: 28px;
+  }
+
+  .partners-cta__button {
+    min-width: 135px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .partners-cta {
+    padding-block: 40px;
+  }
+
+  .partners-cta__container {
+    min-height: auto;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+  .partners-cta__content {
+    max-width: 100%;
+  }
+
+  .partners-cta__title {
+    font-size: 30px;
+  }
+
+  .partners-cta__description {
+    max-width: 320px;
+
+    font-size: 11px;
+  }
+
+  .partners-cta__button {
+    width: auto;
+
+    min-width: 145px;
+  }
+
+  .partners-cta__decoration--right {
+    right: -45px;
+
+    top: -60px;
+  }
+
+  .partners-cta__decoration--left {
+    left: -45px;
+
+    bottom: -65px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .partners-cta__title {
+    font-size: 27px;
+  }
+
+  .partners-cta__button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-cta__content {
+    animation: none;
+  }
+
+  .partners-cta__button,
+  .partners-cta__button::before,
+  .partners-cta__button svg,
+  .partners-cta__decoration {
+    transition: none;
+  }
+}

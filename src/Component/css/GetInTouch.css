@@ -1,0 +1,219 @@
+
+/* =========================================
+   GET IN TOUCH SECTION
+   ParamShree - Ivory / Plum / Terracotta
+========================================= */
+
+.get-in-touch {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 24px;
+
+  background: var(--color-plum);
+  color: var(--color-ivory);
+}
+
+/* Decorative background accent */
+.get-in-touch::before {
+  content: "";
+
+  position: absolute;
+  top: -140px;
+  right: -100px;
+
+  width: 360px;
+  height: 360px;
+
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.get-in-touch::after {
+  content: "";
+
+  position: absolute;
+  bottom: -180px;
+  left: -100px;
+
+  width: 400px;
+  height: 400px;
+
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.get-in-touch__container {
+  position: relative;
+  z-index: 1;
+
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.get-in-touch__content {
+  max-width: 760px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  animation: getInTouchReveal 800ms ease both;
+}
+
+/* Eyebrow */
+.get-in-touch__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: var(--color-terracotta);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* Heading */
+.get-in-touch__content h2 {
+  margin: 0 0 20px;
+
+  color: var(--color-ivory);
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+
+/* Description */
+.get-in-touch__content p {
+  max-width: 590px;
+  margin: 0 auto 32px;
+
+  color: rgb(255 255 255 / 78%);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Send Enquiry button */
+.get-in-touch__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 15px 28px;
+
+  border: 1px solid var(--color-terracotta);
+  border-radius: 999px;
+
+  background: var(--color-terracotta);
+  color: #fff;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+/* Arrow transition */
+.get-in-touch__button span {
+  display: inline-block;
+
+  font-size: 1.1rem;
+
+  transition: transform 250ms ease;
+}
+
+/* Hover effect */
+.get-in-touch__button:hover {
+  background: transparent;
+  color: var(--color-ivory);
+
+  border-color: var(--color-ivory);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgb(0 0 0 / 15%);
+}
+
+.get-in-touch__button:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* Keyboard accessibility */
+.get-in-touch__button:focus-visible {
+  outline: 3px solid var(--color-ivory);
+  outline-offset: 5px;
+}
+
+/* Entrance animation */
+@keyframes getInTouchReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .get-in-touch {
+    padding: 80px 22px;
+  }
+
+  .get-in-touch::before {
+    width: 260px;
+    height: 260px;
+  }
+
+  .get-in-touch::after {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .get-in-touch {
+    padding: 65px 18px;
+  }
+
+  .get-in-touch__content p {
+    font-size: 0.94rem;
+  }
+
+  .get-in-touch__button {
+    padding: 14px 24px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .get-in-touch__content {
+    animation: none;
+  }
+
+  .get-in-touch__button,
+  .get-in-touch__button span {
+    transition: none;
+  }
+
+  .get-in-touch__button:hover {
+    transform: none;
+  }
+}

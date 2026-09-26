@@ -1,0 +1,341 @@
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+  position: relative;
+  min-height: 20px;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-ivory-dark);
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.contact-hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+
+.contact-hero__image {
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1.02);
+  animation: contactHeroImageReveal 1.6s ease-out forwards;
+}
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.contact-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 241, 233, 0.96) 0%,
+      rgba(245, 241, 233, 0.88) 23%,
+      rgba(245, 241, 233, 0.58) 43%,
+      rgba(245, 241, 233, 0.16) 65%,
+      rgba(245, 241, 233, 0) 100%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.contact-hero__container {
+  position: relative;
+  min-height: 570px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-hero__content {
+  width: min(100%, 470px);
+  padding-block: 80px;
+
+  animation: contactHeroContentReveal 1s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    0.15s
+    both;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.contact-hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: var(--color-plum);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.contact-hero__eyebrow-line {
+  width: 30px;
+  height: 1px;
+
+  background: var(--color-terracotta);
+
+  transform-origin: left center;
+
+  animation: contactHeroLineReveal 0.7s
+    ease
+    0.6s
+    both;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.contact-hero__title {
+  max-width: 480px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+  font-size: clamp(46px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.contact-hero__title span {
+  display: inline;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.contact-hero__description {
+  max-width: 400px;
+
+  margin-top: 22px;
+
+  color: var(--color-charcoal);
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  animation: contactHeroDescriptionReveal 0.9s
+    ease
+    0.45s
+    both;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.contact-hero__button {
+  margin-top: 28px;
+
+  min-width: 142px;
+
+  animation: contactHeroButtonReveal 0.9s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    0.6s
+    both;
+}
+
+.contact-hero__button:hover {
+  transform: translateY(-2px);
+}
+
+.contact-hero__button:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   BOTTOM FADE
+========================================= */
+
+.contact-hero__bottom-fade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 55px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(245, 241, 233, 0.2)
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes contactHeroImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes contactHeroContentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contactHeroLineReveal {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes contactHeroDescriptionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contactHeroButtonReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .contact-hero {
+    min-height: 620px;
+  }
+
+  .contact-hero__container {
+    min-height: 620px;
+  }
+
+  .contact-hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 241, 233, 0.94) 0%,
+        rgba(245, 241, 233, 0.76) 42%,
+        rgba(245, 241, 233, 0.25) 75%,
+        rgba(245, 241, 233, 0.08) 100%
+      );
+  }
+
+  .contact-hero__content {
+    padding-top: 100px;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    min-height: 650px;
+  }
+
+  .contact-hero__container {
+    min-height: 650px;
+  }
+
+  .contact-hero__content {
+    width: 100%;
+    padding-block: 75px 40px;
+  }
+
+  .contact-hero__title {
+    font-size: clamp(42px, 12vw, 54px);
+  }
+
+  .contact-hero__description {
+    max-width: 350px;
+    font-size: 13px;
+  }
+
+  .contact-hero__image {
+    object-position: 62% center;
+  }
+
+  .contact-hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 241, 233, 0.96) 0%,
+        rgba(245, 241, 233, 0.85) 48%,
+        rgba(245, 241, 233, 0.38) 78%,
+        rgba(245, 241, 233, 0.1) 100%
+      );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-hero__image,
+  .contact-hero__content,
+  .contact-hero__eyebrow-line,
+  .contact-hero__description,
+  .contact-hero__button {
+    animation: none;
+  }
+
+  .contact-hero__button {
+    transition: none;
+  }
+}

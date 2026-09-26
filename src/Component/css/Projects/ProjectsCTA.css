@@ -1,0 +1,490 @@
+/* =========================================================
+   PROJECTS CTA
+========================================================= */
+
+.projects-cta {
+  position: relative;
+
+  min-height: 235px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background: var(--color-ivory-dark);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.projects-cta__image-wrapper {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  overflow: hidden;
+}
+
+.projects-cta__image {
+  object-fit: cover;
+
+  object-position: center center;
+
+  transform: scale(1.04);
+
+  animation:
+    projectsCtaImageReveal
+    1.4s
+    ease-out
+    forwards;
+
+  transition:
+    transform 1.2s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.projects-cta:hover
+.projects-cta__image {
+  transform: scale(1.075);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.projects-cta__overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 241, 233, 0.98) 0%,
+      rgba(245, 241, 233, 0.94) 23%,
+      rgba(245, 241, 233, 0.72) 42%,
+      rgba(245, 241, 233, 0.24) 67%,
+      rgba(245, 241, 233, 0.02) 100%
+    );
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.projects-cta__container {
+  position: relative;
+
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  min-height: 235px;
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.projects-cta__content {
+  width: min(100%, 530px);
+
+  padding-block: 35px;
+
+  opacity: 0;
+
+  transform: translateY(24px);
+
+  animation:
+    projectsCtaContentReveal
+    850ms
+    180ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.projects-cta__eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: var(--color-terracotta);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.21em;
+
+  text-transform: uppercase;
+}
+
+.projects-cta__eyebrow-line {
+  width: 38px;
+
+  height: 1px;
+
+  background: var(--color-terracotta);
+
+  transform-origin: left;
+
+  transform: scaleX(0);
+
+  animation:
+    projectsCtaLineReveal
+    650ms
+    650ms
+    ease-out
+    forwards;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.projects-cta__title {
+  max-width: 500px;
+
+  margin-top: 8px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(32px, 3.5vw, 47px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.03em;
+
+  text-wrap: balance;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.projects-cta__description {
+  max-width: 410px;
+
+  margin-top: 11px;
+
+  color: var(--color-text);
+
+  font-size: 11px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.projects-cta__button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 42px;
+
+  margin-top: 16px;
+
+  padding: 9px 17px 9px 20px;
+
+  border: 1px solid var(--color-plum);
+
+  border-radius: 999px;
+
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  transition:
+    background 300ms ease,
+    border-color 300ms ease,
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.projects-cta__button:hover {
+  background: var(--color-plum-light);
+
+  border-color: var(--color-plum-light);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px
+      rgba(66, 24, 47, 0.2);
+}
+
+
+/* =========================================================
+   BUTTON ICON
+========================================================= */
+
+.projects-cta__button-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 21px;
+
+  height: 21px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  transition:
+    transform 300ms ease,
+    background 300ms ease;
+}
+
+.projects-cta__button:hover
+.projects-cta__button-icon {
+  transform: translateX(3px);
+
+  background:
+    rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================================
+   DECORATIVE LINE
+========================================================= */
+
+.projects-cta__decorative-line {
+  position: absolute;
+
+  right: 4%;
+
+  bottom: 28px;
+
+  width: 55px;
+
+  height: 1px;
+
+  background: var(--color-white);
+
+  opacity: 0.7;
+
+  transform-origin: right;
+
+  animation:
+    projectsCtaLineRight
+    900ms
+    800ms
+    ease-out
+    forwards;
+
+  transform: scaleX(0);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes projectsCtaImageReveal {
+  from {
+    opacity: 0;
+
+    transform: scale(1.1);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1.04);
+  }
+}
+
+
+@keyframes projectsCtaContentReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+@keyframes projectsCtaLineReveal {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+@keyframes projectsCtaLineRight {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .projects-cta {
+    min-height: 270px;
+  }
+
+  .projects-cta__container {
+    min-height: 270px;
+  }
+
+  .projects-cta__overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(245, 241, 233, 0.98) 0%,
+        rgba(245, 241, 233, 0.9) 38%,
+        rgba(245, 241, 233, 0.5) 65%,
+        rgba(245, 241, 233, 0.1) 100%
+      );
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+  .projects-cta {
+    min-height: 390px;
+  }
+
+  .projects-cta__container {
+    min-height: 390px;
+
+    align-items: flex-end;
+
+    padding-bottom: 34px;
+  }
+
+  .projects-cta__image {
+    object-position: 65% center;
+  }
+
+  .projects-cta__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 241, 233, 0.2) 0%,
+        rgba(245, 241, 233, 0.35) 25%,
+        rgba(245, 241, 233, 0.85) 60%,
+        rgba(245, 241, 233, 0.98) 82%,
+        rgba(245, 241, 233, 1) 100%
+      );
+  }
+
+  .projects-cta__content {
+    width: 100%;
+
+    padding-block: 20px;
+  }
+
+  .projects-cta__title {
+    max-width: 100%;
+
+    font-size: clamp(34px, 9vw, 43px);
+
+    line-height: 1;
+  }
+
+  .projects-cta__description {
+    max-width: 390px;
+
+    font-size: 11px;
+  }
+
+  .projects-cta__decorative-line {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-cta__image,
+  .projects-cta__content,
+  .projects-cta__eyebrow-line,
+  .projects-cta__decorative-line {
+    animation: none;
+
+    opacity: 1;
+
+    transform: none;
+  }
+
+  .projects-cta__image,
+  .projects-cta__button,
+  .projects-cta__button-icon {
+    transition: none;
+  }
+}

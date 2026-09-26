@@ -1,0 +1,412 @@
+/* =========================================
+   SERVICES HERO
+========================================= */
+
+.services-hero {
+  position: relative;
+  min-height: 380px;
+  height: clamp(380px, 30vw, 470px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.services-hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: scale(1.02);
+
+  animation: servicesHeroZoom 12s ease-out forwards;
+}
+
+.services-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  /*
+    The left side needs to remain slightly lighter
+    so that the plum heading and body copy remain
+    readable while preserving the photograph.
+  */
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 241, 233, 0.78) 0%,
+      rgba(245, 241, 233, 0.58) 25%,
+      rgba(245, 241, 233, 0.16) 55%,
+      rgba(53, 49, 47, 0.05) 100%
+    );
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.services-hero__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.services-hero__content {
+  width: min(100%, 560px);
+
+  padding-top: 2px;
+
+  animation: servicesHeroContentIn 900ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.services-hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 12px;
+
+  color: var(--color-plum);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  animation: servicesHeroFadeUp 700ms
+    100ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.services-hero__eyebrow-line {
+  width: 35px;
+  height: 1px;
+
+  background: var(--color-terracotta);
+
+  transform-origin: left;
+
+  animation: servicesHeroLineReveal 700ms
+    400ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.services-hero__title {
+  max-width: 560px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+
+  animation: servicesHeroFadeUp 800ms
+    200ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.services-hero__description {
+  max-width: 470px;
+
+  margin-top: 14px;
+
+  color: var(--color-charcoal);
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  animation: servicesHeroFadeUp 800ms
+    350ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.services-hero__button {
+  margin-top: 18px;
+
+  animation: servicesHeroFadeUp 800ms
+    500ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.services-hero__button svg {
+  transition:
+    transform var(--transition);
+}
+
+.services-hero__button:hover svg {
+  transform: translate(3px, -2px);
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.services-hero__quote {
+  position: absolute;
+
+  right: var(--page-gutter);
+  bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  color: var(--color-white);
+
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: right;
+
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.25);
+
+  animation: servicesHeroQuoteIn 900ms
+    700ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.services-hero__quote-line {
+  width: 28px;
+  height: 1px;
+
+  margin-top: 8px;
+
+  background: var(--color-white);
+
+  opacity: 0.9;
+
+  animation: servicesHeroLineReveal 700ms
+    1000ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes servicesHeroZoom {
+  from {
+    transform: scale(1.02);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes servicesHeroContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes servicesHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes servicesHeroQuoteIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes servicesHeroLineReveal {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .services-hero {
+    height: 430px;
+  }
+
+  .services-hero__overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(245, 241, 233, 0.86) 0%,
+        rgba(245, 241, 233, 0.68) 42%,
+        rgba(245, 241, 233, 0.2) 100%
+      );
+  }
+
+  .services-hero__title {
+    max-width: 500px;
+    font-size: clamp(36px, 5vw, 48px);
+  }
+
+  .services-hero__quote {
+    right: var(--page-gutter);
+    bottom: 24px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+  .services-hero {
+    min-height: 560px;
+    height: 560px;
+  }
+
+  .services-hero__background {
+    background-position: 65% center;
+  }
+
+  .services-hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 241, 233, 0.9) 0%,
+        rgba(245, 241, 233, 0.78) 48%,
+        rgba(53, 49, 47, 0.2) 100%
+      );
+  }
+
+  .services-hero__container {
+    align-items: flex-start;
+    padding-top: 65px;
+  }
+
+  .services-hero__content {
+    width: 100%;
+  }
+
+  .services-hero__eyebrow {
+    margin-bottom: 10px;
+  }
+
+  .services-hero__title {
+    max-width: 100%;
+
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.08;
+  }
+
+  .services-hero__description {
+    max-width: 100%;
+
+    margin-top: 16px;
+
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .services-hero__button {
+    margin-top: 20px;
+  }
+
+  .services-hero__quote {
+    right: var(--page-gutter);
+    bottom: 24px;
+
+    font-size: 21px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-hero__background,
+  .services-hero__content,
+  .services-hero__eyebrow,
+  .services-hero__eyebrow-line,
+  .services-hero__title,
+  .services-hero__description,
+  .services-hero__button,
+  .services-hero__quote,
+  .services-hero__quote-line {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}

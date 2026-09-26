@@ -1,0 +1,478 @@
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.soul-location {
+  position: relative;
+  overflow: hidden;
+  padding: var(--section-spacing) 0;
+  background: var(--color-ivory-dark);
+}
+
+.soul-location__container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(50px, 7vw, 105px);
+  align-items: center;
+}
+
+/* =========================================
+   DECOR
+========================================= */
+
+.soul-location__decor {
+  position: absolute;
+  border: 1px solid rgba(66, 24, 47, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.soul-location__decor--top {
+  width: 400px;
+  height: 400px;
+  top: -250px;
+  right: -160px;
+}
+
+.soul-location__decor--bottom {
+  width: 300px;
+  height: 300px;
+  bottom: -210px;
+  left: -150px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.soul-location__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  color: var(--color-terracotta);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.soul-location__eyebrow-line {
+  width: 32px;
+  height: 1px;
+  background: var(--color-terracotta);
+}
+
+.soul-location__title {
+  margin-bottom: 25px;
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.soul-location__title span {
+  display: block;
+}
+
+.soul-location__description {
+  max-width: 520px;
+  margin-bottom: 38px;
+
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.soul-location__highlights {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+}
+
+.soul-location__highlight {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 15px;
+  padding: 18px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.soul-location__highlight:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.soul-location__highlight-number {
+  padding-top: 3px;
+
+  color: var(--color-terracotta);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.soul-location__highlight h3 {
+  margin-bottom: 5px;
+
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.soul-location__highlight p {
+  max-width: 450px;
+
+  color: var(--color-muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.soul-location__button {
+  display: inline-flex;
+}
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.soul-location__visual {
+  position: relative;
+}
+
+.soul-location__map {
+  position: relative;
+  height: clamp(440px, 48vw, 610px);
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(135, 145, 123, 0.18),
+      rgba(245, 241, 233, 0.35)
+    );
+
+  border: 1px solid rgba(66, 24, 47, 0.12);
+}
+
+/* =========================================
+   MAP GRID
+========================================= */
+
+.soul-location__map-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(66, 24, 47, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(66, 24, 47, 0.055) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+/* =========================================
+   ROADS
+========================================= */
+
+.soul-location__road {
+  position: absolute;
+  height: 1px;
+
+  background: rgba(66, 24, 47, 0.18);
+  transform-origin: left center;
+}
+
+.soul-location__road--one {
+  top: 38%;
+  left: -5%;
+  width: 115%;
+  transform: rotate(17deg);
+}
+
+.soul-location__road--two {
+  top: 64%;
+  left: -8%;
+  width: 120%;
+  transform: rotate(-12deg);
+}
+
+.soul-location__road--three {
+  top: -5%;
+  left: 58%;
+  width: 115%;
+  transform: rotate(74deg);
+}
+
+/* =========================================
+   MAP LABELS
+========================================= */
+
+.soul-location__map-label {
+  position: absolute;
+
+  color: rgba(66, 24, 47, 0.45);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.soul-location__map-label--city {
+  top: 17%;
+  left: 17%;
+}
+
+.soul-location__map-label--highway {
+  right: 13%;
+  bottom: 22%;
+  transform: rotate(-12deg);
+}
+
+/* =========================================
+   LOCATION PIN
+========================================= */
+
+.soul-location__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translate(-50%, -50%);
+}
+
+.soul-location__pin-icon {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+  height: 54px;
+
+  border: 1px solid var(--color-plum);
+  border-radius: 50%;
+
+  background: var(--color-plum);
+  color: var(--color-white);
+
+  box-shadow:
+    0 0 0 10px rgba(66, 24, 47, 0.08),
+    0 10px 30px rgba(66, 24, 47, 0.18);
+}
+
+.soul-location__pin-pulse {
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  border: 1px solid rgba(166, 95, 66, 0.35);
+  border-radius: 50%;
+
+  animation: soulLocationPulse 2.5s ease-out infinite;
+}
+
+.soul-location__pin-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 18px;
+  padding: 10px 15px;
+
+  background: rgba(251, 249, 245, 0.94);
+  border: 1px solid var(--color-border);
+
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.soul-location__pin-label span {
+  margin-bottom: 4px;
+
+  color: var(--color-terracotta);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.soul-location__pin-label strong {
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* =========================================
+   DISTANCES
+========================================= */
+
+.soul-location__distances {
+  position: relative;
+  margin: -45px 30px 0;
+  padding: 25px;
+
+  background: var(--color-ivory-light);
+  border: 1px solid var(--color-border);
+
+  box-shadow: 0 15px 45px rgba(53, 31, 39, 0.1);
+}
+
+.soul-location__distance-heading {
+  margin-bottom: 17px;
+
+  color: var(--color-terracotta);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.soul-location__distance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.soul-location__distance {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 17px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.soul-location__distance:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.soul-location__distance span {
+  color: var(--color-muted);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+
+.soul-location__distance strong {
+  color: var(--color-plum);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes soulLocationPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.7);
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .soul-location__container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .soul-location__content {
+    max-width: 700px;
+  }
+
+  .soul-location__map {
+    height: 520px;
+  }
+}
+
+@media (max-width: 650px) {
+  .soul-location__title {
+    font-size: 42px;
+  }
+
+  .soul-location__map {
+    height: 420px;
+  }
+
+  .soul-location__distances {
+    margin: -30px 15px 0;
+    padding: 20px;
+  }
+
+  .soul-location__distance-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .soul-location__distance:nth-child(3) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .soul-location__distance:nth-child(4) {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .soul-location__map {
+    height: 350px;
+  }
+
+  .soul-location__pin-label strong {
+    font-size: 12px;
+  }
+
+  .soul-location__distance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-location__distance,
+  .soul-location__distance:nth-child(3),
+  .soul-location__distance:nth-child(4) {
+    padding: 10px 0;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .soul-location__distance:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+}

@@ -1,0 +1,589 @@
+/* =========================================
+   SOUL PRAKRITI — ABOUT PROJECT
+========================================= */
+
+.soul-about {
+  position: relative;
+  overflow: hidden;
+
+  padding-block: var(--section-spacing);
+
+  background: var(--color-ivory);
+
+  color: var(--color-charcoal);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.soul-about__container {
+  position: relative;
+  z-index: 2;
+
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(0, 1fr)
+    minmax(270px, 0.65fr);
+
+  grid-template-areas:
+    "intro image details";
+
+  align-items: center;
+
+  gap: clamp(35px, 4vw, 65px);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.soul-about__intro {
+  grid-area: intro;
+
+  animation: soulAboutReveal 800ms ease both;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.soul-about__eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+
+  color: var(--color-terracotta);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+.soul-about__eyebrow-line {
+  width: 28px;
+  height: 1px;
+
+  background: currentColor;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.soul-about__title {
+  max-width: 400px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(34px, 3.3vw, 48px);
+
+  font-weight: 400;
+
+  line-height: 1.12;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.soul-about__description {
+  max-width: 430px;
+
+  margin-top: 20px;
+
+  color: var(--color-muted);
+
+  font-size: 13px;
+
+  line-height: 1.85;
+}
+
+.soul-about__description p + p {
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.soul-about__highlights {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: 38px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+
+.soul-about__highlight {
+  position: relative;
+
+  padding: 22px 16px 8px 0;
+
+  border-bottom: 1px solid var(--color-border);
+
+  animation: soulHighlightReveal 700ms ease both;
+}
+
+
+.soul-about__highlight:nth-child(odd) {
+  padding-right: 22px;
+
+  border-right: 1px solid var(--color-border);
+}
+
+
+.soul-about__highlight:nth-child(even) {
+  padding-left: 22px;
+}
+
+
+.soul-about__highlight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 12px;
+
+  color: var(--color-plum);
+
+  border: 1px solid var(--color-terracotta);
+
+  border-radius: 50%;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+
+.soul-about__highlight:hover .soul-about__highlight-icon {
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  transform: translateY(-3px);
+}
+
+
+.soul-about__highlight h3 {
+  color: var(--color-charcoal);
+
+  font-family: var(--font-heading);
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+}
+
+
+.soul-about__highlight p {
+  margin-top: 5px;
+
+  color: var(--color-muted);
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.soul-about__image-column {
+  grid-area: image;
+
+  position: relative;
+}
+
+
+.soul-about__image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1.05 / 1;
+
+  overflow: hidden;
+
+  border: 6px solid var(--color-white);
+
+  box-shadow: var(--shadow-soft);
+
+  animation: soulImageReveal 900ms ease 150ms both;
+}
+
+
+.soul-about__image {
+  object-fit: cover;
+
+  transition:
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.soul-about__image-wrapper:hover .soul-about__image {
+  transform: scale(1.045);
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.soul-about__details {
+  grid-area: details;
+
+  overflow: hidden;
+
+  background: var(--color-ivory-light);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 8px;
+
+  box-shadow: var(--shadow-soft);
+
+  animation: soulDetailsReveal 850ms ease 250ms both;
+}
+
+
+/* =========================================
+   DETAIL ITEM
+========================================= */
+
+.soul-about__detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 16px 18px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    background var(--transition),
+    padding-left var(--transition);
+}
+
+
+.soul-about__detail:last-child {
+  border-bottom: 0;
+}
+
+
+.soul-about__detail:hover {
+  background: var(--color-white);
+
+  padding-left: 22px;
+}
+
+
+/* =========================================
+   DETAIL ICON
+========================================= */
+
+.soul-about__detail-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  color: var(--color-plum);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 50%;
+
+  background: var(--color-ivory);
+}
+
+
+/* =========================================
+   DETAIL CONTENT
+========================================= */
+
+.soul-about__detail-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.soul-about__detail-content span {
+  color: var(--color-muted);
+
+  font-size: 9px;
+
+  line-height: 1.4;
+}
+
+
+.soul-about__detail-content strong {
+  color: var(--color-charcoal);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   DECORATIONS
+========================================= */
+
+.soul-about__decoration {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  color: var(--color-terracotta);
+
+  opacity: 0.18;
+}
+
+
+.soul-about__decoration--left {
+  width: 160px;
+  height: 160px;
+
+  left: -95px;
+  bottom: -70px;
+
+  border: 1px solid currentColor;
+
+  border-radius: 50%;
+}
+
+
+.soul-about__decoration--right {
+  right: 4%;
+
+  bottom: 7%;
+
+  transform: rotate(-15deg);
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes soulAboutReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes soulImageReveal {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes soulDetailsReveal {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes soulHighlightReveal {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .soul-about__container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+
+    grid-template-areas:
+      "intro intro"
+      "image details";
+  }
+
+  .soul-about__intro {
+    max-width: 700px;
+  }
+
+  .soul-about__title {
+    max-width: 500px;
+  }
+
+  .soul-about__description {
+    max-width: 600px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .soul-about__container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 35px;
+  }
+
+  .soul-about__intro {
+    width: 100%;
+  }
+
+  .soul-about__title {
+    font-size: 36px;
+  }
+
+  .soul-about__description {
+    font-size: 13px;
+  }
+
+  .soul-about__highlights {
+    margin-top: 30px;
+  }
+
+  .soul-about__highlight {
+    padding-top: 18px;
+  }
+
+  .soul-about__image-wrapper {
+    aspect-ratio: 1 / 0.85;
+  }
+
+  .soul-about__details {
+    width: 100%;
+  }
+
+  .soul-about__decoration--right {
+    right: -10px;
+    bottom: 25%;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .soul-about__highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-about__highlight:nth-child(odd) {
+    padding-right: 0;
+
+    border-right: 0;
+  }
+
+  .soul-about__highlight:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .soul-about__intro,
+  .soul-about__image-wrapper,
+  .soul-about__details,
+  .soul-about__highlight {
+    animation: none;
+  }
+
+  .soul-about__image,
+  .soul-about__highlight-icon,
+  .soul-about__detail {
+    transition: none;
+  }
+}

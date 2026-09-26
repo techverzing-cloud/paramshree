@@ -1,0 +1,580 @@
+/* =========================================================
+   WHY INVEST
+========================================================= */
+
+.why-invest {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-block: 62px;
+
+  background:
+    linear-gradient(
+      110deg,
+      var(--color-ivory-dark) 0%,
+      #eadbd5 50%,
+      #e7d5d0 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE BACKGROUND
+========================================================= */
+
+.why-invest::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -120px;
+  top: -150px;
+
+  border: 1px solid
+    rgba(166, 95, 66, 0.12);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  animation:
+    whyInvestFloat 8s ease-in-out infinite;
+}
+
+.why-invest::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  left: -90px;
+  bottom: -110px;
+
+  border: 1px solid
+    rgba(66, 24, 47, 0.08);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  animation:
+    whyInvestFloatReverse 10s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.why-invest__container {
+  position: relative;
+  z-index: 1;
+
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.95fr)
+    minmax(500px, 1.6fr);
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.why-invest__intro {
+  opacity: 0;
+
+  transform: translateX(-30px);
+
+  animation:
+    whyInvestIntroReveal
+    800ms
+    150ms
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.why-invest__eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--color-plum);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+.why-invest__eyebrow::after {
+  content: "";
+
+  width: 32px;
+  height: 1px;
+
+  background: var(--color-terracotta);
+
+  transform-origin: left;
+
+  animation:
+    whyInvestLineReveal
+    700ms
+    600ms
+    ease-out
+    forwards;
+
+  transform: scaleX(0);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.why-invest__title {
+  max-width: 420px;
+
+  margin-top: 10px;
+
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(31px, 3.1vw, 44px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.why-invest__description {
+  max-width: 430px;
+
+  margin-top: 15px;
+
+  color: var(--color-text);
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.why-invest__benefits {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   INDIVIDUAL BENEFIT
+========================================================= */
+
+.why-invest__benefit {
+  position: relative;
+
+  min-height: 150px;
+
+  padding-inline: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  opacity: 0;
+
+  transform:
+    translateY(28px)
+    scale(0.97);
+
+  animation:
+    whyInvestBenefitReveal
+    700ms
+    var(--benefit-delay)
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+
+/* =========================================================
+   VERTICAL SEPARATORS
+========================================================= */
+
+.why-invest__benefit + .why-invest__benefit {
+  border-left: 1px solid
+    rgba(66, 24, 47, 0.16);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.why-invest__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid
+    rgba(66, 24, 47, 0.2);
+
+  border-radius: 50%;
+
+  color: var(--color-plum);
+
+  background:
+    rgba(255, 255, 255, 0.18);
+
+  transition:
+    transform 450ms
+      cubic-bezier(0.22, 1, 0.36, 1),
+    background 300ms ease,
+    color 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.why-invest__benefit:hover
+.why-invest__icon {
+  transform:
+    translateY(-5px)
+    rotate(-6deg);
+
+  background: var(--color-plum);
+
+  color: var(--color-white);
+
+  border-color: var(--color-plum);
+
+  box-shadow:
+    0 9px 20px
+      rgba(66, 24, 47, 0.14);
+}
+
+
+/* =========================================================
+   BENEFIT TITLE
+========================================================= */
+
+.why-invest__content h3 {
+  color: var(--color-plum);
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   BENEFIT DESCRIPTION
+========================================================= */
+
+.why-invest__content p {
+  max-width: 135px;
+
+  margin-top: 7px;
+
+  color: var(--color-text);
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes whyInvestIntroReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+}
+
+
+@keyframes whyInvestBenefitReveal {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(28px)
+      scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+@keyframes whyInvestLineReveal {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+@keyframes whyInvestFloat {
+  0%,
+  100% {
+    transform:
+      translate(0, 0);
+  }
+
+  50% {
+    transform:
+      translate(-20px, 20px);
+  }
+}
+
+
+@keyframes whyInvestFloatReverse {
+  0%,
+  100% {
+    transform:
+      translate(0, 0);
+  }
+
+  50% {
+    transform:
+      translate(15px, -15px);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .why-invest {
+    padding-block: 55px;
+  }
+
+  .why-invest__container {
+    grid-template-columns:
+      1fr;
+
+    gap: 38px;
+  }
+
+  .why-invest__intro {
+    text-align: center;
+  }
+
+  .why-invest__eyebrow {
+    justify-content: center;
+  }
+
+  .why-invest__title,
+  .why-invest__description {
+    margin-inline: auto;
+  }
+
+  .why-invest__benefits {
+    max-width: 850px;
+
+    width: 100%;
+
+    margin-inline: auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+  .why-invest {
+    padding-block: 50px;
+  }
+
+  .why-invest__container {
+    gap: 30px;
+  }
+
+  .why-invest__title {
+    font-size: 34px;
+  }
+
+  .why-invest__description {
+    font-size: 12px;
+  }
+
+  .why-invest__benefits {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    row-gap: 25px;
+  }
+
+  .why-invest__benefit {
+    min-height: 145px;
+
+    padding-inline: 12px;
+  }
+
+  /*
+   * Remove separator from every first
+   * column item.
+   */
+  .why-invest__benefit:nth-child(3) {
+    border-left: none;
+  }
+
+  .why-invest__benefit:nth-child(2),
+  .why-invest__benefit:nth-child(4) {
+    border-left: 1px solid
+      rgba(66, 24, 47, 0.16);
+  }
+
+  .why-invest__icon {
+    width: 44px;
+    height: 44px;
+
+    margin-bottom: 12px;
+  }
+
+  .why-invest__content h3 {
+    font-size: 13px;
+  }
+
+  .why-invest__content p {
+    font-size: 8px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .why-invest__benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .why-invest__benefit {
+    min-height: auto;
+
+    padding-block: 18px;
+  }
+
+  .why-invest__benefit + .why-invest__benefit {
+    border-left: none;
+
+    border-top: 1px solid
+      rgba(66, 24, 47, 0.14);
+  }
+
+  .why-invest__benefit:first-child {
+    padding-top: 0;
+  }
+
+  .why-invest__benefit:last-child {
+    padding-bottom: 0;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .why-invest::before,
+  .why-invest::after,
+  .why-invest__intro,
+  .why-invest__benefit,
+  .why-invest__eyebrow::after {
+    animation: none;
+
+    opacity: 1;
+
+    transform: none;
+  }
+
+  .why-invest__icon {
+    transition: none;
+  }
+}
