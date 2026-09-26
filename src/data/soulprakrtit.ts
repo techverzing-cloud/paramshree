@@ -255,110 +255,321 @@ export const soulPrakritiData = {
     "Explore the landscapes, architecture and experiences that make Soul Prakriti a distinctive retreat in nature.",
 
   filters: [
+    // {
+    //   id: "all",
+    //   label: "All",
+    // },
     {
-      id: "all",
-      label: "All",
+      id: "northzone",
+      label: "North Zone",
     },
     {
-      id: "architecture",
-      label: "Architecture",
+      id: "southzone",
+      label: "South Zone",
     },
     {
-      id: "nature",
-      label: "Nature",
+      id: "eastzone",
+      label: "East Zone",
     },
     {
-      id: "lifestyle",
-      label: "Lifestyle",
+      id: "westzone",
+      label: "West Zone",
     },
     {
-      id: "interiors",
-      label: "Interiors",
-    },
+      id: "centralzone",
+      label: "Central Zone"
+    }
   ],
 
   images: [
-    {
-      id: 1,
-      src: "/images/soul-prakriti/gallery/architecture-01.jpg",
-      alt: "Soul Prakriti farmhouse surrounded by greenery",
-      category: "architecture",
-      categoryLabel: "Architecture",
-      title: "Farmhouse Living",
-    },
+  {
+    id: 1,
+    src: "/images/soul-prakriti/gallery/northzone/acupressure-maze.jpg",
+    alt: "Acupressure maze at Soul Prakriti",
+    category: "northzone",
+    categoryLabel: "Acupressure Maze",
+    title: "Acupressure Maze",
+  },
 
-    {
-      id: 2,
-      src: "/images/soul-prakriti/gallery/nature-01.jpg",
-      alt: "Mountain landscape surrounding Soul Prakriti",
-      category: "nature",
-      categoryLabel: "Nature",
-      title: "Nature All Around",
-    },
+  {
+    id: 2,
+    src: "/images/soul-prakriti/gallery/northzone/aroma-garden.jpg",
+    alt: "Aroma garden at Soul Prakriti",
+    category: "northzone",
+    categoryLabel: "Aroma Garden",
+    title: "Aroma Garden",
+  },
 
-    {
-      id: 3,
-      src: "/images/soul-prakriti/gallery/lifestyle-01.jpg",
-      alt: "Outdoor lifestyle space at Soul Prakriti",
-      category: "lifestyle",
-      categoryLabel: "Lifestyle",
-      title: "Life Outdoors",
-    },
+  {
+    id: 3,
+    src: "/images/soul-prakriti/gallery/northzone/ayurveda.jpg",
+    alt: "Ayurveda wellness space at Soul Prakriti",
+    category: "northzone",
+    categoryLabel: "Ayurveda",
+    title: "Ayurveda",
+  },
 
-    {
-      id: 4,
-      src: "/images/soul-prakriti/gallery/interior-01.jpg",
-      alt: "Elegant farmhouse interior",
-      category: "interiors",
-      categoryLabel: "Interiors",
-      title: "Quiet Interiors",
-    },
+  {
+    id: 4,
+    src: "/images/soul-prakriti/gallery/northzone/bamboo-pavilion.jpg",
+    alt: "Bamboo pavilion surrounded by greenery",
+    category: "northzone",
+    categoryLabel: "Bamboo Pavilion",
+    title: "Bamboo Pavilion",
+  },
 
-    {
-      id: 5,
-      src: "/images/soul-prakriti/gallery/architecture-02.jpg",
-      alt: "Luxury farmhouse architecture in a natural setting",
-      category: "architecture",
-      categoryLabel: "Architecture",
-      title: "Designed for Nature",
-    },
+  {
+    id: 5,
+    src: "/images/soul-prakriti/gallery/northzone/club-house.jpg",
+    alt: "Club house at Soul Prakriti",
+    category: "northzone",
+    categoryLabel: "Club House",
+    title: "Club House",
+  },
 
-    {
-      id: 6,
-      src: "/images/soul-prakriti/gallery/nature-02.jpg",
-      alt: "Green landscape and mountain views",
-      category: "nature",
-      categoryLabel: "Nature",
-      title: "Into the Green",
-    },
+  {
+    id: 6,
+    src: "/images/soul-prakriti/gallery/northzone/entrance-gate.jpg",
+    alt: "Entrance gate of Soul Prakriti",
+    category: "northzone",
+    categoryLabel: "Entrance Gate",
+    title: "The Entrance",
+  },
 
-    {
-      id: 7,
-      src: "/images/soul-prakriti/gallery/lifestyle-02.jpg",
-      alt: "Relaxing outdoor space surrounded by nature",
-      category: "lifestyle",
-      categoryLabel: "Lifestyle",
-      title: "Slow Living",
-    },
+  {
+    id: 7,
+    src: "/images/soul-prakriti/gallery/southzone/forest-bathing.jpg",
+    alt: "Forest bathing experience at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Forest Bathing",
+    title: "Forest Bathing",
+  },
 
-    {
-      id: 8,
-      src: "/images/soul-prakriti/gallery/interior-02.jpg",
-      alt: "Premium farmhouse living space",
-      category: "interiors",
-      categoryLabel: "Interiors",
-      title: "Comfort in Detail",
-    },
+  {
+    id: 8,
+    src: "/images/soul-prakriti/gallery/southzone/hammock-yoga.jpg",
+    alt: "Hammock yoga experience at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Hammock Yoga",
+    title: "Hammock Yoga",
+  },
 
-    {
-      id: 9,
-      src: "/images/soul-prakriti/gallery/nature-03.jpg",
-      alt: "Scenic natural surroundings",
-      category: "nature",
-      categoryLabel: "Nature",
-      title: "A View to Remember",
-    },
-  ],
+  {
+    id: 9,
+    src: "/images/soul-prakriti/gallery/southzone/herb-picking.jpg",
+    alt: "Herb picking activity at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Herb Picking",
+    title: "Herb Picking",
+  },
+
+  {
+    id: 10,
+    src: "/images/soul-prakriti/gallery/southzone/meditation-circle.jpg",
+    alt: "Meditation circle surrounded by nature",
+    category: "southzone",
+    categoryLabel: "Meditation Circle",
+    title: "Meditation Circle",
+  },
+
+  {
+    id: 11,
+    src: "/images/soul-prakriti/gallery/southzone/nap-pods.jpg",
+    alt: "Relaxing nap pods at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Nap Pods",
+    title: "Nap Pods",
+  },
+
+  {
+    id: 12,
+    src: "/images/soul-prakriti/gallery/southzone/reflexology.jpg",
+    alt: "Reflexology experience at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Reflexology",
+    title: "Reflexology",
+  },
+
+  {
+    id: 13,
+    src: "/images/soul-prakriti/gallery/southzone/restaurant.jpg",
+    alt: "Restaurant at Soul Prakriti",
+    category: "southzone",
+    categoryLabel: "Restaurant",
+    title: "Soul Prakriti Restaurant",
+  },
+
+  {
+    id: 14,
+    src: "/images/soul-prakriti/gallery/eastzone/shaded-cabana.jpg",
+    alt: "Shaded cabana surrounded by greenery",
+    category: "eastzone",
+    categoryLabel: "Shaded Cabana",
+    title: "Shaded Cabana",
+  },
+
+  {
+    id: 15,
+    src: "/images/soul-prakriti/gallery/eastzone/singing-bowl.jpg",
+    alt: "Singing bowl wellness experience at Soul Prakriti",
+    category: "eastzone",
+    categoryLabel: "Singing Bowl",
+    title: "Singing Bowl",
+  },
+
+  {
+    id: 16,
+    src: "/images/soul-prakriti/gallery/eastzone/swimming-pool.jpg",
+    alt: "Swimming pool at Soul Prakriti",
+    category: "eastzone",
+    categoryLabel: "Swimming Pool",
+    title: "Swimming Pool",
+  },
+
+  {
+    id: 17,
+    src: "/images/soul-prakriti/gallery/eastzone/wellness-building.jpg",
+    alt: "Wellness building at Soul Prakriti",
+    category: "eastzone",
+    categoryLabel: "Wellness Building",
+    title: "Wellness Building",
+  },
+  {
+    id: 18,
+    src: "/images/soul-prakriti/gallery/eastzone/amphitheater.jpg",
+    alt: "Amphitheater at Soul Prakriti",
+    category: "eastzone",
+    categoryLabel: "amphitheater",
+    title: "amphitheater",
+  },
+
+  {
+    id: 19,
+    src: "/images/soul-prakriti/gallery/eastzone/artificial-lake.jpg",
+    alt: "Artificial lake at Soul Prakriti",
+    category: "eastzone",
+    categoryLabel: "artificial-lake",
+    title: "artificial-lake",
+  },
+
+  {
+    id: 20,
+    src: "/images/soul-prakriti/gallery/westzone/badminton.jpg",
+    alt: "Badminton facility at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "badminton",
+    title: "badminton",
+  },
+
+  {
+    id: 21,
+    src: "/images/soul-prakriti/gallery/westzone/boat-peddling.jpg",
+    alt: "Boat peddling activity at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "boat-peddling",
+    title: "boat-peddling",
+  },
+
+  {
+    id: 22,
+    src: "/images/soul-prakriti/gallery/westzone/box-cricket.jpg",
+    alt: "Box cricket facility at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "box-cricket",
+    title: "box-cricket",
+  },
+
+  {
+    id: 23,
+    src: "/images/soul-prakriti/gallery/westzone/cafeteria-dining.jpg",
+    alt: "Cafeteria dining area at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "cafeteria-dining",
+    title: "cafeteria-dining",
+  },
+
+  {
+    id: 24,
+    src: "/images/soul-prakriti/gallery/westzone/cafeteria.jpg",
+    alt: "Cafeteria at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "cafeteria",
+    title: "cafeteria",
+  },
+
+  {
+    id: 25,
+    src: "/images/soul-prakriti/gallery/westzone/diy-planting.jpg",
+    alt: "DIY planting activity at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "diy-planting",
+    title: "diy-planting",
+  },
+
+  {
+    id: 26,
+    src: "/images/soul-prakriti/gallery/westzone/forest-trail.jpg",
+    alt: "Forest trail at Soul Prakriti",
+    category: "westzone",
+    categoryLabel: "forest-trail",
+    title: "forest-trail",
+  },
+
+  {
+    id: 27,
+    src: "/images/soul-prakriti/gallery/centralzone/golf-course.jpg",
+    alt: "Golf course at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "golf-course",
+    title: "golf-course",
+  },
+
+  {
+    id: 28,
+    src: "/images/soul-prakriti/gallery/centralzone/library.jpg",
+    alt: "Library at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "library",
+    title: "library",
+  },
+
+  {
+    id: 29,
+    src: "/images/soul-prakriti/gallery/centralzone/open-gym.jpg",
+    alt: "Open gym at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "open-gym",
+    title: "open-gym",
+  },
+
+  {
+    id: 30,
+    src: "/images/soul-prakriti/gallery/centralzone/playzone.jpg",
+    alt: "Play zone at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "playzone",
+    title: "playzone",
+  },
+
+  {
+    id: 31,
+    src: "/images/soul-prakriti/gallery/centralzone/sculpture-garden.jpg",
+    alt: "Sculpture garden at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "sculpture-garden",
+    title: "sculpture-garden",
+  },
+
+  {
+    id: 32,
+    src: "/images/soul-prakriti/gallery/centralzone/tree-house.jpg",
+    alt: "Tree house at Soul Prakriti",
+    category: "centralzone",
+    categoryLabel: "tree-house",
+    title: "tree-house",
+  },
+
+],
 },
 location: {
   eyebrow: "LOCATION",
@@ -535,7 +746,7 @@ floorPlans: {
       area: "150 Sq. Yards",
       configuration: "3 BHK",
       price: "On Request",
-      image: "/images/projects/soul-prakriti/floor-plan.jpg",
+      image: "/images/soul-prakriti/floor-plan.jpg",
     },
   ],
 

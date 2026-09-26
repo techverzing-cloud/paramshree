@@ -573,3 +573,29 @@
     transition: none;
   }
 }
+
+
+.project-grid__empty {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 64px 24px;
+  text-align: center;
+  border: 1px solid rgba(91, 45, 69, 0.14);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.project-grid__empty h3 {
+  margin: 0 0 12px;
+  color: #532b43;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-grid__empty p {
+  max-width: 480px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.7;
+}

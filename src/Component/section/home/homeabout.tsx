@@ -113,7 +113,7 @@ export default function About() {
 
             <div className="about-image-frame">
               <Image
-                src="/homehero/hero-detail.jpg"
+                src="/images/home/homehero/hero-detail.jpg"
                 alt="Farmhouse outdoor living and landscaped surroundings"
                 fill
                 sizes="(max-width: 760px) 100vw, (max-width: 1050px) 45vw, 30vw"

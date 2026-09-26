@@ -73,7 +73,7 @@ export default function Hero() {
           {/* Main Image */}
           <div className="hero-main-image">
             <Image
-              src="/homehero/hero1.jpg"
+              src="/images/home/homehero/hero1.jpg"
               alt="Farmhouse architecture surrounded by greenery"
               fill
               priority
@@ -96,7 +96,7 @@ export default function Hero() {
           {/* Floating Detail Image */}
           <div className="hero-floating-image">
             <Image
-              src="/homehero/hero-detail.jpg"
+              src="/images/home/homehero/hero-detail.jpg"
               alt="Outdoor living space at a farmhouse"
               fill
               sizes="(max-width: 760px) 45vw, 220px"

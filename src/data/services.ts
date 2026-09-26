@@ -12,7 +12,7 @@ export const servicesPageData = {
       href: "/projects",
     },
 
-    image: "/images/services/services-hero.jpg",
+    image: "/images/services/hero.jpg",
 
     quote: {
       lineOne: "Your Dream",

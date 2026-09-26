@@ -125,7 +125,7 @@ export default function Location() {
             <div className="location-image-main">
 
               <Image
-                src="/homehero/hero-landscape.jpg"
+                src="/images/home/location.jpg"
                 alt="Scenic landscape surrounding farmhouse developments"
                 fill
                 sizes="(max-width: 760px) 100vw, 55vw"
@@ -136,7 +136,6 @@ export default function Location() {
 
               <div className="location-image-caption">
                 <span>DISCOVER THE SETTING</span>
-                <h3>A Different Pace of Life</h3>
               </div>
 
             </div>

@@ -149,7 +149,7 @@ export const aboutPageData = {
     name: "ETH Infra Pvt. Ltd.",
   },
 
-  image: "/images/about/partnership.jpg",
+  image: "/images/about/partnership.png",
 
   button: {
     label: "Explore Projects",

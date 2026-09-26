@@ -79,7 +79,7 @@ export const partnersPageData = {
 
     button: {
       label: "Explore Their Projects",
-      href: "#projects",
+      href: "/soulagrofarms",
     },
 
     logo: "/images/partners/soul-agro-logo.png",
