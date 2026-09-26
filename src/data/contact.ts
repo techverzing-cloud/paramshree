@@ -138,7 +138,7 @@ export const contactPageData = {
 
   buttonText: "Plan a Site Visit",
 
-  image: "/images/contact/office-visit1.jpg",
+  image: "/images/contact/office-visit.jpg",
 
   imageAlt:
     "ParamShree office and farmhouse entrance",
