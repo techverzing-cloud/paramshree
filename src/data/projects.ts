@@ -111,7 +111,7 @@ export const projectsPageData = {
   priceCr: 1.25,
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
-  href: "/soulprakritipage",
+  href: "/projects/soul-prakriti-farmhouse",
 },
 {
   id: 2,
@@ -127,7 +127,7 @@ export const projectsPageData = {
   priceCr: 2.5,
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/home/featuredimages/soulprakritivilla.jpeg",
-  href: "/soulprakritipage",
+  href: "/projects/soul-prakriti-villa",
 },
   ],
   whyInvest: {
@@ -178,6 +178,6 @@ ctaBanner: {
     href: "#projects",
   },
 
-  image: "/images/projects/projects-cta1.jpg",
+  image: "/images/projects/projects-cta.jpg",
 },
 };

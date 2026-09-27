@@ -1,6 +1,9 @@
+
+
 "use client";
 
 import Image from "next/image";
+
 import {
   House,
   Leaf,
@@ -11,9 +14,9 @@ import {
   TreePine,
 } from "lucide-react";
 
-import { soulPrakritiData } from "../../../data/soulprakrtit";
+import type { ProjectPageProject } from "../../../data/ProjectPageProject";
 
-import "../../css/Soul Prakriti/AboutProject.css";
+import "../../css/ProjectPageProjects/AboutProject.css";
 
 const iconMap = {
   project: House,
@@ -30,18 +33,22 @@ const highlightIconMap = {
   star: Star,
 };
 
-export default function AboutProject() {
-  const { about } = soulPrakritiData;
+type AboutProjectProps = {
+  project: ProjectPageProject;
+};
+
+export default function AboutProject({
+  project,
+}: AboutProjectProps) {
+  const { about } = project;
 
   return (
     <section className="soul-about">
       <div className="soul-about__container">
 
-        {/* =========================================
-            INTRO CONTENT
-        ========================================= */}
-
+        {/* Intro Content */}
         <div className="soul-about__intro">
+
           <div className="soul-about__eyebrow">
             <span>{about.eyebrow}</span>
             <span className="soul-about__eyebrow-line" />
@@ -53,12 +60,13 @@ export default function AboutProject() {
 
           <div className="soul-about__description">
             {about.description.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index}>
+                {paragraph}
+              </p>
             ))}
           </div>
 
           {/* Highlights */}
-
           <div className="soul-about__highlights">
             {about.highlights.map((highlight, index) => {
               const Icon =
@@ -75,7 +83,10 @@ export default function AboutProject() {
                   }}
                 >
                   <div className="soul-about__highlight-icon">
-                    <Icon size={21} strokeWidth={1.4} />
+                    <Icon
+                      size={21}
+                      strokeWidth={1.4}
+                    />
                   </div>
 
                   <h3>{highlight.title}</h3>
@@ -87,12 +98,8 @@ export default function AboutProject() {
           </div>
         </div>
 
-
-        {/* =========================================
-            IMAGE
-        ========================================= */}
-
-        <div className="soul-about__image-column">
+        {/* Image */}
+        {/* <div className="soul-about__image-column">
           <div className="soul-about__image-wrapper">
             <Image
               src={about.image}
@@ -102,18 +109,40 @@ export default function AboutProject() {
               sizes="(max-width: 900px) 100vw, 45vw"
             />
           </div>
-        </div>
+        </div> */}
+        <div className="soul-about__image-column">
+  <div className="soul-about__image-stack">
 
+    {about.images.map((image, index) => (
+  <div
+    key={index}
+    className={`soul-about__stack-image soul-about__stack-image--${
+      index + 1
+    }`}
+      >
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          className="soul-about__image"
+          sizes="360px"
+        />
+        
+      </div>
+      
+      
+    ))}
 
-        {/* =========================================
-            PROJECT DETAILS
-        ========================================= */}
+  </div>
+</div>
 
+        {/* Project Details */}
         <div className="soul-about__details">
-
           {about.projectDetails.map((detail, index) => {
             const Icon =
-              iconMap[detail.icon as keyof typeof iconMap];
+              iconMap[
+                detail.icon as keyof typeof iconMap
+              ];
 
             return (
               <div
@@ -121,7 +150,10 @@ export default function AboutProject() {
                 key={`${detail.label}-${index}`}
               >
                 <div className="soul-about__detail-icon">
-                  <Icon size={19} strokeWidth={1.4} />
+                  <Icon
+                    size={19}
+                    strokeWidth={1.4}
+                  />
                 </div>
 
                 <div className="soul-about__detail-content">
@@ -131,17 +163,17 @@ export default function AboutProject() {
               </div>
             );
           })}
-
         </div>
-
       </div>
 
-      {/* Decorative leaf/circle */}
-
+      {/* Decorative Elements */}
       <div className="soul-about__decoration soul-about__decoration--left" />
 
       <div className="soul-about__decoration soul-about__decoration--right">
-        <Sparkles size={30} strokeWidth={0.8} />
+        <Sparkles
+          size={30}
+          strokeWidth={0.8}
+        />
       </div>
     </section>
   );
