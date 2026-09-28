@@ -1,1672 +1,2081 @@
+
+
 export const ProjectPageProject = {
   "soul-prakriti-farmhouse": {
     slug: "soul-prakriti-farmhouse",
     name: "Soul Prakriti Farmhouse",
-  hero: {
-    eyebrow: "OUR PROJECT",
 
-    title: "Soul Prakriti",
-
-    subtitle: "Luxury Farmhouse Living in the Heart of Nature",
-
-    description:
-      "Soul Prakriti is a premium farmhouse project by Soul Agro Farms Pvt. Ltd., designed for those who seek peace, privacy and a deeper connection with nature.",
-
-    primaryButton: "Enquire Now",
-
-    secondaryButton: "Watch Video",
-
-    heroImage: "/images/soul-prakriti/hero.jpg",
-
-    imageAlt: "Soul Prakriti luxury farmhouse surrounded by nature",
-
-    tagline: {
-      small: "Nature",
-      large: "Redefined",
-      bottom: "Luxury",
+    hero: {
+      eyebrow: "FarmHouses",
+      title: "Soul Prakriti FarmHouse",
+      subtitle: "A Holistic Sanctuary Rooted in Nature & Wellness",
+      description:
+        "Soul Prakriti is envisioned as a 30-acre holistic landscape that brings together modern living, Vedic wellness, nature and thoughtfully planned recreational spaces.",
+      primaryButton: "Enquire Now",
+      secondaryButton: "View Project",
+      heroImage: "/images/projectpageproject/hero.jpg",
+      imageAlt: "Soul Prakriti farmhouse and landscaped surroundings",
+      tagline: {
+        small: "Nature",
+        large: "Wellness",
+        bottom: "Living",
+      },
     },
-  },
 
-  about: {
-    eyebrow: "ABOUT THE PROJECT",
+    about: {
+      eyebrow: "ABOUT THE PROJECT",
+      title: "A Holistic Sanctuary in Nature",
 
-    title: "A Blissful Retreat in Nature",
-
-    description: [
-      "Soul Prakriti offers beautifully designed farmhouses with modern amenities, nestled in a serene location.",
-      "It’s a place where luxury meets sustainability — crafted for peaceful and healthier living.",
-    ],
+      description: [
+        "Set along the river and embraced by lush forests and majestic mountains near Rajaji National Park, Soul Prakriti brings you an exclusive farmhouse lifestyle with seamless highway connectivity. Developed by Soul Agro Farms Pvt. Ltd. (Powered by ETH Infra), these premium farmhouses offer 600 sq. yards of thoughtfully designed space, created for those who value the harmony of contemporary luxury and natural beauty.Surrounded by the unspoiled landscapes of Rajaji National Park, with a serene flowing river and spectacular mountain views, Soul Prakriti is more than just a home—it’s a refreshing way of life."
+      ],
 
       images: [
-    {
-      src: "/images/soul-prakriti/about.jpg",
-      alt: "Soul Prakriti farmhouse exterior",
-    },
-    {
-      src: "/images/soul-prakriti/about1.jpg",
-      alt: "Soul Prakriti farmhouse interior",
-    },
-    {
-      src: "/images/soul-prakriti/about2.jpg",
-      alt: "Soul Prakriti natural surroundings",
-    },
-  ],
-
-    imageAlt:
-      "Soul Prakriti farmhouse surrounded by mountains and greenery",
-
-    projectDetails: [
-      {
-        icon: "project",
-        label: "Project Name",
-        value: "Soul Prakriti",
-      },
-      {
-        icon: "location",
-        label: "Location",
-        value: "Rishikesh, Uttarakhand",
-      },
-      {
-        icon: "type",
-        label: "Type",
-        value: "Farmhouses",
-      },
-      {
-        icon: "plot",
-        label: "Plot Sizes",
-        value: "1 – 3 Acres",
-      },
-      {
-        icon: "developer",
-        label: "Built By",
-        value: "Soul Agro Farms Pvt. Ltd.",
-      },
-    ],
-
-    highlights: [
-      {
-        icon: "leaf",
-        title: "Eco-Friendly Living",
-        description: "Designed around nature.",
-      },
-      {
-        icon: "shield",
-        title: "Safe & Secure Environment",
-        description: "Peace of mind, always.",
-      },
-      {
-        icon: "nature",
-        title: "Spacious Farmhouse Plots",
-        description: "Room to live freely.",
-      },
-      {
-        icon: "star",
-        title: "Premium Lifestyle",
-        description: "Comfort meets nature.",
-      },
-    ],
-  },
-  amenities: {
-  eyebrow: "AMENITIES",
-  title: "Designed Around Every Way You Live",
-  description:
-    "From wellness and nature to recreation, community and adventure, every part of Soul Prakriti is thoughtfully planned to create a richer connection with life outdoors.",
-
-  zones: [
-    {
-      id: "north",
-      name: "North Zone",
-      subtitle: "Wellness & Tranquility",
-      items: [
-        "Yoga Pavilion",
-        "Meditation Garden",
-        "Ayurvedic Wellness Centre",
-        "Spa & Sauna",
-        "Hot Spring Bath",
-        "Sound Therapy Room",
-        "Aromatherapy Garden",
-        "Zen Garden",
-        "Steam Room",
-        "Jacuzzi",
-        "Health Juice Bar",
-        "Breathing Exercise Deck",
-        "Reflexology Path",
-        "Tai Chi Lawn",
-        "Crystal Healing Room",
+        {
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse2.png",
+          alt: "Soul Prakriti master planned landscape",
+        },
+        {
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+          alt: "Soul Prakriti landscaped residential surroundings",
+        },
+        {
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse3.png",
+          alt: "Soul Prakriti wellness and nature spaces",
+        },
       ],
-    },
 
-    {
-      id: "south",
-      name: "South Zone",
-      subtitle: "Nature, Eco & Landscaped Zone",
-      items: [
-        "Organic Farm Plots",
-        "Butterfly Garden",
-        "Herbal Garden",
-        "Fruit Orchard",
-        "Nature Walking Trail",
-        "Bird Watching Deck",
-        "Amphitheatre Garden",
-        "Butterfly Park",
-        "Rain Water Harvesting",
-        "Solar Energy Park",
-        "Eco Pond",
-        "Wildflower Meadow",
-        "Bamboo Grove",
-        "Miyawaki Forest",
-        "Permaculture Zone",
-      ],
-    },
+      imageAlt: "Soul Prakriti planned landscape surrounded by greenery",
 
-    {
-      id: "east",
-      name: "East Zone",
-      subtitle: "Sports & Fitness Arenas",
-      items: [
-        "Cricket Pitch",
-        "Football Ground",
-        "Basketball Court",
-        "Tennis Court",
-        "Badminton Court",
-        "Volleyball Court",
-        "Cycling Track",
-        "Jogging Track",
-        "Archery Range",
-        "Rock Climbing Wall",
-        "Rope Course",
-        "Horse Riding Arena",
-        "Skating Rink",
-        "Outdoor Gym",
-        "Fitness Trail",
-      ],
-    },
-
-    {
-      id: "west",
-      name: "West Zone",
-      subtitle: "Family & Community Spaces",
-      items: [
-        "Grand Clubhouse",
-        "Swimming Pool",
-        "Kids Play Zone",
-        "Senior Citizen Park",
-        "Party Lawn",
-        "Community Hall",
-        "Mini Theatre",
-        "Library & Reading Room",
-        "Indoor Games Room",
-        "BBQ & Campfire Area",
-        "Bonfire Pit",
-        "Cafeteria",
-        "Guest Rooms",
-        "Co-Working Space",
-        "Amphitheatre",
-      ],
-    },
-
-    {
-      id: "central",
-      name: "Central Zone",
-      subtitle: "Signature Experiences & Adventure Amenities",
-      items: [
-        "Riverfront Deck",
-        "Bonfire Bay",
-        "Stargazing Deck",
-        "Adventure Park",
-        "Zip Line",
-        "Obstacle Course",
-        "Kayaking & Boating",
-        "Fishing Deck",
-        "Camping Grounds",
-        "Sky Walkway",
-        "Tree House Experience",
-        "Nature Observation Tower",
-        "Forest Trail Experience",
-        "Mountain Viewpoint",
-        "Sunset Point",
-      ],
-    },
-  ],
-},
-  WhyThisProject: {
-    eyebrow: "WHY SOUL PRAKRITI",
-
-    title: "More Than Just a Farmhouse",
-
-    description:
-      "It’s an investment in your well-being, your family’s happiness and a better tomorrow. Soul Prakriti brings together nature, luxury and sustainability in perfect harmony.",
-
-    buttonText: "Explore Amenities",
-
-    features: [
-      {
-        icon: "leaf",
-        title: "Clean Air & Green Surroundings",
-        description: "Breathe pure, live fresh.",
-      },
-      {
-        icon: "shield",
-        title: "24/7 Security",
-        description: "Your safety, our priority.",
-      },
-      {
-        icon: "mountain",
-        title: "Scenic Views",
-        description: "Nature at every glance.",
-      },
-      {
-        icon: "sprout",
-        title: "Sustainable Living",
-        description: "For a greener future.",
-      },
-    ],
-  },
-  gallery: {
-  eyebrow: "GALLERY",
-
-  title: "Moments from Soul Prakriti",
-
-  description:
-    "Explore the landscapes, architecture and experiences that make Soul Prakriti a distinctive retreat in nature.",
-
-  filters: [
-    // {
-    //   id: "all",
-    //   label: "All",
-    // },
-    {
-      id: "northzone",
-      label: "North Zone",
-    },
-    {
-      id: "southzone",
-      label: "South Zone",
-    },
-    {
-      id: "eastzone",
-      label: "East Zone",
-    },
-    {
-      id: "westzone",
-      label: "West Zone",
-    },
-    {
-      id: "centralzone",
-      label: "Central Zone"
-    }
-  ],
-
-  images: [
+      projectDetails: [
   {
-    id: 1,
-    src: "/images/soul-prakriti/gallery/northzone/acupressure-maze.jpg",
-    alt: "Acupressure maze at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Acupressure Maze",
-    title: "Acupressure Maze",
-  },
-
-  {
-    id: 2,
-    src: "/images/soul-prakriti/gallery/northzone/aroma-garden.jpg",
-    alt: "Aroma garden at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Aroma Garden",
-    title: "Aroma Garden",
-  },
-
-  {
-    id: 3,
-    src: "/images/soul-prakriti/gallery/northzone/ayurveda.jpg",
-    alt: "Ayurveda wellness space at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Ayurveda",
-    title: "Ayurveda",
-  },
-
-  {
-    id: 4,
-    src: "/images/soul-prakriti/gallery/northzone/bamboo-pavilion.jpg",
-    alt: "Bamboo pavilion surrounded by greenery",
-    category: "northzone",
-    categoryLabel: "Bamboo Pavilion",
-    title: "Bamboo Pavilion",
-  },
-
-  {
-    id: 5,
-    src: "/images/soul-prakriti/gallery/northzone/club-house.jpg",
-    alt: "Club house at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Club House",
-    title: "Club House",
-  },
-
-  {
-    id: 6,
-    src: "/images/soul-prakriti/gallery/northzone/entrance-gate.jpg",
-    alt: "Entrance gate of Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Entrance Gate",
-    title: "The Entrance",
-  },
-
-  {
-    id: 7,
-    src: "/images/soul-prakriti/gallery/southzone/forest-bathing.jpg",
-    alt: "Forest bathing experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Forest Bathing",
-    title: "Forest Bathing",
-  },
-
-  {
-    id: 8,
-    src: "/images/soul-prakriti/gallery/southzone/hammock-yoga.jpg",
-    alt: "Hammock yoga experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Hammock Yoga",
-    title: "Hammock Yoga",
-  },
-
-  {
-    id: 9,
-    src: "/images/soul-prakriti/gallery/southzone/herb-picking.jpg",
-    alt: "Herb picking activity at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Herb Picking",
-    title: "Herb Picking",
-  },
-
-  {
-    id: 10,
-    src: "/images/soul-prakriti/gallery/southzone/meditation-circle.jpg",
-    alt: "Meditation circle surrounded by nature",
-    category: "southzone",
-    categoryLabel: "Meditation Circle",
-    title: "Meditation Circle",
-  },
-
-  {
-    id: 11,
-    src: "/images/soul-prakriti/gallery/southzone/nap-pods.jpg",
-    alt: "Relaxing nap pods at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Nap Pods",
-    title: "Nap Pods",
-  },
-
-  {
-    id: 12,
-    src: "/images/soul-prakriti/gallery/southzone/reflexology.jpg",
-    alt: "Reflexology experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Reflexology",
-    title: "Reflexology",
-  },
-
-  {
-    id: 13,
-    src: "/images/soul-prakriti/gallery/southzone/restaurant.jpg",
-    alt: "Restaurant at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Restaurant",
-    title: "Soul Prakriti Restaurant",
-  },
-
-  {
-    id: 14,
-    src: "/images/soul-prakriti/gallery/eastzone/shaded-cabana.jpg",
-    alt: "Shaded cabana surrounded by greenery",
-    category: "eastzone",
-    categoryLabel: "Shaded Cabana",
-    title: "Shaded Cabana",
-  },
-
-  {
-    id: 15,
-    src: "/images/soul-prakriti/gallery/eastzone/singing-bowl.jpg",
-    alt: "Singing bowl wellness experience at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Singing Bowl",
-    title: "Singing Bowl",
-  },
-
-  {
-    id: 16,
-    src: "/images/soul-prakriti/gallery/eastzone/swimming-pool.jpg",
-    alt: "Swimming pool at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Swimming Pool",
-    title: "Swimming Pool",
-  },
-
-  {
-    id: 17,
-    src: "/images/soul-prakriti/gallery/eastzone/wellness-building.jpg",
-    alt: "Wellness building at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Wellness Building",
-    title: "Wellness Building",
+    icon: "project",
+    label: "Project Name",
+    value: "Soul Prakriti",
   },
   {
-    id: 18,
-    src: "/images/soul-prakriti/gallery/eastzone/amphitheater.jpg",
-    alt: "Amphitheater at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "amphitheater",
-    title: "amphitheater",
+    icon: "type",
+    label: "Project Theme",
+    value: "Holistic Wellness Township",
   },
-
   {
-    id: 19,
-    src: "/images/soul-prakriti/gallery/eastzone/artificial-lake.jpg",
-    alt: "Artificial lake at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "artificial-lake",
-    title: "artificial-lake",
+    icon: "plot",
+    label: "Landscape",
+    value: "600 Sq. Yards",
   },
-
   {
-    id: 20,
-    src: "/images/soul-prakriti/gallery/westzone/badminton.jpg",
-    alt: "Badminton facility at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "badminton",
-    title: "badminton",
+    icon: "plot",
+    label: "Plot Categories",
+    value: "600 Sq. Yards",
   },
-
   {
-    id: 21,
-    src: "/images/soul-prakriti/gallery/westzone/boat-peddling.jpg",
-    alt: "Boat peddling activity at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "boat-peddling",
-    title: "boat-peddling",
+    icon: "developer",
+    label: "Client",
+    value: "E.T.H INFRA",
   },
-
   {
-    id: 22,
-    src: "/images/soul-prakriti/gallery/westzone/box-cricket.jpg",
-    alt: "Box cricket facility at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "box-cricket",
-    title: "box-cricket",
+    icon: "project",
+    label: "Architect",
+    value: "Innov Arch",
   },
-
-  {
-    id: 23,
-    src: "/images/soul-prakriti/gallery/westzone/cafeteria-dining.jpg",
-    alt: "Cafeteria dining area at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "cafeteria-dining",
-    title: "cafeteria-dining",
-  },
-
-  {
-    id: 24,
-    src: "/images/soul-prakriti/gallery/westzone/cafeteria.jpg",
-    alt: "Cafeteria at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "cafeteria",
-    title: "cafeteria",
-  },
-
-  {
-    id: 25,
-    src: "/images/soul-prakriti/gallery/westzone/diy-planting.jpg",
-    alt: "DIY planting activity at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "diy-planting",
-    title: "diy-planting",
-  },
-
-  {
-    id: 26,
-    src: "/images/soul-prakriti/gallery/westzone/forest-trail.jpg",
-    alt: "Forest trail at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "forest-trail",
-    title: "forest-trail",
-  },
-
-  {
-    id: 27,
-    src: "/images/soul-prakriti/gallery/centralzone/golf-course.jpg",
-    alt: "Golf course at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "golf-course",
-    title: "golf-course",
-  },
-
-  {
-    id: 28,
-    src: "/images/soul-prakriti/gallery/centralzone/library.jpg",
-    alt: "Library at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "library",
-    title: "library",
-  },
-
-  {
-    id: 29,
-    src: "/images/soul-prakriti/gallery/centralzone/open-gym.jpg",
-    alt: "Open gym at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "open-gym",
-    title: "open-gym",
-  },
-
-  {
-    id: 30,
-    src: "/images/soul-prakriti/gallery/centralzone/playzone.jpg",
-    alt: "Play zone at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "playzone",
-    title: "playzone",
-  },
-
-  {
-    id: 31,
-    src: "/images/soul-prakriti/gallery/centralzone/sculpture-garden.jpg",
-    alt: "Sculpture garden at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "sculpture-garden",
-    title: "sculpture-garden",
-  },
-
-  {
-    id: 32,
-    src: "/images/soul-prakriti/gallery/centralzone/tree-house.jpg",
-    alt: "Tree house at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "tree-house",
-    title: "tree-house",
-  },
-
 ],
-},
-location: {
-  eyebrow: "LOCATION",
 
-  title: "Connected to Everything. Close to Nature.",
-
-  description:
-    "Soul Prakriti is thoughtfully located in a peaceful natural setting, offering the perfect balance between everyday accessibility and a tranquil escape from the city.",
-
-  address: {
-    title: "Soul Prakriti",
-    location: "Bhaguwala, Najibabad, Uttar Pradesh",
-    landmark: "Near Rajaji National Park",
-  },
-
-  mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.5793400561993!2d78.25048757499837!3d29.73194213331042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39095d0041aa54ab%3A0xa2a31556beb6bf3e!2sSoul%20Prakriti!5e0!3m2!1sen!2sin!4v1790336835080!5m2!1sen!2sin",
-
-  directionsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Bhaguwala%2C%20Najibabad%2C%20Uttar%20Pradesh",
-
-  landmarks: [
-    {
-      icon: "park",
-      title: "Rajaji National Park",
-      distance: "Approx. 5 min",
-    },
-    {
-      icon: "road",
-      title: "Direct Highway Access",
-      distance: "Easy connectivity",
-    },
-    {
-      icon: "town",
-      title: "Najibabad Town",
-      distance: "Approx. 10 min",
-    },
-    {
-      icon: "hospital",
-      title: "Nearby Healthcare",
-      distance: "Approx. 10 min",
-    },
-  ],
-
-  availability: {
-    eyebrow: "PRICE & AVAILABILITY",
-
-    title: "Choose Your Space",
-
+      highlights: [
+  {
+    icon: "leaf",
+    title: "Nature-Centric Planning",
     description:
-      "Explore the available configurations and connect with our team for current pricing, availability and detailed project information.",
-
-    items: [
-      {
-        configuration: "Villa",
-        area: "150 Sq. Yards",
-        price: "On Request",
-        status: "Available",
-      },
-      {
-        configuration: "Premium Villa",
-        area: "250 Sq. Yards",
-        price: "On Request",
-        status: "Available",
-      },
-      {
-        configuration: "Luxury Farmhouse",
-        area: "500 Sq. Yards",
-        price: "On Request",
-        status: "Limited",
-      },
-    ],
+      "A landscape planned around gardens, greenery and natural experiences.",
   },
-},
-craftedDetails: {
-  eyebrow: "CRAFTED DETAILS",
-
-  title: "Thoughtful Details. Lasting Quality.",
-
-  description:
-    "Every element is thoughtfully considered to create a farmhouse experience that combines natural beauty, modern comfort and lasting quality.",
-
-  items: [
-    {
-      number: "01",
-      title: "Construction & Structure",
-      preview:
-        "Strong foundations and carefully planned construction for dependable long-term living.",
-      details: [
-        "Thoughtfully planned structural design for comfortable farmhouse living.",
-        "Quality-focused construction practices throughout the project.",
-        "Designed to complement the surrounding natural landscape.",
-        "Built with an emphasis on durability, functionality and long-term value.",
-      ],
-    },
-
-    {
-      number: "02",
-      title: "Flooring & Finishes",
-      preview:
-        "Elegant finishes selected to complement the natural character of the property.",
-      details: [
-        "Carefully selected flooring and surface finishes.",
-        "Materials chosen to balance aesthetics with everyday practicality.",
-        "Natural and understated finishes that complement the farmhouse setting.",
-        "Attention to detailing across interior living spaces.",
-      ],
-    },
-
-    {
-      number: "03",
-      title: "Kitchen & Interiors",
-      preview:
-        "Functional interiors designed around comfort, simplicity and contemporary farmhouse living.",
-      details: [
-        "Thoughtfully planned kitchen layouts.",
-        "Practical storage and workspace considerations.",
-        "Contemporary interior detailing with a warm natural character.",
-        "Spaces designed for both everyday living and relaxed entertaining.",
-      ],
-    },
-
-    {
-      number: "04",
-      title: "Doors & Windows",
-      preview:
-        "Open, naturally lit spaces designed to connect indoor living with the surrounding landscape.",
-      details: [
-        "Large openings designed to encourage natural light and ventilation.",
-        "Door and window placements planned around views and usability.",
-        "Finishes selected to complement the overall architectural character.",
-        "A stronger visual connection between interiors and nature.",
-      ],
-    },
-
-    {
-      number: "05",
-      title: "Electrical & Lighting",
-      preview:
-        "Essential electrical infrastructure with lighting designed for comfort and functionality.",
-      details: [
-        "Planned electrical points across functional living areas.",
-        "Lighting provisions designed for everyday convenience.",
-        "Thoughtful placement of switches, fixtures and electrical points.",
-        "Infrastructure planned to support modern farmhouse living.",
-      ],
-    },
-
-    {
-      number: "06",
-      title: "Safety & Security",
-      preview:
-        "A thoughtfully planned environment focused on peace of mind and secure living.",
-      details: [
-        "Security-conscious project planning.",
-        "Controlled access and safety considerations.",
-        "Well-planned circulation throughout the development.",
-        "A peaceful environment designed for comfortable family living.",
-      ],
-    },
-  ],
-},
-floorPlans: {
-  eyebrow: "EXPLORE THE PLANS",
-  title: "Spaces Designed Around You",
-  description:
-    "Explore thoughtfully planned farmhouse spaces created to bring together comfort, privacy and the beauty of nature.",
-
-  plans: [
-    {
-      id: "soul-prakriti-villa",
-      name: "Soul Prakriti Villa",
-      type: "Villa",
-      area: "150 Sq. Yards",
-      configuration: "3 BHK",
-      price: "On Request",
-      image: "/images/soul-prakriti/floor-plan.jpg",
-    },
-  ],
-
-  startingFrom: {
-    label: "Starting From",
-    value: "On Request",
+  {
+    icon: "shield",
+    title: "Vedic Wellness",
     description:
-      "Connect with our team for current pricing, availability and personalised assistance.",
+      "Wellness spaces inspired by holistic and Vedic principles.",
+  },
+  {
+    icon: "nature",
+    title: "Active Lifestyle",
+    description:
+      "Recreation and outdoor facilities integrated into the master plan.",
+  },
+  {
+    icon: "star",
+    title: "Holistic Living",
+    description:
+      "A combination of physical, mental and spiritual wellness experiences.",
+  },
+],
+    },
+
+    amenities: {
+      eyebrow: "AMENITIES",
+      title: "Experiences Across Soul Prakriti",
+
+      description:
+        "Villa residents are part of the wider Soul Prakriti master plan, which includes wellness, nature, recreation and community facilities.",
+
+      zones: [
+        {
+          id: "north",
+          name: "North Zone",
+          subtitle: "Wellness & Natural Healing",
+
+          items: [
+            "Yoga Pavilion",
+            "Meditation Garden",
+            "Ayurvedic Wellness Centre",
+            "Spa & Sauna",
+            "Hot Spring Bath",
+            "Sound Therapy Room",
+            "Aromatherapy Garden",
+            "Zen Garden",
+            "Steam Room",
+            "Jacuzzi",
+            "Health Juice Bar",
+            "Breathing Exercise Deck",
+            "Reflexology Path",
+            "Tai Chi Lawn",
+            "Crystal Healing Room"
+          ],
+        },
+
+        {
+          id: "south",
+          name: "South Zone",
+          subtitle: "Sports and Fitness Areas",
+
+          items: [
+            "Organic Farm Plots",
+"Butterfly Garden",
+"Herbal Garden",
+"Fruit Orchard",
+"Nature Walking Trail",
+"Bird Watching Deck",
+"Amphitheatre Garden",
+"Butterfly Park",
+"Rain Water Harvesting",
+"Solar Energy Park",
+"Eco Pond",
+"Wildflower Meadow",
+"Bamboo Grove",
+"Miyawaki Forest",
+"Permaculture Zone",
+          ],
+        },
+
+        {
+          id: "east",
+          name: "East Zone",
+          subtitle: "Nature, Eco & Landscape",
+
+          items: [
+  "Cricket Pitch",
+  "Football Ground",
+  "Basketball Court",
+  "Tennis Court",
+  "Badminton Court",
+  "Volleyball Court",
+  "Cycling Track",
+  "Jogging Track",
+  "Archery Range",
+  "Rock Climbing Wall",
+  "Rope Course",
+  "Horse Riding Arena",
+  "Skating Rink",
+  "Outdoor Gym",
+  "Fitness Trail",
+],
+        },
+
+        {
+          id: "west",
+          name: "West Zone",
+          subtitle: "Family and Comunity Spaces",
+
+          items: [
+  "Grand Clubhouse",
+  "Swimming Pool",
+  "Kids Play Zone",
+  "Senior Citizen Park",
+  "Party Lawn",
+  "Community Hall",
+  "Mini Theatre",
+  "Library & Reading Room",
+  "Indoor Games Room",
+  "BBQ & Campfire Area",
+  "Bonfire Pit",
+  "Cafeteria",
+  "Guest Rooms",
+  "Co-Working Space",
+  "Amphitheatre",
+],
+        },
+
+         {
+          id: "central",
+          name: "Central Zone",
+          subtitle: "Signature Experiences and Adventure Amenities",
+
+          items: [
+  "Riverfront Deck",
+  "Bonfire Bay",
+  "Stargazing Deck",
+  "Adventure Park",
+  "Zip Line",
+  "Obstacle Course",
+  "Kayaking & Boating",
+  "Fishing Deck",
+  "Camping Grounds",
+  "Sky Walkway",
+  "Tree House Experience",
+  "Nature Observation Tower",
+  "Forest Trail Experience",
+  "Mountain Viewpoint",
+  "Sunset Point",
+],
+        },
+      ],
+    },
+
+    WhyThisProject: {
+      eyebrow: "WHY SOUL PRAKRITI",
+      title: "More Than a Residential Development",
+
+      description:
+        "Soul Prakriti brings together residential planning, wellness, nature and outdoor experiences within a thoughtfully designed 30-acre landscape.",
+
+      buttonText: "Explore Amenities",
+
+      features: [
+        {
+          icon: "home",
+          title: "Nature Integrated Planning",
+          description:
+            "Landscaped gardens, forests and natural experiences are integrated into the master plan.",
+        },
+        {
+          icon: "leaf",
+          title: "Wellness Focused",
+          description:
+            "Dedicated spaces support meditation, yoga, relaxation and holistic wellness.",
+        },
+        {
+          icon: "heart",
+          title: "Recreation & Fitness",
+          description:
+            "Sports, cycling, horse riding and outdoor activities are part of the planned development.",
+        },
+        {
+          icon: "activity",
+          title: "Green Experiences",
+          description:
+            "Miyawaki forest, herbal gardens, butterfly gardens and planting spaces connect residents with nature.",
+        },
+      ],
+    },
+
+    gallery: {
+      eyebrow: "GALLERY",
+      title: "Experience Soul Prakriti",
+      description:
+        "Explore the architectural concepts, wellness spaces, landscaped areas and recreational experiences planned for Soul Prakriti.",
+
+      filters: [
+        {
+          id: "farmhouse",
+          label: "Farmhouse",
+        },
+        {
+          id: "northzone",
+          label: "North Zone",
+        },
+        {
+          id: "centralzone",
+          label: "Central Zone",
+        },
+        {
+          id: "eastzone",
+          label: "East Zone",
+        },
+        {
+          id: "westzone",
+          label: "West Zone",
+        },
+        {
+          id: "southzone",
+          label: "South Zone",
+        },
+        
+        
+      ],
+
+      images: [
+        {
+          id: 1,
+          src: "/images/projectpageproject/gallery/northzone/north1.png",
+          alt: "Soul Prakriti entrance gate",
+          category: "northzone",
+          categoryLabel: "Entrance Gate",
+          title: "Entrance Gate",
+        },
+
+        {
+          id: 2,
+          src: "/images/projectpageproject/gallery/northzone/north2.png",
+          alt: "RESTURANT WITH OUTDOOR SEATING",
+          category: "northzone",
+          categoryLabel: "RESTURANT WITH OUTDOOR SEATING",
+          title: "RESTURANT WITH OUTDOOR SEATING",
+        },
+
+        {
+          id: 3,
+          src: "/images/projectpageproject/gallery/northzone/north3.png",
+          alt: "WELLNESS BUILDING",
+          category: "northzone",
+          categoryLabel: "WELLNESS BUILDING",
+          title: "WELLNESS BUILDING",
+        },
+
+        {
+          id: 4,
+          src: "/images/projectpageproject/gallery/northzone/north4.png",
+          alt: "NAP PODS",
+          category: "northzone",
+          categoryLabel: "NAP PODS",
+          title: "NAP PODS",
+        },
+
+        {
+          id: 5,
+          src: "/images/projectpageproject/gallery/northzone/north5.png",
+          alt: "SHADED CABANA",
+          category: "northzone",
+          categoryLabel: "SHADED CABANA",
+          title: "SHADED CABANA",
+        },
+
+        {
+          id: 6,
+          src: "/images/projectpageproject/gallery/northzone/north6.png",
+          alt: "SINGING BOWL MEDITATION POINT",
+          category: "northzone",
+          categoryLabel: "SINGING BOWL MEDITATION POINT",
+          title: "SINGING BOWL MEDITATION POINT",
+        },
+
+        {
+          id: 7,
+          src: "/images/projectpageproject/gallery/northzone/north7.png",
+          alt: "HAMMOCK YOGA SPACE",
+          category: "northzone",
+          categoryLabel: "HAMMOCK YOGA SPACE",
+          title: "HAMMOCK YOGA SPACE",
+        },
+
+        {
+          id: 8,
+          src: "/images/projectpageproject/gallery/northzone/north8.png",
+          alt: "MEDITATION STONE CIRCLE",
+          category: "northzone",
+          categoryLabel: "MEDITATION STONE CIRCLE",
+          title: "MEDITATION STONE CIRCLE",
+        },
+
+        {
+          id: 9,
+          src: "/images/projectpageproject/gallery/northzone/north9.png",
+          alt: "AYURVEDA AND NATURAL HEALING",
+          category: "northzone",
+          categoryLabel: "AYURVEDA AND NATURAL HEALING",
+          title: "AYURVEDA AND NATURAL HEALING",
+        },
+
+        {
+          id: 10,
+          src: "/images/projectpageproject/gallery/northzone/north10.png",
+          alt: "CLUB HOUSE",
+          category: "northzone",
+          categoryLabel: "CLUB HOUSE",
+          title: "CLUB HOUSE",
+        },
+
+        {
+          id: 11,
+          src: "/images/projectpageproject/gallery/centralzone/central1.png",
+          alt: "OPEN AMPHITHEATER",
+          category: "centralzone",
+          categoryLabel: "OPEN AMPHITHEATER",
+          title: "OPEN AMPHITHEATER",
+        },
+
+        {
+          id: 12,
+          src: "/images/projectpageproject/gallery/centralzone/central2.png",
+          alt: "CAFETERIA",
+          category: "centralzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 13,
+          src: "/images/projectpageproject/gallery/centralzone/central3.png",
+          alt: "CAFETERIA",
+          category: "centralzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 14,
+          src: "/images/projectpageproject/gallery/centralzone/central4.png",
+          alt: "BOAT PEDDLING",
+          category: "centralzone",
+          categoryLabel: "BOAT PEDDLING",
+          title: "BOAT PEDDLING",
+        },
+
+        {
+          id: 15,
+          src: "/images/projectpageproject/gallery/centralzone/central5.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 16,
+          src: "/images/projectpageproject/gallery/centralzone/central6.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 17,
+          src: "/images/projectpageproject/gallery/centralzone/central7.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 18,
+          src: "/images/projectpageproject/gallery/centralzone/central8.pngt",
+          alt: "SCULPTURE GARDEN",
+          category: "central",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 19,
+          src: "/images/projectpageproject/gallery/centralzone/central9.png",
+          alt: "SCULPTURE GARDEN",
+          category: "central",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 20,
+          src: "/images/projectpageproject/gallery/centralzone/central10.png",
+          alt: "SEASONAL AROMA THERAPY GARDEN",
+          category: "central",
+          categoryLabel: "SEASONAL AROMA THERAPY GARDEN",
+          title: "SEASONAL AROMA THERAPY GARDEN",
+        },
+        {
+          id: 21,
+          src: "/images/projectpageproject/gallery/eastzone/east1.png",
+          alt: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          category: "eastzone",
+          categoryLabel: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          title: "REFLEXOLOGY WALKWAY(PEBBLED)",
+        },
+
+        {
+          id: 22,
+          src: "/images/projectpageproject/gallery/eastzone/east2.png",
+          alt: "OPEN AMPHITHEATER",
+          category: "eastzone",
+          categoryLabel: "OPEN AMPHITHEATER",
+          title: "OPEN AMPHITHEATER",
+        },
+
+        {
+          id: 23,
+          src: "/images/projectpageproject/gallery/eastzone/east3.png",
+          alt: "CAFETERIA",
+          category: "eastzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 24,
+          src: "/images/projectpageproject/gallery/eastzone/east4.png",
+          alt: "CAFETERIA",
+          category: "eastzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 25,
+          src: "/images/projectpageproject/gallery/eastzone/east5.png",
+          alt: "SCULPTURE GARDEN",
+          category: "eastzone",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 26,
+          src: "/images/projectpageproject/gallery/eastzone/east6.png",
+          alt: "YOGA SPACE",
+          category: "eastzone",
+          categoryLabel: "YOGA SPACE",
+          title: "YOGA SPACE",
+        },
+
+        {
+          id: 27,
+          src: "/images/projectpageproject/gallery/eastzone/east7.png",
+          alt: "YOGA SPACE",
+          category: "eastzone",
+          categoryLabel: "YOGA SPACE",
+          title: "YOGA SPACE",
+        },
+
+        {
+          id: 28,
+          src: "/images/projectpageproject/gallery/eastzone/east8.png",
+          alt:"LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+
+        {
+          id: 29,
+          src: "/images/projectpageproject/gallery/eastzone/east9.png",
+          alt: "LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+
+        {
+          id: 30,
+          src: "/images/projectpageproject/gallery/eastzone/east10.png",
+          alt: "LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+        {
+          id: 31,
+          src: "/images/projectpageproject/gallery/westzone/west1.png",
+          alt: "BADMINTON COURT",
+          category: "westzone",
+          categoryLabel: "BADMINTON COURT",
+          title: "BADMINTON COURT",
+        },
+
+        {
+          id: 32,
+          src: "/images/projectpageproject/gallery/westzone/west2.png",
+          alt: "GOLF COUSE",
+          category: "westzone",
+          categoryLabel: "GOLF COUSE",
+          title: "GOLF COUSE",
+        },
+
+        {
+          id: 33,
+          src: "/images/projectpageproject/gallery/westzone/west3.png",
+          alt: "BOX CRICKET",
+          category: "westzone",
+          categoryLabel: "BOX CRICKET",
+          title: "BOX CRICKET",
+        },
+
+        {
+          id: 34,
+          src: "/images/projectpageproject/gallery/westzone/west4.png",
+          alt: "OPEN GYM",
+          category: "westzone",
+          categoryLabel: "OPEN GYM",
+          title: "OPEN GYM",
+        },
+
+        {
+          id: 35,
+          src: "/images/projectpageproject/gallery/westzone/west5.png",
+          alt: "PLAYZONE",
+          category: "westzone",
+          categoryLabel: "PLAYZONE",
+          title: "PLAYZONE",
+        },
+
+        {
+          id: 36,
+          src: "/images/projectpageproject/gallery/westzone/west6.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 37,
+          src: "/images/projectpageproject/gallery/westzone/west7.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 38,
+          src: "/images/projectpageproject/gallery/westzone/west8.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 39,
+          src: "/images/projectpageproject/gallery/westzone/west9.png",
+          alt: "DIY PLANTING",
+          category: "westzone",
+          categoryLabel: "DIY PLANTING",
+          title: "DIY PLANTING",
+        },
+
+        {
+          id: 40,
+          src: "/images/projectpageproject/gallery/westzone/west10.png",
+          alt: "DIY PLANTING",
+          category: "westzone",
+          categoryLabel: "DIY PLANTING",
+          title: "DIY PLANTING",
+        },
+        {
+          id: 41,
+          src: "/images/projectpageproject/gallery/southzone/south1.png",
+          alt: "Swimming Pool",
+          category: "southzone",
+          categoryLabel: "Swimming Pool",
+          title: "Swimming Pool",
+        },
+
+        {
+          id: 42,
+          src: "/images/projectpageproject/gallery/southzone/south2.png",
+          alt: "BAMBOO PAVILLION FOR YOGA",
+          category: "southzone",
+          categoryLabel: "BAMBOO PAVILLION FOR YOGA",
+          title: "BAMBOO PAVILLION FOR YOGA",
+        },
+
+        {
+          id: 43,
+          src: "/images/projectpageproject/gallery/southzone/south3.png",
+          alt: "FOREST BATHING TRAIL AND SPA",
+          category: "southzone",
+          categoryLabel: "FOREST BATHING TRAIL AND SPA",
+          title: "FOREST BATHING TRAIL AND SPA",
+        },
+
+        {
+          id: 44,
+          src: "/images/projectpageproject/gallery/southzone/south4.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALK",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+
+        {
+          id: 45,
+          src: "/images/projectpageproject/gallery/southzone/south5.png",
+          alt: "SEASONAL AROMA THERAPY GARDEN",
+          category: "southzone",
+          categoryLabel: "SEASONAL AROMA THERAPY GARDEN",
+          title: "SEASONAL AROMA THERAPY GARDEN",
+        },
+
+        {
+          id: 46,
+          src: "/images/projectpageproject/gallery/southzone/south6.png",
+          alt: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          category: "southzone",
+          categoryLabel: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          title: "REFLEXOLOGY WALKWAY(PEBBLED)",
+        },
+
+        {
+          id: 47,
+          src: "/images/projectpageproject/gallery/southzone/south7.png",
+          alt: "HERB PICKING CORNER",
+          category: "southzone",
+          categoryLabel: "HERB PICKING CORNER",
+          title: "HERB PICKING CORNER",
+        },
+
+        {
+          id: 48,
+          src: "/images/projectpageproject/gallery/southzone/south8.png",
+          alt: "AYURVEDA AND NATURAL HEALING",
+          category: "southzone",
+          categoryLabel: "AYURVEDA AND NATURAL HEALING",
+          title: "AYURVEDA AND NATURAL HEALING",
+        },
+
+        {
+          id: 49,
+          src: "/images/projectpageproject/gallery/southzone/south9.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALK",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+
+        {
+          id: 50,
+          src: "/images/projectpageproject/gallery/southzone/south10.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALKy",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+        {
+          id: 51,
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+          alt: "FarmHouseFARMHOUSE-2 BHK",
+          category: "farmhouse",
+          categoryLabel: "FARMHOUSE-2 BHK",
+          title: "FARMHOUSE-2 BHK",
+        },
+
+        {
+          id: 52,
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse2.png",
+          alt: "FLOOR PLAN",
+          category: "farmhouse",
+          categoryLabel: "FLOOR PLAN 2BHK",
+          title: "FLOOR PLAN",
+        },
+        {
+          id: 53,
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse3.png",
+          alt: "FLOOR PLAN",
+          category: "farmhouse",
+          categoryLabel: "FLOOR PLAN 2BHK",
+          title: "FLOOR PLAN",
+        },
+        {
+          id: 54,
+          src: "/images/projectpageproject/gallery/farmhouse/farmhouse4.png",
+          alt: "FLOOR PLAN",
+          category: "farmhouse",
+          categoryLabel: "FLOOR PLAN 2BHK",
+          title: "FLOOR PLAN 2BHK",
+        },
+
+        
+      ],
+    },
+
+    location: {
+      eyebrow: "PROJECT PLAN",
+      title: "A Thoughtfully Planned 30-Acre Landscape",
+
+      description:
+        "Soul Prakriti Farmhouse - Space of Ultimate Living. Nestled beside the river, surrounded by forests and majestic mountains near Rajaji National Park, Soul Prakriti offers luxury farmhouse living with direct highway connectivity.",
+
+      address: {
+        title: "Soul Prakriti",
+        location: "Bhaguwala, Najibabad, Uttar Pradesh",
+        landmark: "Near Rajaji National Park",
+      },
+
+      mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3464.5907317224633!2d78.2507969755418!3d29.73161227508264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDQzJzUzLjgiTiA3OMKwMTUnMTIuMSJF!5e0!3m2!1sen!2sin!4v1790574898053!5m2!1sen!2sin",
+      directionsUrl: "https://maps.app.goo.gl/8GtJCvN66CdserM99",
+
+      landmarks: [
+        {
+          icon: "road",
+          title: "Rajaji National Park",
+          distance: "5 min",
+        },
+        {
+          icon: "road",
+          title: "Direct Highway",
+          distance: "0 km",
+        },
+        {
+          icon: "garden",
+          title: "Najibabad Town",
+          distance: "5km . 10km",
+        },
+        {
+          icon: "lake",
+          title: "Najibabad Hospital",
+          distance: "5km . 10km",
+        },
+      ],
+
+      availability: {
+        eyebrow: "PLOT CONFIGURATIONS",
+        title: "Choose Your Space",
+
+        description:
+          "Let your dream come true",
+
+        items: [
+          {
+            configuration: "Luxury FarmHouse",
+            area: "600 Sq. Yards",
+            price: "On Request",
+            status: "Available",
+          },
+          
+        ],
+      },
+    },
+
+    craftedDetails: {
+      eyebrow: "CRAFTED DETAILS",
+      title: "Planned Around Wellness, Nature & Experience",
+
+      description:
+        "The Soul Prakriti master plan combines residential plots with landscaped gardens, wellness facilities, recreational areas and nature-focused experiences.",
+
+      items: [
+        {
+          number: "01",
+          title: "Master Planning",
+          preview:
+            "A 30-acre landscape planned as an integrated residential and wellness environment.",
+
+          details: [
+            "Holistic master planning across a 30-acre landscape.",
+            "Residential plots integrated with landscaped open spaces.",
+            "Dedicated North and Central Zone experiences.",
+            "Multiple internal road widths planned across the development.",
+          ],
+        },
+
+        {
+          number: "02",
+          title: "Wellness Spaces",
+          preview:
+            "Dedicated spaces for meditation, yoga, relaxation and holistic wellness.",
+
+          details: [
+            "Meditation circle.",
+            "Singing meditation bowl.",
+            "Hammock yoga.",
+            "Ayurveda and natural healing.",
+            "Steam and sauna.",
+            "Reflexology walkway.",
+            "Wellness building.",
+          ],
+        },
+
+        {
+          number: "03",
+          title: "Nature & Landscape",
+          preview:
+            "Green spaces and nature-based experiences are integrated throughout the development.",
+
+          details: [
+            "Orchid gardens.",
+            "Tea and herbal garden.",
+            "Butterfly garden.",
+            "Miyawaki forest.",
+            "Healing herbs information patch.",
+            "DIY planting zone.",
+            "Whisper garden.",
+          ],
+        },
+
+        {
+          number: "04",
+          title: "Recreation & Fitness",
+          preview:
+            "Outdoor recreation and fitness facilities form an important part of the master plan.",
+
+          details: [
+            "Mini golf course.",
+            "Badminton court.",
+            "Box cricket.",
+            "Open gym.",
+            "Cycle track.",
+            "Horse riding trail and arena.",
+            "Mini trekking trail.",
+          ],
+        },
+
+        {
+          number: "05",
+          title: "Community Experiences",
+          preview:
+            "Spaces designed for gathering, leisure and shared experiences.",
+
+          details: [
+            "Club house.",
+            "Restaurant with outdoor seating.",
+            "Soul Prakriti concept cafe.",
+            "Amphitheatre.",
+            "Library.",
+            "Bonfire and stargazing area.",
+            "Boat peddling.",
+          ],
+        },
+
+        {
+          number: "06",
+          title: "Residential Planning",
+          preview:
+            "The development includes multiple plotted configurations and dedicated villa plans.",
+
+          details: [
+            "150 sq. yard plots.",
+            "200 sq. yard plots.",
+            "202 sq. yard plots.",
+            "Farmhouse - 2 BHK concept.",
+            "Villa - 150 sq. yards.",
+            "Villa - 200 sq. yards.",
+          ],
+        },
+      ],
+    },
+
+    floorPlans: {
+      eyebrow: "EXPLORE THE PLANS",
+      title: "Spaces Designed for Different Ways of Living",
+
+      description:
+        "Explore the residential configurations shown in the Soul Prakriti project presentation and architectural plans.",
+
+      plans: [
+        {
+          id: "farmhouse-2-bhk",
+          name: "Soul Prakriti Farmhouse",
+          type: "Farmhouse",
+          area: " 600 Sq. Yards",
+          configuration: "2 BHK",
+          price: "On Request",
+          image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+        }, 
+      ],
+
+      startingFrom: {
+        label: "Pricing",
+        value: "On Request",
+        description:
+          "On Request",
+      },
+
+      documents: {
+        eyebrow: "PROJECT DOCUMENTS",
+        title: "Project Plans",
+
+        items: [
+          {
+            name: " 600 Sq. Yards Layout Plan",
+            type: "PDF",
+            href: "/documents/soul-prakriti/150-yards-layout.pdf",
+          },
+          {
+            name: "Site Plan",
+            type: "PDF",
+            href: "/documents/soul-prakriti/site-plan.pdf",
+          },
+          {
+            name: "Soul Prakriti Presentation",
+            type: "PDF",
+            href: "/documents/soul-prakriti/presentation.pdf",
+          },
+        ],
+      },
+
+      actions: {
+        primary: "Schedule a Visit",
+        secondary: "Enquire Now",
+      },
+    },
   },
 
-  documents: {
-    eyebrow: "PROJECT DOCUMENTS",
-    title: "Useful Downloads",
-    items: [
-      {
-        name: "Layout Plan",
-        type: "PDF",
-        href: "/documents/soul-prakriti/layout-plan.pdf",
-      },
-      {
-        name: "Site Plan",
-        type: "PDF",
-        href: "/documents/soul-prakriti/site-plan.pdf",
-      },
-      {
-        name: "Amenities Guide",
-        type: "PDF",
-        href: "/documents/soul-prakriti/amenities-guide.pdf",
-      },
-    ],
-  },
-
-  actions: {
-    primary: "Schedule a Visit",
-    secondary: "Enquire Now",
-  },
-},
-  },
   "soul-prakriti-villa": {
     slug: "soul-prakriti-villa",
     name: "Soul Prakriti Villa",
-  hero: {
-    eyebrow: "OUR PROJECT",
 
-    title: "Soul Prakriti",
-
-    subtitle: "Luxury Farmhouse Living in the Heart of Nature",
-
-    description:
-      "Soul Prakriti is a premium Villa project by Soul Agro Farms Pvt. Ltd., designed for those who seek peace, privacy and a deeper connection with nature.",
-
-    primaryButton: "Enquire Now",
-
-    secondaryButton: "Watch Video",
-
-    heroImage: "/images/soul-prakriti/hero.jpg",
-
-    imageAlt: "Soul Prakriti luxury farmhouse surrounded by nature",
-
-    tagline: {
-      small: "Nature",
-      large: "Redefined",
-      bottom: "Luxury",
+    hero: {
+      eyebrow: "VILLA COLLECTION",
+      title: "Soul Prakriti Villa",
+      subtitle: "Thoughtfully Planned Villas within Soul Prakriti",
+      description:
+        "The Soul Prakriti project presentation includes villa configurations of 150 sq. yards and 200 sq. yards within its larger 30-acre master plan.",
+      primaryButton: "Enquire Now",
+      secondaryButton: "View Floor Plans",
+      heroImage: "/images/projectpageproject/hero.jpg",
+      imageAlt: "Soul Prakriti villa concept",
+      tagline: {
+        small: "Thoughtfully",
+        large: "Planned",
+        bottom: "Living",
+      },
     },
-  },
 
-  about: {
-    eyebrow: "ABOUT THE PROJECT",
+    about: {
+      eyebrow: "ABOUT THE VILLA",
+      title: "Villa Living within Soul Prakriti",
 
-    title: "A Blissful Retreat in Nature",
-
-    description: [
-      "Soul Prakriti offers beautifully designed farmhouses with modern amenities, nestled in a serene location.",
-      "It’s a place where luxury meets sustainability — crafted for peaceful and healthier living.",
-    ],
-
-
-  images: [
-    {
-      src: "/images/soul-prakriti/about.jpg",
-      alt: "Soul Prakriti farmhouse exterior",
-    },
-    {
-      src: "/images/soul-prakriti/about1.jpg",
-      alt: "Soul Prakriti farmhouse interior",
-    },
-    {
-      src: "/images/soul-prakriti/about2.jpg",
-      alt: "Soul Prakriti natural surroundings",
-    },
-  ],
-
-    projectDetails: [
-      {
-        icon: "project",
-        label: "Project Name",
-        value: "Soul Prakriti",
-      },
-      {
-        icon: "location",
-        label: "Location",
-        value: "Rishikesh, Uttarakhand",
-      },
-      {
-        icon: "type",
-        label: "Type",
-        value: "Farmhouses",
-      },
-      {
-        icon: "plot",
-        label: "Plot Sizes",
-        value: "1 – 3 Acres",
-      },
-      {
-        icon: "developer",
-        label: "Built By",
-        value: "Soul Agro Farms Pvt. Ltd.",
-      },
-    ],
-
-    highlights: [
-      {
-        icon: "leaf",
-        title: "Eco-Friendly Living",
-        description: "Designed around nature.",
-      },
-      {
-        icon: "shield",
-        title: "Safe & Secure Environment",
-        description: "Peace of mind, always.",
-      },
-      {
-        icon: "nature",
-        title: "Spacious Farmhouse Plots",
-        description: "Room to live freely.",
-      },
-      {
-        icon: "star",
-        title: "Premium Lifestyle",
-        description: "Comfort meets nature.",
-      },
-    ],
-  },
-  amenities: {
-  eyebrow: "AMENITIES",
-  title: "Designed Around Every Way You Live",
-  description:
-    "From wellness and nature to recreation, community and adventure, every part of Soul Prakriti is thoughtfully planned to create a richer connection with life outdoors.",
-
-  zones: [
-    {
-      id: "north",
-      name: "North Zone",
-      subtitle: "Wellness & Tranquility",
-      items: [
-        "Yoga Pavilion",
-        "Meditation Garden",
-        "Ayurvedic Wellness Centre",
-        "Spa & Sauna",
-        "Hot Spring Bath",
-        "Sound Therapy Room",
-        "Aromatherapy Garden",
-        "Zen Garden",
-        "Steam Room",
-        "Jacuzzi",
-        "Health Juice Bar",
-        "Breathing Exercise Deck",
-        "Reflexology Path",
-        "Tai Chi Lawn",
-        "Crystal Healing Room",
+      description: [
+        "Situated beside a flowing river and surrounded by verdant forests and majestic mountains near Rajaji National Park, Soul Prakriti offers an exclusive villa lifestyle with convenient direct highway connectivity. Developed by Soul Agro Farms Pvt. Ltd. (Powered by ETH Infra), these premium villas span 150 sq. yards each, thoughtfully designed for those who desire the ideal blend of contemporary luxury and unspoiled natural beauty.Set amidst the pristine surroundings of Rajaji National Park, with the tranquil charm of a flowing river and stunning mountain vistas, Soul Prakriti is more than just a home—it’s a complete lifestyle transformation.",
       ],
-    },
 
-    {
-      id: "south",
-      name: "South Zone",
-      subtitle: "Nature, Eco & Landscaped Zone",
-      items: [
-        "Organic Farm Plots",
-        "Butterfly Garden",
-        "Herbal Garden",
-        "Fruit Orchard",
-        "Nature Walking Trail",
-        "Bird Watching Deck",
-        "Amphitheatre Garden",
-        "Butterfly Park",
-        "Rain Water Harvesting",
-        "Solar Energy Park",
-        "Eco Pond",
-        "Wildflower Meadow",
-        "Bamboo Grove",
-        "Miyawaki Forest",
-        "Permaculture Zone",
+      images: [
+        {
+          src: "/images/projectpageproject/gallery/villa/villa151.jpg",
+          alt: "Soul Prakriti villa surroundings",
+        },
+        {
+          src: "/images/projectpageproject/gallery/villa/villa152.png",
+          alt: "Soul Prakriti villa concept",
+        },
+        {
+          src: "/images/projectpageproject/gallery/villa/villa151.jpg",
+          alt: "Soul Prakriti landscaped development",
+        },
       ],
-    },
 
-    {
-      id: "east",
-      name: "East Zone",
-      subtitle: "Sports & Fitness Arenas",
-      items: [
-        "Cricket Pitch",
-        "Football Ground",
-        "Basketball Court",
-        "Tennis Court",
-        "Badminton Court",
-        "Volleyball Court",
-        "Cycling Track",
-        "Jogging Track",
-        "Archery Range",
-        "Rock Climbing Wall",
-        "Rope Course",
-        "Horse Riding Arena",
-        "Skating Rink",
-        "Outdoor Gym",
-        "Fitness Trail",
-      ],
-    },
+      imageAlt: "Soul Prakriti villa within the planned landscape",
 
-    {
-      id: "west",
-      name: "West Zone",
-      subtitle: "Family & Community Spaces",
-      items: [
-        "Grand Clubhouse",
-        "Swimming Pool",
-        "Kids Play Zone",
-        "Senior Citizen Park",
-        "Party Lawn",
-        "Community Hall",
-        "Mini Theatre",
-        "Library & Reading Room",
-        "Indoor Games Room",
-        "BBQ & Campfire Area",
-        "Bonfire Pit",
-        "Cafeteria",
-        "Guest Rooms",
-        "Co-Working Space",
-        "Amphitheatre",
-      ],
-    },
-
-    {
-      id: "central",
-      name: "Central Zone",
-      subtitle: "Signature Experiences & Adventure Amenities",
-      items: [
-        "Riverfront Deck",
-        "Bonfire Bay",
-        "Stargazing Deck",
-        "Adventure Park",
-        "Zip Line",
-        "Obstacle Course",
-        "Kayaking & Boating",
-        "Fishing Deck",
-        "Camping Grounds",
-        "Sky Walkway",
-        "Tree House Experience",
-        "Nature Observation Tower",
-        "Forest Trail Experience",
-        "Mountain Viewpoint",
-        "Sunset Point",
-      ],
-    },
-  ],
-},
-  WhyThisProject: {
-    eyebrow: "WHY SOUL PRAKRITI",
-
-    title: "More Than Just a Farmhouse",
-
-    description:
-      "It’s an investment in your well-being, your family’s happiness and a better tomorrow. Soul Prakriti brings together nature, luxury and sustainability in perfect harmony.",
-
-    buttonText: "Explore Amenities",
-
-    features: [
-      {
-        icon: "leaf",
-        title: "Clean Air & Green Surroundings",
-        description: "Breathe pure, live fresh.",
-      },
-      {
-        icon: "shield",
-        title: "24/7 Security",
-        description: "Your safety, our priority.",
-      },
-      {
-        icon: "mountain",
-        title: "Scenic Views",
-        description: "Nature at every glance.",
-      },
-      {
-        icon: "sprout",
-        title: "Sustainable Living",
-        description: "For a greener future.",
-      },
-    ],
-  },
-  gallery: {
-  eyebrow: "GALLERY",
-
-  title: "Moments from Soul Prakriti",
-
-  description:
-    "Explore the landscapes, architecture and experiences that make Soul Prakriti a distinctive retreat in nature.",
-
-  filters: [
-    // {
-    //   id: "all",
-    //   label: "All",
-    // },
-    {
-    id: "2bhk",
-    label: "2 BHK",
+      projectDetails: [
+  {
+    icon: "project",
+    label: "Project Name",
+    value: "Soul Prakriti",
   },
   {
-    id: "3bhk",
-    label: "3 BHK",
-  },
-    {
-      id: "northzone",
-      label: "North Zone",
-    },
-    {
-      id: "southzone",
-      label: "South Zone",
-    },
-    {
-      id: "eastzone",
-      label: "East Zone",
-    },
-    {
-      id: "westzone",
-      label: "West Zone",
-    },
-    {
-      id: "centralzone",
-      label: "Central Zone"
-    }
-  ],
-
-  images: [
-  {
-    id: 1,
-    src: "/images/soul-prakriti/gallery/northzone/acupressure-maze.jpg",
-    alt: "Acupressure maze at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Acupressure Maze",
-    title: "Acupressure Maze",
-  },
-
-  {
-    id: 2,
-    src: "/images/soul-prakriti/gallery/northzone/aroma-garden.jpg",
-    alt: "Aroma garden at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Aroma Garden",
-    title: "Aroma Garden",
-  },
-
-  {
-    id: 3,
-    src: "/images/soul-prakriti/gallery/northzone/ayurveda.jpg",
-    alt: "Ayurveda wellness space at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Ayurveda",
-    title: "Ayurveda",
-  },
-
-  {
-    id: 4,
-    src: "/images/soul-prakriti/gallery/northzone/bamboo-pavilion.jpg",
-    alt: "Bamboo pavilion surrounded by greenery",
-    category: "northzone",
-    categoryLabel: "Bamboo Pavilion",
-    title: "Bamboo Pavilion",
-  },
-
-  {
-    id: 5,
-    src: "/images/soul-prakriti/gallery/northzone/club-house.jpg",
-    alt: "Club house at Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Club House",
-    title: "Club House",
-  },
-
-  {
-    id: 6,
-    src: "/images/soul-prakriti/gallery/northzone/entrance-gate.jpg",
-    alt: "Entrance gate of Soul Prakriti",
-    category: "northzone",
-    categoryLabel: "Entrance Gate",
-    title: "The Entrance",
-  },
-
-  {
-    id: 7,
-    src: "/images/soul-prakriti/gallery/southzone/forest-bathing.jpg",
-    alt: "Forest bathing experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Forest Bathing",
-    title: "Forest Bathing",
-  },
-
-  {
-    id: 8,
-    src: "/images/soul-prakriti/gallery/southzone/hammock-yoga.jpg",
-    alt: "Hammock yoga experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Hammock Yoga",
-    title: "Hammock Yoga",
-  },
-
-  {
-    id: 9,
-    src: "/images/soul-prakriti/gallery/southzone/herb-picking.jpg",
-    alt: "Herb picking activity at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Herb Picking",
-    title: "Herb Picking",
-  },
-
-  {
-    id: 10,
-    src: "/images/soul-prakriti/gallery/southzone/meditation-circle.jpg",
-    alt: "Meditation circle surrounded by nature",
-    category: "southzone",
-    categoryLabel: "Meditation Circle",
-    title: "Meditation Circle",
-  },
-
-  {
-    id: 11,
-    src: "/images/soul-prakriti/gallery/southzone/nap-pods.jpg",
-    alt: "Relaxing nap pods at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Nap Pods",
-    title: "Nap Pods",
-  },
-
-  {
-    id: 12,
-    src: "/images/soul-prakriti/gallery/southzone/reflexology.jpg",
-    alt: "Reflexology experience at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Reflexology",
-    title: "Reflexology",
-  },
-
-  {
-    id: 13,
-    src: "/images/soul-prakriti/gallery/southzone/restaurant.jpg",
-    alt: "Restaurant at Soul Prakriti",
-    category: "southzone",
-    categoryLabel: "Restaurant",
-    title: "Soul Prakriti Restaurant",
-  },
-
-  {
-    id: 14,
-    src: "/images/soul-prakriti/gallery/eastzone/shaded-cabana.jpg",
-    alt: "Shaded cabana surrounded by greenery",
-    category: "eastzone",
-    categoryLabel: "Shaded Cabana",
-    title: "Shaded Cabana",
-  },
-
-  {
-    id: 15,
-    src: "/images/soul-prakriti/gallery/eastzone/singing-bowl.jpg",
-    alt: "Singing bowl wellness experience at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Singing Bowl",
-    title: "Singing Bowl",
-  },
-
-  {
-    id: 16,
-    src: "/images/soul-prakriti/gallery/eastzone/swimming-pool.jpg",
-    alt: "Swimming pool at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Swimming Pool",
-    title: "Swimming Pool",
-  },
-
-  {
-    id: 17,
-    src: "/images/soul-prakriti/gallery/eastzone/wellness-building.jpg",
-    alt: "Wellness building at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "Wellness Building",
-    title: "Wellness Building",
+    icon: "type",
+    label: "Property Type",
+    value: "Villa",
   },
   {
-    id: 18,
-    src: "/images/soul-prakriti/gallery/eastzone/amphitheater.jpg",
-    alt: "Amphitheater at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "amphitheater",
-    title: "amphitheater",
+    icon: "plot",
+    label: "Villa Options",
+    value: "150 & 200 Sq. Yards",
   },
-
   {
-    id: 19,
-    src: "/images/soul-prakriti/gallery/eastzone/artificial-lake.jpg",
-    alt: "Artificial lake at Soul Prakriti",
-    category: "eastzone",
-    categoryLabel: "artificial-lake",
-    title: "artificial-lake",
+    icon: "plot",
+    label: "Project Landscape",
+    value: "30 Acres",
   },
-
   {
-    id: 20,
-    src: "/images/soul-prakriti/gallery/westzone/badminton.jpg",
-    alt: "Badminton facility at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "badminton",
-    title: "badminton",
+    icon: "developer",
+    label: "Client",
+    value: "E.T.H INFRA",
   },
-
   {
-    id: 21,
-    src: "/images/soul-prakriti/gallery/westzone/boat-peddling.jpg",
-    alt: "Boat peddling activity at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "boat-peddling",
-    title: "boat-peddling",
+    icon: "project",
+    label: "Architect",
+    value: "Innov Arch",
   },
-
-  {
-    id: 22,
-    src: "/images/soul-prakriti/gallery/westzone/box-cricket.jpg",
-    alt: "Box cricket facility at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "box-cricket",
-    title: "box-cricket",
-  },
-
-  {
-    id: 23,
-    src: "/images/soul-prakriti/gallery/westzone/cafeteria-dining.jpg",
-    alt: "Cafeteria dining area at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "cafeteria-dining",
-    title: "cafeteria-dining",
-  },
-
-  {
-    id: 24,
-    src: "/images/soul-prakriti/gallery/westzone/cafeteria.jpg",
-    alt: "Cafeteria at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "cafeteria",
-    title: "cafeteria",
-  },
-
-  {
-    id: 25,
-    src: "/images/soul-prakriti/gallery/westzone/diy-planting.jpg",
-    alt: "DIY planting activity at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "diy-planting",
-    title: "diy-planting",
-  },
-
-  {
-    id: 26,
-    src: "/images/soul-prakriti/gallery/westzone/forest-trail.jpg",
-    alt: "Forest trail at Soul Prakriti",
-    category: "westzone",
-    categoryLabel: "forest-trail",
-    title: "forest-trail",
-  },
-
-  {
-    id: 27,
-    src: "/images/soul-prakriti/gallery/centralzone/golf-course.jpg",
-    alt: "Golf course at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "golf-course",
-    title: "golf-course",
-  },
-
-  {
-    id: 28,
-    src: "/images/soul-prakriti/gallery/centralzone/library.jpg",
-    alt: "Library at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "library",
-    title: "library",
-  },
-
-  {
-    id: 29,
-    src: "/images/soul-prakriti/gallery/centralzone/open-gym.jpg",
-    alt: "Open gym at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "open-gym",
-    title: "open-gym",
-  },
-
-  {
-    id: 30,
-    src: "/images/soul-prakriti/gallery/centralzone/playzone.jpg",
-    alt: "Play zone at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "playzone",
-    title: "playzone",
-  },
-
-  {
-    id: 31,
-    src: "/images/soul-prakriti/gallery/centralzone/sculpture-garden.jpg",
-    alt: "Sculpture garden at Soul Prakriti",
-    category: "centralzone",
-    categoryLabel: "sculpture-garden",
-    title: "sculpture-garden",
-  },
-
-  {
-  id: 33,
-  src: "/images/soul-prakriti/2bhk-01.jpg",
-  alt: "Soul Prakriti 2 BHK",
-  category: "2bhk",
-  categoryLabel: "2 BHK",
-  title: "2 BHK Floor Plan",
-},
-{
-  id: 34,
-  src: "/images/soul-prakriti/2bhk-02.jpg",
-  alt: "Soul Prakriti 2 BHK",
-  category: "2bhk",
-  categoryLabel: "2 BHK",
-  title: "2 BHK Interior",
-},
-{
-  id: 35,
-  src: "/images/soul-prakriti/2bhk-03.jpg",
-  alt: "Soul Prakriti 2 BHK",
-  category: "2bhk",
-  categoryLabel: "2 BHK",
-  title: "2 BHK Living Space",
-},
-{
-  id: 36,
-  src: "/images/soul-prakriti/2bhk-04.jpg",
-  alt: "Soul Prakriti 2 BHK",
-  category: "2bhk",
-  categoryLabel: "2 BHK",
-  title: "2 BHK Bedroom",
-},
-{
-  id: 37,
-  src: "/images/soul-prakriti/3bhk-01.jpg",
-  alt: "Soul Prakriti 3 BHK",
-  category: "3bhk",
-  categoryLabel: "3 BHK",
-  title: "3 BHK Floor Plan",
-},
-{
-  id: 38,
-  src: "/images/soul-prakriti/3bhk-02.jpg",
-  alt: "Soul Prakriti 3 BHK",
-  category: "3bhk",
-  categoryLabel: "3 BHK",
-  title: "3 BHK Interior",
-},
-{
-  id: 39,
-  src: "/images/soul-prakriti/3bhk-03.jpg",
-  alt: "Soul Prakriti 3 BHK",
-  category: "3bhk",
-  categoryLabel: "3 BHK",
-  title: "3 BHK Living Space",
-},
-{
-  id: 40,
-  src: "/images/soul-prakriti/3bhk-04.jpg",
-  alt: "Soul Prakriti 3 BHK",
-  category: "3bhk",
-  categoryLabel: "3 BHK",
-  title: "3 BHK Bedroom",
-},
-
 ],
-},
-location: {
-  eyebrow: "LOCATION",
 
-  title: "Connected to Everything. Close to Nature.",
-
-  description:
-    "Soul Prakriti is thoughtfully located in a peaceful natural setting, offering the perfect balance between everyday accessibility and a tranquil escape from the city.",
-
-  address: {
-    title: "Soul Prakriti",
-    location: "Bhaguwala, Najibabad, Uttar Pradesh",
-    landmark: "Near Rajaji National Park",
+      highlights: [
+  {
+    icon: "leaf",
+    title: "Nature-Centric Living",
+    description: "Designed around natural surroundings and green spaces.",
   },
-
-  mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.5793400561993!2d78.25048757499837!3d29.73194213331042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39095d0041aa54ab%3A0xa2a31556beb6bf3e!2sSoul%20Prakriti!5e0!3m2!1sen!2sin!4v1790336835080!5m2!1sen!2sin",
-
-  directionsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Bhaguwala%2C%20Najibabad%2C%20Uttar%20Pradesh",
-
-  landmarks: [
-    {
-      icon: "park",
-      title: "Rajaji National Park",
-      distance: "Approx. 5 min",
-    },
-    {
-      icon: "road",
-      title: "Direct Highway Access",
-      distance: "Easy connectivity",
-    },
-    {
-      icon: "town",
-      title: "Najibabad Town",
-      distance: "Approx. 10 min",
-    },
-    {
-      icon: "hospital",
-      title: "Nearby Healthcare",
-      distance: "Approx. 10 min",
-    },
-  ],
-
-  availability: {
-    eyebrow: "PRICE & AVAILABILITY",
-
-    title: "Choose Your Space",
-
-    description:
-      "Explore the available configurations and connect with our team for current pricing, availability and detailed project information.",
-
-    items: [
-      {
-        configuration: "Villa",
-        area: "150 Sq. Yards",
-        price: "On Request",
-        status: "Available",
-      },
-      {
-        configuration: "Premium Villa",
-        area: "250 Sq. Yards",
-        price: "On Request",
-        status: "Available",
-      },
-      {
-        configuration: "Luxury Farmhouse",
-        area: "500 Sq. Yards",
-        price: "On Request",
-        status: "Limited",
-      },
-    ],
+  {
+    icon: "shield",
+    title: "Private & Secure",
+    description: "A planned environment focused on privacy and security.",
   },
-},
-craftedDetails: {
-  eyebrow: "CRAFTED DETAILS",
+  {
+    icon: "nature",
+    title: "Outdoor Experiences",
+    description: "Spaces designed for recreation and outdoor activities.",
+  },
+  {
+    icon: "star",
+    title: "Premium Living",
+    description: "A thoughtfully planned farmhouse lifestyle experience.",
+  },
+],
+    },
 
-  title: "Thoughtful Details. Lasting Quality.",
+    amenities: {
+      eyebrow: "AMENITIES",
+      title: "Experiences Across Soul Prakriti",
 
-  description:
-    "Every element is thoughtfully considered to create a farmhouse experience that combines natural beauty, modern comfort and lasting quality.",
+      description:
+        "Villa residents are part of the wider Soul Prakriti master plan, which includes wellness, nature, recreation and community facilities.",
 
-  items: [
-    {
-      number: "01",
-      title: "Construction & Structure",
-      preview:
-        "Strong foundations and carefully planned construction for dependable long-term living.",
-      details: [
-        "Thoughtfully planned structural design for comfortable farmhouse living.",
-        "Quality-focused construction practices throughout the project.",
-        "Designed to complement the surrounding natural landscape.",
-        "Built with an emphasis on durability, functionality and long-term value.",
+      zones: [
+        {
+          id: "north",
+          name: "North Zone",
+          subtitle: "Wellness & Natural Healing",
+
+          items: [
+            "Yoga Pavilion",
+            "Meditation Garden",
+            "Ayurvedic Wellness Centre",
+            "Spa & Sauna",
+            "Hot Spring Bath",
+            "Sound Therapy Room",
+            "Aromatherapy Garden",
+            "Zen Garden",
+            "Steam Room",
+            "Jacuzzi",
+            "Health Juice Bar",
+            "Breathing Exercise Deck",
+            "Reflexology Path",
+            "Tai Chi Lawn",
+            "Crystal Healing Room"
+          ],
+        },
+
+        {
+          id: "south",
+          name: "South Zone",
+          subtitle: "Sports and Fitness Areas",
+
+          items: [
+            "Organic Farm Plots",
+"Butterfly Garden",
+"Herbal Garden",
+"Fruit Orchard",
+"Nature Walking Trail",
+"Bird Watching Deck",
+"Amphitheatre Garden",
+"Butterfly Park",
+"Rain Water Harvesting",
+"Solar Energy Park",
+"Eco Pond",
+"Wildflower Meadow",
+"Bamboo Grove",
+"Miyawaki Forest",
+"Permaculture Zone",
+          ],
+        },
+
+        {
+          id: "east",
+          name: "East Zone",
+          subtitle: "Nature, Eco & Landscape",
+
+          items: [
+  "Cricket Pitch",
+  "Football Ground",
+  "Basketball Court",
+  "Tennis Court",
+  "Badminton Court",
+  "Volleyball Court",
+  "Cycling Track",
+  "Jogging Track",
+  "Archery Range",
+  "Rock Climbing Wall",
+  "Rope Course",
+  "Horse Riding Arena",
+  "Skating Rink",
+  "Outdoor Gym",
+  "Fitness Trail",
+],
+        },
+
+        {
+          id: "west",
+          name: "West Zone",
+          subtitle: "Family and Comunity Spaces",
+
+          items: [
+  "Grand Clubhouse",
+  "Swimming Pool",
+  "Kids Play Zone",
+  "Senior Citizen Park",
+  "Party Lawn",
+  "Community Hall",
+  "Mini Theatre",
+  "Library & Reading Room",
+  "Indoor Games Room",
+  "BBQ & Campfire Area",
+  "Bonfire Pit",
+  "Cafeteria",
+  "Guest Rooms",
+  "Co-Working Space",
+  "Amphitheatre",
+],
+        },
+
+         {
+          id: "central",
+          name: "Central Zone",
+          subtitle: "Signature Experiences and Adventure Amenities",
+
+          items: [
+  "Riverfront Deck",
+  "Bonfire Bay",
+  "Stargazing Deck",
+  "Adventure Park",
+  "Zip Line",
+  "Obstacle Course",
+  "Kayaking & Boating",
+  "Fishing Deck",
+  "Camping Grounds",
+  "Sky Walkway",
+  "Tree House Experience",
+  "Nature Observation Tower",
+  "Forest Trail Experience",
+  "Mountain Viewpoint",
+  "Sunset Point",
+],
+        },
       ],
     },
 
-    {
-      number: "02",
-      title: "Flooring & Finishes",
-      preview:
-        "Elegant finishes selected to complement the natural character of the property.",
-      details: [
-        "Carefully selected flooring and surface finishes.",
-        "Materials chosen to balance aesthetics with everyday practicality.",
-        "Natural and understated finishes that complement the farmhouse setting.",
-        "Attention to detailing across interior living spaces.",
+    WhyThisProject: {
+      eyebrow: "WHY SOUL PRAKRITI VILLA",
+      title: "Villa Living within a Holistic Landscape",
+
+      description:
+        "The villa plans are part of a larger 30-acre development combining residential plots with wellness, nature, recreation and community-oriented spaces.",
+
+      buttonText: "Explore Amenities",
+
+      features: [
+        {
+          icon: "home",
+          title: "Multiple Villa Options",
+          description:
+            "Villa configurations are presented in 150 and 200 sq. yard options.",
+        },
+        {
+          icon: "leaf",
+          title: "Nature Integrated",
+          description:
+            "The villa development sits within a landscape planned around gardens and natural experiences.",
+        },
+        {
+          icon: "heart",
+          title: "Wellness Focus",
+          description:
+            "Dedicated wellness facilities form part of the wider Soul Prakriti master plan.",
+        },
+        {
+          icon: "activity",
+          title: "Outdoor Recreation",
+          description:
+            "Sports, fitness and outdoor experiences are incorporated into the project plan.",
+        },
       ],
     },
 
-    {
-      number: "03",
-      title: "Kitchen & Interiors",
-      preview:
-        "Functional interiors designed around comfort, simplicity and contemporary farmhouse living.",
-      details: [
-        "Thoughtfully planned kitchen layouts.",
-        "Practical storage and workspace considerations.",
-        "Contemporary interior detailing with a warm natural character.",
-        "Spaces designed for both everyday living and relaxed entertaining.",
+    gallery: {
+      eyebrow: "VILLA GALLERY",
+      title: "Soul Prakriti Villa Concepts",
+      description:
+        "Explore the villa configurations and architectural concepts presented for Soul Prakriti.",
+
+      filters: [
+        {
+          id: "villa150",
+          label: "150 Sq. Yards Villa",
+        },
+        {
+          id: "villa200",
+          label: "200 Sq. Yards Villa",
+        },
+        {
+          id: "northzone",
+          label: "North Zone",
+        },
+        {
+          id: "centralzone",
+          label: "Central Zone",
+        },
+        {
+          id: "eastzone",
+          label: "East Zone",
+        },
+        {
+          id: "westzone",
+          label: "West Zone",
+        },
+        {
+          id: "southzone",
+          label: "South Zone",
+        },
+        
+      ],
+
+      images: [
+        {
+          id: 1,
+          src: "/images/projectpageproject/gallery/northzone/north1.png",
+          alt: "Soul Prakriti entrance gate",
+          category: "northzone",
+          categoryLabel: "Entrance Gate",
+          title: "Entrance Gate",
+        },
+
+        {
+          id: 2,
+          src: "/images/projectpageproject/gallery/northzone/north2.png",
+          alt: "RESTURANT WITH OUTDOOR SEATING",
+          category: "northzone",
+          categoryLabel: "RESTURANT WITH OUTDOOR SEATING",
+          title: "RESTURANT WITH OUTDOOR SEATING",
+        },
+
+        {
+          id: 3,
+          src: "/images/projectpageproject/gallery/northzone/north3.png",
+          alt: "WELLNESS BUILDING",
+          category: "northzone",
+          categoryLabel: "WELLNESS BUILDING",
+          title: "WELLNESS BUILDING",
+        },
+
+        {
+          id: 4,
+          src: "/images/projectpageproject/gallery/northzone/north4.png",
+          alt: "NAP PODS",
+          category: "northzone",
+          categoryLabel: "NAP PODS",
+          title: "NAP PODS",
+        },
+
+        {
+          id: 5,
+          src: "/images/projectpageproject/gallery/northzone/north5.png",
+          alt: "SHADED CABANA",
+          category: "northzone",
+          categoryLabel: "SHADED CABANA",
+          title: "SHADED CABANA",
+        },
+
+        {
+          id: 6,
+          src: "/images/projectpageproject/gallery/northzone/north6.png",
+          alt: "SINGING BOWL MEDITATION POINT",
+          category: "northzone",
+          categoryLabel: "SINGING BOWL MEDITATION POINT",
+          title: "SINGING BOWL MEDITATION POINT",
+        },
+
+        {
+          id: 7,
+          src: "/images/projectpageproject/gallery/northzone/north7.png",
+          alt: "HAMMOCK YOGA SPACE",
+          category: "northzone",
+          categoryLabel: "HAMMOCK YOGA SPACE",
+          title: "HAMMOCK YOGA SPACE",
+        },
+
+        {
+          id: 8,
+          src: "/images/projectpageproject/gallery/northzone/north8.png",
+          alt: "MEDITATION STONE CIRCLE",
+          category: "northzone",
+          categoryLabel: "MEDITATION STONE CIRCLE",
+          title: "MEDITATION STONE CIRCLE",
+        },
+
+        {
+          id: 9,
+          src: "/images/projectpageproject/gallery/northzone/north9.png",
+          alt: "AYURVEDA AND NATURAL HEALING",
+          category: "northzone",
+          categoryLabel: "AYURVEDA AND NATURAL HEALING",
+          title: "AYURVEDA AND NATURAL HEALING",
+        },
+
+        {
+          id: 10,
+          src: "/images/projectpageproject/gallery/northzone/north10.png",
+          alt: "CLUB HOUSE",
+          category: "northzone",
+          categoryLabel: "CLUB HOUSE",
+          title: "CLUB HOUSE",
+        },
+
+        {
+          id: 11,
+          src: "/images/projectpageproject/gallery/centralzone/central1.png",
+          alt: "OPEN AMPHITHEATER",
+          category: "centralzone",
+          categoryLabel: "OPEN AMPHITHEATER",
+          title: "OPEN AMPHITHEATER",
+        },
+
+        {
+          id: 12,
+          src: "/images/projectpageproject/gallery/centralzone/central2.png",
+          alt: "CAFETERIA",
+          category: "centralzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 13,
+          src: "/images/projectpageproject/gallery/centralzone/central3.png",
+          alt: "CAFETERIA",
+          category: "centralzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 14,
+          src: "/images/projectpageproject/gallery/centralzone/central4.png",
+          alt: "BOAT PEDDLING",
+          category: "centralzone",
+          categoryLabel: "BOAT PEDDLING",
+          title: "BOAT PEDDLING",
+        },
+
+        {
+          id: 15,
+          src: "/images/projectpageproject/gallery/centralzone/central5.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 16,
+          src: "/images/projectpageproject/gallery/centralzone/central6.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 17,
+          src: "/images/projectpageproject/gallery/centralzone/central7.png",
+          alt: "TREE HOUSE AND PLAY ZONE",
+          category: "centralzone",
+          categoryLabel: "TREE HOUSE AND PLAY ZONE",
+          title: "TREE HOUSE AND PLAY ZONE",
+        },
+
+        {
+          id: 18,
+          src: "/images/projectpageproject/gallery/centralzone/central8.pngt",
+          alt: "SCULPTURE GARDEN",
+          category: "central",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 19,
+          src: "/images/projectpageproject/gallery/centralzone/central9.png",
+          alt: "SCULPTURE GARDEN",
+          category: "central",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 20,
+          src: "/images/projectpageproject/gallery/centralzone/central10.png",
+          alt: "SEASONAL AROMA THERAPY GARDEN",
+          category: "central",
+          categoryLabel: "SEASONAL AROMA THERAPY GARDEN",
+          title: "SEASONAL AROMA THERAPY GARDEN",
+        },
+        {
+          id: 21,
+          src: "/images/projectpageproject/gallery/eastzone/east1.png",
+          alt: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          category: "eastzone",
+          categoryLabel: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          title: "REFLEXOLOGY WALKWAY(PEBBLED)",
+        },
+
+        {
+          id: 22,
+          src: "/images/projectpageproject/gallery/eastzone/east2.png",
+          alt: "OPEN AMPHITHEATER",
+          category: "eastzone",
+          categoryLabel: "OPEN AMPHITHEATER",
+          title: "OPEN AMPHITHEATER",
+        },
+
+        {
+          id: 23,
+          src: "/images/projectpageproject/gallery/eastzone/east3.png",
+          alt: "CAFETERIA",
+          category: "eastzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 24,
+          src: "/images/projectpageproject/gallery/eastzone/east4.png",
+          alt: "CAFETERIA",
+          category: "eastzone",
+          categoryLabel: "CAFETERIA",
+          title: "CAFETERIA",
+        },
+
+        {
+          id: 25,
+          src: "/images/projectpageproject/gallery/eastzone/east5.png",
+          alt: "SCULPTURE GARDEN",
+          category: "eastzone",
+          categoryLabel: "SCULPTURE GARDEN",
+          title: "SCULPTURE GARDEN",
+        },
+
+        {
+          id: 26,
+          src: "/images/projectpageproject/gallery/eastzone/east6.png",
+          alt: "YOGA SPACE",
+          category: "eastzone",
+          categoryLabel: "YOGA SPACE",
+          title: "YOGA SPACE",
+        },
+
+        {
+          id: 27,
+          src: "/images/projectpageproject/gallery/eastzone/east7.png",
+          alt: "YOGA SPACE",
+          category: "eastzone",
+          categoryLabel: "YOGA SPACE",
+          title: "YOGA SPACE",
+        },
+
+        {
+          id: 28,
+          src: "/images/projectpageproject/gallery/eastzone/east8.png",
+          alt:"LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+
+        {
+          id: 29,
+          src: "/images/projectpageproject/gallery/eastzone/east9.png",
+          alt: "LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+
+        {
+          id: 30,
+          src: "/images/projectpageproject/gallery/eastzone/east10.png",
+          alt: "LIBRARY",
+          category: "eastzone",
+          categoryLabel: "LIBRARY",
+          title: "LIBRARY",
+        },
+        {
+          id: 31,
+          src: "/images/projectpageproject/gallery/westzone/west1.png",
+          alt: "BADMINTON COURT",
+          category: "westzone",
+          categoryLabel: "BADMINTON COURT",
+          title: "BADMINTON COURT",
+        },
+
+        {
+          id: 32,
+          src: "/images/projectpageproject/gallery/westzone/west2.png",
+          alt: "GOLF COUSE",
+          category: "westzone",
+          categoryLabel: "GOLF COUSE",
+          title: "GOLF COUSE",
+        },
+
+        {
+          id: 33,
+          src: "/images/projectpageproject/gallery/westzone/west3.png",
+          alt: "BOX CRICKET",
+          category: "westzone",
+          categoryLabel: "BOX CRICKET",
+          title: "BOX CRICKET",
+        },
+
+        {
+          id: 34,
+          src: "/images/projectpageproject/gallery/westzone/west4.png",
+          alt: "OPEN GYM",
+          category: "westzone",
+          categoryLabel: "OPEN GYM",
+          title: "OPEN GYM",
+        },
+
+        {
+          id: 35,
+          src: "/images/projectpageproject/gallery/westzone/west5.png",
+          alt: "PLAYZONE",
+          category: "westzone",
+          categoryLabel: "PLAYZONE",
+          title: "PLAYZONE",
+        },
+
+        {
+          id: 36,
+          src: "/images/projectpageproject/gallery/westzone/west6.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 37,
+          src: "/images/projectpageproject/gallery/westzone/west7.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 38,
+          src: "/images/projectpageproject/gallery/westzone/west8.png",
+          alt: "FOREST TRAIL",
+          category: "westzone",
+          categoryLabel: "FOREST TRAIL",
+          title: "FOREST TRAIL",
+        },
+
+        {
+          id: 39,
+          src: "/images/projectpageproject/gallery/westzone/west9.png",
+          alt: "DIY PLANTING",
+          category: "westzone",
+          categoryLabel: "DIY PLANTING",
+          title: "DIY PLANTING",
+        },
+
+        {
+          id: 40,
+          src: "/images/projectpageproject/gallery/westzone/west10.png",
+          alt: "DIY PLANTING",
+          category: "westzone",
+          categoryLabel: "DIY PLANTING",
+          title: "DIY PLANTING",
+        },
+        {
+          id: 41,
+          src: "/images/projectpageproject/gallery/southzone/south1.png",
+          alt: "Swimming Pool",
+          category: "southzone",
+          categoryLabel: "Swimming Pool",
+          title: "Swimming Pool",
+        },
+
+        {
+          id: 42,
+          src: "/images/projectpageproject/gallery/southzone/south2.png",
+          alt: "BAMBOO PAVILLION FOR YOGA",
+          category: "southzone",
+          categoryLabel: "BAMBOO PAVILLION FOR YOGA",
+          title: "BAMBOO PAVILLION FOR YOGA",
+        },
+
+        {
+          id: 43,
+          src: "/images/projectpageproject/gallery/southzone/south3.png",
+          alt: "FOREST BATHING TRAIL AND SPA",
+          category: "southzone",
+          categoryLabel: "FOREST BATHING TRAIL AND SPA",
+          title: "FOREST BATHING TRAIL AND SPA",
+        },
+
+        {
+          id: 44,
+          src: "/images/projectpageproject/gallery/southzone/south4.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALK",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+
+        {
+          id: 45,
+          src: "/images/projectpageproject/gallery/southzone/south5.png",
+          alt: "SEASONAL AROMA THERAPY GARDEN",
+          category: "southzone",
+          categoryLabel: "SEASONAL AROMA THERAPY GARDEN",
+          title: "SEASONAL AROMA THERAPY GARDEN",
+        },
+
+        {
+          id: 46,
+          src: "/images/projectpageproject/gallery/southzone/south6.png",
+          alt: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          category: "southzone",
+          categoryLabel: "REFLEXOLOGY WALKWAY(PEBBLED)",
+          title: "REFLEXOLOGY WALKWAY(PEBBLED)",
+        },
+
+        {
+          id: 47,
+          src: "/images/projectpageproject/gallery/southzone/south7.png",
+          alt: "HERB PICKING CORNER",
+          category: "southzone",
+          categoryLabel: "HERB PICKING CORNER",
+          title: "HERB PICKING CORNER",
+        },
+
+        {
+          id: 48,
+          src: "/images/projectpageproject/gallery/southzone/south8.png",
+          alt: "AYURVEDA AND NATURAL HEALING",
+          category: "southzone",
+          categoryLabel: "AYURVEDA AND NATURAL HEALING",
+          title: "AYURVEDA AND NATURAL HEALING",
+        },
+
+        {
+          id: 49,
+          src: "/images/projectpageproject/gallery/southzone/south9.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALK",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+
+        {
+          id: 50,
+          src: "/images/projectpageproject/gallery/southzone/south10.png",
+          alt: "ACCUPRESSURE MAZE WALK",
+          category: "southzone",
+          categoryLabel: "ACCUPRESSURE MAZE WALKy",
+          title: "ACCUPRESSURE MAZE WALK",
+        },
+        {
+          id: 51,
+          src: "/images/projectpageproject/gallery/villa/villa151.jpg",
+          alt: "DAY RENDER VILLA-150 SQ. YARDS",
+          category: "villa150",
+          categoryLabel: "DAY RENDER VILLA-150 SQ. YARDS",
+          title: "DAY RENDER VILLA-150 SQ. YARDS",
+        },
+
+        {
+          id: 52,
+          src: "/images/projectpageproject/gallery/villa/villa152.png",
+          alt: "Night RENDER VILLA-150 SQ. YARDS",
+          category: "villa150",
+          categoryLabel: "DAY RENDER VILLA-150 SQ. YARDS",
+          title: "Night RENDER VILLA-150 SQ. YARDS",
+        },
+
+        {
+          id: 53,
+          src: "/images/projectpageproject/gallery/villa/villa153.png",
+          alt: "FLOOR PLAN 1bhk",
+          category: "villa150",
+          categoryLabel: "FLOOR PLAN 1bhk",
+          title: "FLOOR PLAN 1bhk",
+        },
+
+        {
+          id: 54,
+          src: "/images/projectpageproject/gallery/villa/villa154.png",
+          alt: "FLOOR PLAN 1bhk",
+          category: "villa150",
+          categoryLabel: "FLOOR PLAN 1bhk",
+          title: "FLOOR PLAN 1bhk",
+        },
+        {
+          id: 55,
+          src: "/images/projectpageproject/gallery/villa/villa202.png",
+          alt: "Day Render VILLA-200 SQ. YARDS",
+          category: "villa200",
+          categoryLabel: "Day Render VILLA-200 SQ. YARDS",
+          title: "Day Render VILLA-200 SQ. YARDS",
+        },
+
+        {
+          id: 56,
+          src: "/images/projectpageproject/gallery/villa/villa201.png",
+          alt: "Night Render VILLA-200 SQ. YARDS",
+          category: "villa200",
+          categoryLabel: "Night Render VILLA-200 SQ. YARDS",
+          title: "Night Render VILLA-200 SQ. YARDS",
+        },
+
+        {
+          id: 57,
+          src: "/images/projectpageproject/gallery/villa/villa203.png",
+          alt: "FLOOR PLAN 3bhk",
+          category: "villa200",
+          categoryLabel: "FLOOR PLAN 3bhk",
+          title: "FLOOR PLAN 3bhk",
+        },
+
+        {
+          id: 58,
+          src: "/images/projectpageproject/gallery/villa/villa204.png",
+          alt: "FLOOR PLAN 3bhk",
+          category: "villa200",
+          categoryLabel: "FLOOR PLAN 3bhk",
+          title: "FLOOR PLAN 3bhk",
+        },
+        
+        
       ],
     },
 
-    {
-      number: "04",
-      title: "Doors & Windows",
-      preview:
-        "Open, naturally lit spaces designed to connect indoor living with the surrounding landscape.",
-      details: [
-        "Large openings designed to encourage natural light and ventilation.",
-        "Door and window placements planned around views and usability.",
-        "Finishes selected to complement the overall architectural character.",
-        "A stronger visual connection between interiors and nature.",
-      ],
-    },
+    location: {
+      eyebrow: "PROJECT PLAN",
+      title: "Part of the Soul Prakriti Master Plan",
 
-    {
-      number: "05",
-      title: "Electrical & Lighting",
-      preview:
-        "Essential electrical infrastructure with lighting designed for comfort and functionality.",
-      details: [
-        "Planned electrical points across functional living areas.",
-        "Lighting provisions designed for everyday convenience.",
-        "Thoughtful placement of switches, fixtures and electrical points.",
-        "Infrastructure planned to support modern farmhouse living.",
-      ],
-    },
+      description:
+        "Soul Prakriti Villa - Space of Ultimate Living. Nestled beside the river, surrounded by forests and majestic mountains near Rajaji National Park, Soul Prakriti offers luxury villa living with direct highway connectivity.",
 
-    {
-      number: "06",
-      title: "Safety & Security",
-      preview:
-        "A thoughtfully planned environment focused on peace of mind and secure living.",
-      details: [
-        "Security-conscious project planning.",
-        "Controlled access and safety considerations.",
-        "Well-planned circulation throughout the development.",
-        "A peaceful environment designed for comfortable family living.",
-      ],
-    },
-  ],
-},
-floorPlans: {
-  eyebrow: "EXPLORE THE PLANS",
-  title: "Spaces Designed Around You",
-  description:
-    "Explore thoughtfully planned farmhouse spaces created to bring together comfort, privacy and the beauty of nature.",
-
-  plans: [
-    {
-      id: "soul-prakriti-villa",
-      name: "Soul Prakriti Villa",
-      type: "Villa",
-      area: "150 Sq. Yards",
-      configuration: "3 BHK",
-      price: "On Request",
-      image: "/images/soul-prakriti/floor-plan.jpg",
-    },
-  ],
-
-  startingFrom: {
-    label: "Starting From",
-    value: "On Request",
-    description:
-      "Connect with our team for current pricing, availability and personalised assistance.",
-  },
-
-  documents: {
-    eyebrow: "PROJECT DOCUMENTS",
-    title: "Useful Downloads",
-    items: [
-      {
-        name: "Layout Plan",
-        type: "PDF",
-        href: "/documents/soul-prakriti/layout-plan.pdf",
+      address: {
+        title: "Soul Prakriti",
+        location: "Bhaguwala, Najibabad, Uttar Pradesh",
+        landmark: "Near Rajaji National Park",
       },
-      {
-        name: "Site Plan",
-        type: "PDF",
-        href: "/documents/soul-prakriti/site-plan.pdf",
-      },
-      {
-        name: "Amenities Guide",
-        type: "PDF",
-        href: "/documents/soul-prakriti/amenities-guide.pdf",
-      },
-    ],
-  },
 
-  actions: {
-    primary: "Schedule a Visit",
-    secondary: "Enquire Now",
+      mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3464.5907317224633!2d78.2507969755418!3d29.73161227508264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDQzJzUzLjgiTiA3OMKwMTUnMTIuMSJF!5e0!3m2!1sen!2sin!4v1790574575744!5m2!1sen!2sin",
+      directionsUrl: "https://maps.app.goo.gl/8GtJCvN66CdserM99",
+
+      landmarks: [
+        {
+          icon: "road",
+          title: "Rajaji National Park",
+          distance: "5 min",
+        },
+        {
+          icon: "road",
+          title: "Direct Highway",
+          distance: "0 km",
+        },
+        {
+          icon: "garden",
+          title: "Najibabad Town",
+          distance: "5km . 10km",
+        },
+        {
+          icon: "lake",
+          title: "Najibabad Hospital",
+          distance: "5km . 10km",
+        },
+      ],
+
+      availability: {
+        eyebrow: "VILLA CONFIGURATIONS",
+        title: "Choose Your Villa",
+
+        description:
+          "The supplied presentation identifies two villa plot configurations. Pricing and live availability are not included in the supplied documents.",
+
+        items: [
+          {
+            configuration: "Villa",
+            area: "150 Sq. Yards",
+            price: "On Request",
+            status: "Available",
+          },
+          {
+            configuration: "Villa",
+            area: "200 Sq. Yards",
+            price: "On Request",
+            status: "Available",
+          },
+        ],
+      },
+    },
+
+    craftedDetails: {
+      eyebrow: "CRAFTED DETAILS",
+      title: "Villa Configurations & Planning",
+
+      description:
+        "The project presentation includes dedicated villa configurations within the larger Soul Prakriti master plan.",
+
+      items: [
+        {
+          number: "01",
+          title: "150 Sq. Yard Villa",
+          preview:
+            "A dedicated 150 sq. yard villa configuration shown in the project presentation.",
+
+          details: [
+            "Villa configuration identified as 150 sq. yards.",
+            "Dedicated floor plan and architectural concept shown.",
+            "Integrated within the Soul Prakriti master plan.",
+          ],
+        },
+
+        {
+          number: "02",
+          title: "200 Sq. Yard Villa",
+          preview:
+            "A dedicated 200 sq. yard villa configuration shown in the project presentation.",
+
+          details: [
+            "Villa configuration identified as 200 sq. yards.",
+            "Dedicated floor plan and architectural concept shown.",
+            "Integrated within the Soul Prakriti master plan.",
+          ],
+        },
+
+        {
+          number: "03",
+          title: "Wellness Integration",
+          preview:
+            "The villa development forms part of a larger wellness-oriented landscape.",
+
+          details: [
+            "Meditation and yoga spaces.",
+            "Ayurveda and natural healing.",
+            "Wellness building.",
+            "Steam and sauna.",
+            "Reflexology walkway.",
+          ],
+        },
+
+        {
+          number: "04",
+          title: "Landscape & Gardens",
+          preview:
+            "The master plan incorporates multiple landscaped and nature-oriented areas.",
+
+          details: [
+            "Orchid gardens.",
+            "Tea and herbal garden.",
+            "Butterfly garden.",
+            "Miyawaki forest.",
+            "Artificial lake.",
+            "DIY planting zone.",
+          ],
+        },
+
+        {
+          number: "05",
+          title: "Sports & Recreation",
+          preview:
+            "Outdoor recreation facilities are integrated into the central part of the master plan.",
+
+          details: [
+            "Mini golf course.",
+            "Badminton court.",
+            "Box cricket.",
+            "Open gym.",
+            "Cycle track.",
+            "Horse riding trail and arena.",
+          ],
+        },
+
+        {
+          number: "06",
+          title: "Community Spaces",
+          preview:
+            "Shared spaces create opportunities for recreation, gathering and leisure.",
+
+          details: [
+            "Club house.",
+            "Restaurant.",
+            "Concept cafe.",
+            "Library.",
+            "Amphitheatre.",
+            "Bonfire and stargazing.",
+          ],
+        },
+      ],
+    },
+
+    floorPlans: {
+      eyebrow: "EXPLORE THE PLANS",
+      title: "Villa Plans",
+
+      description:
+        "Explore the villa configurations presented for Soul Prakriti.",
+
+      plans: [
+        {
+          id: "villa-150",
+          name: "Soul Prakriti Villa",
+          type: "Villa",
+          area: "150 Sq. Yards",
+          configuration: "Villa",
+          price: "On Request",
+          image: "/images/projectpageproject/gallery/villa/villa151.jpg",
+        },
+
+        {
+          id: "villa-200",
+          name: "Soul Prakriti Villa",
+          type: "Villa",
+          area: "200 Sq. Yards",
+          configuration: "Villa",
+          price: "On Request",
+          image: "/images/projectpageproject/gallery/villa/villa201.png",
+        },
+      ],
+
+      startingFrom: {
+        label: "Pricing",
+        value: "On Request",
+        description:
+          "Pricing and current availability are not mentioned in the supplied project documents.",
+      },
+
+      documents: {
+        eyebrow: "PROJECT DOCUMENTS",
+        title: "Project Plans",
+
+        items: [
+          {
+            name: "150 Yards Layout Plan",
+            type: "PDF",
+            href: "/documents/soul-prakriti/150-yards-layout.pdf",
+          },
+          {
+            name: "Site Plan",
+            type: "PDF",
+            href: "/documents/soul-prakriti/site-plan.pdf",
+          },
+          {
+            name: "Soul Prakriti Presentation",
+            type: "PDF",
+            href: "/documents/soul-prakriti/presentation.pdf",
+          },
+        ],
+      },
+
+      actions: {
+        primary: "Schedule a Visit",
+        secondary: "Enquire Now",
+      },
+    },
   },
-},
-  },
- 
 };
+
 export type ProjectSlug = keyof typeof ProjectPageProject;
 
 export type ProjectPageProject =

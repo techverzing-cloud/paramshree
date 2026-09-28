@@ -5,18 +5,57 @@
 .soul-hero {
   position: relative;
   overflow: hidden;
-  background: #fbf9f5;
+
+  min-height: clamp(600px, 48vw, 760px);
+
+  background-color: #fbf9f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   color: #35312f;
-  padding: clamp(70px, 8vw, 120px) 0 clamp(80px, 9vw, 130px);
 }
 
+/* =========================================================
+   BACKGROUND OVERLAY
+========================================================= */
+
+.soul-hero__background-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251, 249, 245, 0.97) 0%,
+      rgba(251, 249, 245, 0.90) 25%,
+      rgba(251, 249, 245, 0.60) 45%,
+      rgba(251, 249, 245, 0.18) 70%,
+      rgba(251, 249, 245, 0.03) 100%
+    );
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
 .soul-hero__container {
-  width: min(1400px, calc(100% - clamp(40px, 10vw, 160px)));
+  position: relative;
+  z-index: 2;
+
+  width: min(
+    1400px,
+    calc(100% - clamp(40px, 10vw, 160px))
+  );
+
+  min-height: clamp(600px, 48vw, 760px);
+
   margin: 0 auto;
 
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: clamp(45px, 7vw, 100px);
+  display: flex;
   align-items: center;
 }
 
@@ -26,7 +65,9 @@
 
 .soul-hero__content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+
+  width: min(600px, 50%);
   max-width: 600px;
 }
 
@@ -43,6 +84,7 @@
   gap: 14px;
 
   color: #a65f42;
+
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -60,13 +102,19 @@
 .soul-why__eyebrow-line {
   width: 42px;
   height: 1px;
+
   background: #a65f42;
 }
+
+/* =========================================================
+   TITLE
+========================================================= */
 
 .soul-hero__title {
   margin: 22px 0 8px;
 
   color: #42182f;
+
   font-family: "Playfair Display", serif;
   font-size: clamp(52px, 6vw, 92px);
   font-weight: 400;
@@ -74,23 +122,34 @@
   letter-spacing: -0.04em;
 }
 
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
 .soul-hero__subtitle {
   margin: 0 0 25px;
 
   max-width: 570px;
 
   color: #5a2946;
+
   font-family: "Playfair Display", serif;
   font-size: clamp(24px, 2.5vw, 38px);
   font-weight: 400;
   line-height: 1.15;
 }
 
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
 .soul-hero__description {
   max-width: 530px;
+
   margin: 0;
 
   color: #817a73;
+
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
   line-height: 1.85;
@@ -104,6 +163,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+
   margin-top: 35px;
 }
 
@@ -111,12 +171,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   gap: 12px;
 
   min-height: 48px;
+
   padding: 0 25px;
 
   border-radius: 999px;
+
   background: #42182f;
   color: #fff;
 
@@ -124,6 +187,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
+
   text-decoration: none;
 
   transition:
@@ -137,40 +201,14 @@
 }
 
 /* =========================================================
-   IMAGE
+   DECORATIVE VISUAL LAYER
 ========================================================= */
 
 .soul-hero__visual {
-  position: relative;
-  min-width: 0;
-}
-
-.soul-hero__image-wrapper {
-  position: relative;
-  width: 100%;
-  height: clamp(480px, 53vw, 720px);
-  overflow: hidden;
-}
-
-.soul-hero__image {
-  object-fit: cover;
-  object-position: center;
-  transition: transform 1s ease;
-}
-
-.soul-hero__image-wrapper:hover .soul-hero__image {
-  transform: scale(1.025);
-}
-
-.soul-hero__image-overlay {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    135deg,
-    rgba(66, 24, 47, 0.08),
-    transparent 55%
-  );
+  z-index: 2;
 
   pointer-events: none;
 }
@@ -181,7 +219,8 @@
 
 .soul-hero__tagline {
   position: absolute;
-  left: -45px;
+
+  right: 0;
   bottom: 55px;
 
   width: 135px;
@@ -193,17 +232,21 @@
   justify-content: center;
 
   border-radius: 50%;
+
   background: #a65f42;
   color: #fff;
 
   text-align: center;
-  z-index: 3;
+
+  z-index: 4;
 }
 
 .soul-hero__tagline span {
   font-family: "DM Sans", sans-serif;
+
   font-size: 10px;
   letter-spacing: 0.15em;
+
   text-transform: uppercase;
 }
 
@@ -211,6 +254,7 @@
   margin: 4px 0;
 
   font-family: "Playfair Display", serif;
+
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -219,6 +263,7 @@
 .soul-hero__tagline-line {
   width: 25px;
   height: 1px;
+
   margin-top: 7px;
 
   background: rgba(255, 255, 255, 0.65);
@@ -230,6 +275,7 @@
 
 .soul-hero__decorative-circle {
   position: absolute;
+
   top: -40px;
   right: -40px;
 
@@ -237,6 +283,7 @@
   height: 150px;
 
   border: 1px solid rgba(166, 95, 66, 0.35);
+
   border-radius: 50%;
 }
 
@@ -246,6 +293,7 @@
 
 .soul-hero__bottom-decoration {
   position: absolute;
+
   left: 50%;
   bottom: 28px;
 
@@ -253,14 +301,18 @@
   gap: 7px;
 
   transform: translateX(-50%);
+
+  z-index: 4;
 }
 
 .soul-hero__bottom-decoration span {
   display: block;
+
   width: 4px;
   height: 4px;
 
   border-radius: 50%;
+
   background: #a65f42;
 }
 
@@ -269,30 +321,54 @@
 ========================================================= */
 
 @media (max-width: 900px) {
+  .soul-hero {
+    min-height: 680px;
+  }
+
   .soul-hero__container {
-    grid-template-columns: 1fr;
+    min-height: 680px;
+
+    width: min(
+      1400px,
+      calc(100% - clamp(40px, 8vw, 80px))
+    );
   }
 
   .soul-hero__content {
+    width: 70%;
     max-width: 720px;
   }
 
-  .soul-hero__visual {
-    width: 100%;
+  .soul-hero__tagline {
+    right: 25px;
   }
 
-  .soul-hero__tagline {
-    left: 25px;
+  .soul-hero__background-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(251, 249, 245, 0.97) 0%,
+        rgba(251, 249, 245, 0.88) 45%,
+        rgba(251, 249, 245, 0.35) 100%
+      );
   }
 }
 
 @media (max-width: 600px) {
   .soul-hero {
-    padding-top: 55px;
+    min-height: 650px;
+
+    background-position: 65% center;
   }
 
   .soul-hero__container {
     width: calc(100% - 40px);
+    min-height: 650px;
+  }
+
+  .soul-hero__content {
+    width: 100%;
+    max-width: 100%;
   }
 
   .soul-hero__title {
@@ -305,14 +381,12 @@
 
   .soul-hero__description {
     font-size: 14px;
-  }
 
-  .soul-hero__image-wrapper {
-    height: 420px;
+    max-width: 480px;
   }
 
   .soul-hero__tagline {
-    left: 15px;
+    right: 15px;
     bottom: 20px;
 
     width: 110px;
@@ -326,5 +400,15 @@
   .soul-hero__decorative-circle {
     width: 100px;
     height: 100px;
+  }
+
+  .soul-hero__background-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(251, 249, 245, 0.96) 0%,
+        rgba(251, 249, 245, 0.82) 65%,
+        rgba(251, 249, 245, 0.35) 100%
+      );
   }
 }

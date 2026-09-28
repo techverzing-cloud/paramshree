@@ -1,10 +1,10 @@
 "use client";
 
 import {
+  Home,
   Leaf,
-  Mountain,
-  ShieldCheck,
-  Sprout,
+  Heart,
+  Activity,
 } from "lucide-react";
 
 import type { ProjectPageProject } from "../../../data/ProjectPageProject";
@@ -17,9 +17,9 @@ type WhyThisProjectProps = {
 
 const featureIconMap = {
   leaf: Leaf,
-  shield: ShieldCheck,
-  mountain: Mountain,
-  sprout: Sprout,
+  home : Home,
+  heart: Heart,
+  activity: Activity,
 };
 
 export default function WhyThisProject({
