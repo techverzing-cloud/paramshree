@@ -99,10 +99,10 @@ export const projectsPageData = {
 
 {
   id: 1,
-  name: "Soul Prakriti",
+  name: "Soul Prakriti Farmhouse",
   type: "Farmhouses",
   badge: "Farmhouse",
-  location: "Rishikesh, Uttarakhand",
+  location: "Bhaguwala, Najibabad, Uttar Pradesh",
   area: "1 – 3 Acres",
   category: "Premium Farmhouse",
   view: "Nature Facing",
@@ -110,15 +110,15 @@ export const projectsPageData = {
   priceSuffix: "onwards",
   priceCr: 1.25,
   developer: "Soul Agro Farms Pvt. Ltd.",
-  image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
-  href: "/soulprakritipage",
+  image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+  href: "/projects/soul-prakriti-farmhouse",
 },
 {
   id: 2,
-  name: "Soul Prakriti",
+  name: "Soul Prakriti Villa",
   type: "Villas",
   badge: "Villa",
-  location: "Rishikesh, Uttarakhand",
+  location: " Bhaguwala, Najibabad, Uttar Pradesh",
   area: "2.5 Cr onwards",
   category: "Luxury Villas",
   view: "River View",
@@ -127,7 +127,7 @@ export const projectsPageData = {
   priceCr: 2.5,
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/home/featuredimages/soulprakritivilla.jpeg",
-  href: "/soulprakritipage",
+  href: "/projects/soul-prakriti-villa",
 },
   ],
   whyInvest: {
@@ -178,6 +178,6 @@ ctaBanner: {
     href: "#projects",
   },
 
-  image: "/images/projects/projects-cta1.jpg",
+  image: "/images/projects/projects-cta.jpg",
 },
 };

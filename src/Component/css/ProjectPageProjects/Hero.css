@@ -1,0 +1,414 @@
+/* =========================================================
+   SOUL HERO
+========================================================= */
+
+.soul-hero {
+  position: relative;
+  overflow: hidden;
+
+  min-height: clamp(600px, 48vw, 760px);
+
+  background-color: #fbf9f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: #35312f;
+}
+
+/* =========================================================
+   BACKGROUND OVERLAY
+========================================================= */
+
+.soul-hero__background-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251, 249, 245, 0.97) 0%,
+      rgba(251, 249, 245, 0.90) 25%,
+      rgba(251, 249, 245, 0.60) 45%,
+      rgba(251, 249, 245, 0.18) 70%,
+      rgba(251, 249, 245, 0.03) 100%
+    );
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.soul-hero__container {
+  position: relative;
+  z-index: 2;
+
+  width: min(
+    1400px,
+    calc(100% - clamp(40px, 10vw, 160px))
+  );
+
+  min-height: clamp(600px, 48vw, 760px);
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.soul-hero__content {
+  position: relative;
+  z-index: 3;
+
+  width: min(600px, 50%);
+  max-width: 600px;
+}
+
+.soul-hero__eyebrow,
+.soul-about__eyebrow,
+.soul-amenities__eyebrow,
+.soul-gallery__eyebrow,
+.soul-crafted__eyebrow,
+.soul-location__eyebrow,
+.soul-floorplans__eyebrow,
+.soul-why__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #a65f42;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.soul-hero__eyebrow-line,
+.soul-about__eyebrow-line,
+.soul-amenities__eyebrow-line,
+.soul-gallery__eyebrow-line,
+.soul-crafted__eyebrow-line,
+.soul-location__eyebrow-line,
+.soul-floorplans__eyebrow-line,
+.soul-why__eyebrow-line {
+  width: 42px;
+  height: 1px;
+
+  background: #a65f42;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.soul-hero__title {
+  margin: 22px 0 8px;
+
+  color: #42182f;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(52px, 6vw, 92px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.soul-hero__subtitle {
+  margin: 0 0 25px;
+
+  max-width: 570px;
+
+  color: #5a2946;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(24px, 2.5vw, 38px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.soul-hero__description {
+  max-width: 530px;
+
+  margin: 0;
+
+  color: #817a73;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.soul-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.soul-hero__primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 48px;
+
+  padding: 0 25px;
+
+  border-radius: 999px;
+
+  background: #42182f;
+  color: #fff;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.soul-hero__primary-button:hover {
+  background: #5a2946;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   DECORATIVE VISUAL LAYER
+========================================================= */
+
+.soul-hero__visual {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.soul-hero__tagline {
+  position: absolute;
+
+  right: 0;
+  bottom: 55px;
+
+  width: 135px;
+  height: 135px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #a65f42;
+  color: #fff;
+
+  text-align: center;
+
+  z-index: 4;
+}
+
+.soul-hero__tagline span {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 10px;
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+.soul-hero__tagline strong {
+  margin: 4px 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.soul-hero__tagline-line {
+  width: 25px;
+  height: 1px;
+
+  margin-top: 7px;
+
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================================================
+   DECORATIVE CIRCLE
+========================================================= */
+
+.soul-hero__decorative-circle {
+  position: absolute;
+
+  top: -40px;
+  right: -40px;
+
+  width: 150px;
+  height: 150px;
+
+  border: 1px solid rgba(166, 95, 66, 0.35);
+
+  border-radius: 50%;
+}
+
+/* =========================================================
+   BOTTOM DECORATION
+========================================================= */
+
+.soul-hero__bottom-decoration {
+  position: absolute;
+
+  left: 50%;
+  bottom: 28px;
+
+  display: flex;
+  gap: 7px;
+
+  transform: translateX(-50%);
+
+  z-index: 4;
+}
+
+.soul-hero__bottom-decoration span {
+  display: block;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #a65f42;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .soul-hero {
+    min-height: 680px;
+  }
+
+  .soul-hero__container {
+    min-height: 680px;
+
+    width: min(
+      1400px,
+      calc(100% - clamp(40px, 8vw, 80px))
+    );
+  }
+
+  .soul-hero__content {
+    width: 70%;
+    max-width: 720px;
+  }
+
+  .soul-hero__tagline {
+    right: 25px;
+  }
+
+  .soul-hero__background-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(251, 249, 245, 0.97) 0%,
+        rgba(251, 249, 245, 0.88) 45%,
+        rgba(251, 249, 245, 0.35) 100%
+      );
+  }
+}
+
+@media (max-width: 600px) {
+  .soul-hero {
+    min-height: 650px;
+
+    background-position: 65% center;
+  }
+
+  .soul-hero__container {
+    width: calc(100% - 40px);
+    min-height: 650px;
+  }
+
+  .soul-hero__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .soul-hero__title {
+    font-size: 52px;
+  }
+
+  .soul-hero__subtitle {
+    font-size: 25px;
+  }
+
+  .soul-hero__description {
+    font-size: 14px;
+
+    max-width: 480px;
+  }
+
+  .soul-hero__tagline {
+    right: 15px;
+    bottom: 20px;
+
+    width: 110px;
+    height: 110px;
+  }
+
+  .soul-hero__tagline strong {
+    font-size: 20px;
+  }
+
+  .soul-hero__decorative-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .soul-hero__background-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(251, 249, 245, 0.96) 0%,
+        rgba(251, 249, 245, 0.82) 65%,
+        rgba(251, 249, 245, 0.35) 100%
+      );
+  }
+}

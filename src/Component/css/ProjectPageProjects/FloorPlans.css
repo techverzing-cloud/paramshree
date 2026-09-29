@@ -1,0 +1,420 @@
+/* =========================================================
+   FLOOR PLANS
+========================================================= */
+
+.soul-floorplans {
+  background: #fbf9f5;
+  color: #35312f;
+  padding: clamp(75px, 9vw, 120px) 0;
+}
+
+.soul-floorplans__container {
+  width: min(1200px, calc(100% - clamp(40px, 10vw, 160px)));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.soul-floorplans__header {
+  max-width: 760px;
+  margin-bottom: 50px;
+}
+
+.soul-floorplans__title {
+  margin: 22px 0 18px;
+
+  color: #42182f;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(38px, 4.5vw, 62px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.soul-floorplans__description {
+  margin: 0;
+
+  color: #817a73;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   PLANS
+========================================================= */
+
+.soul-floorplans__plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.soul-floorplans__plan {
+  overflow: hidden;
+
+  border: 1px solid rgba(66, 24, 47, 0.11);
+  background: #f5f1e9;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.soul-floorplans__plan:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(53, 49, 47, 0.07);
+}
+
+.soul-floorplans__image-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 360px;
+
+  overflow: hidden;
+}
+
+.soul-floorplans__image {
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.soul-floorplans__plan:hover .soul-floorplans__image {
+  transform: scale(1.03);
+}
+
+.soul-floorplans__plan-content {
+  padding: 25px;
+}
+
+.soul-floorplans__plan-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.soul-floorplans__plan-type {
+  color: #a65f42;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.soul-floorplans__plan-header h3 {
+  margin: 7px 0 0;
+
+  color: #42182f;
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+/* =========================================================
+   INFO
+========================================================= */
+
+.soul-floorplans__plan-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  margin-top: 25px;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(66, 24, 47, 0.12);
+}
+
+.soul-floorplans__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding-right: 15px;
+}
+
+.soul-floorplans__info-item + .soul-floorplans__info-item {
+  padding-left: 15px;
+  border-left: 1px solid rgba(66, 24, 47, 0.1);
+}
+
+.soul-floorplans__info-item span {
+  color: #817a73;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.soul-floorplans__info-item strong {
+  color: #42182f;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   STARTING
+========================================================= */
+
+.soul-floorplans__starting {
+  margin-top: 45px;
+  padding: 32px 35px;
+
+  border: 1px solid rgba(166, 95, 66, 0.2);
+  background: #ede6da;
+}
+
+.soul-floorplans__starting > div {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.soul-floorplans__starting span {
+  color: #817a73;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.soul-floorplans__starting strong {
+  color: #42182f;
+
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.soul-floorplans__starting p {
+  max-width: 420px;
+  margin: 0 0 0 auto;
+
+  color: #817a73;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   DOCUMENTS
+========================================================= */
+
+.soul-floorplans__documents {
+  margin-top: 70px;
+}
+
+.soul-floorplans__documents-header {
+  margin-bottom: 28px;
+}
+
+.soul-floorplans__documents-header h3 {
+  margin: 18px 0 0;
+
+  color: #42182f;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.soul-floorplans__documents-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.soul-floorplans__document {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(66, 24, 47, 0.11);
+
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.soul-floorplans__document:hover {
+  border-color: rgba(166, 95, 66, 0.4);
+  transform: translateY(-2px);
+}
+
+.soul-floorplans__document-icon {
+  flex: 0 0 auto;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ede6da;
+  color: #a65f42;
+}
+
+.soul-floorplans__document-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  flex: 1;
+}
+
+.soul-floorplans__document-content strong {
+  color: #42182f;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+}
+
+.soul-floorplans__document-content span {
+  color: #817a73;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.soul-floorplans__actions {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+
+  margin-top: 45px;
+}
+
+.soul-floorplans__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 47px;
+  padding: 0 23px;
+
+  border-radius: 999px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.soul-floorplans__button:hover {
+  transform: translateY(-2px);
+}
+
+.soul-floorplans__button--primary {
+  border: 1px solid #42182f;
+  background: #42182f;
+  color: #fff;
+}
+
+.soul-floorplans__button--primary:hover {
+  background: #5a2946;
+}
+
+.soul-floorplans__button--secondary {
+  border: 1px solid #42182f;
+  background: transparent;
+  color: #42182f;
+}
+
+.soul-floorplans__button--secondary:hover {
+  background: #42182f;
+  color: #fff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .soul-floorplans__plans {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-floorplans__documents-list {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-floorplans__starting > div {
+    flex-wrap: wrap;
+  }
+
+  .soul-floorplans__starting p {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .soul-floorplans__container {
+    width: calc(100% - 40px);
+  }
+
+  .soul-floorplans__title {
+    font-size: 40px;
+  }
+
+  .soul-floorplans__image-wrapper {
+    height: 280px;
+  }
+
+  .soul-floorplans__plan-info {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .soul-floorplans__info-item {
+    padding: 0 !important;
+  }
+
+  .soul-floorplans__info-item + .soul-floorplans__info-item {
+    border-left: 0;
+  }
+
+  .soul-floorplans__starting {
+    padding: 25px 20px;
+  }
+
+  .soul-floorplans__starting > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .soul-floorplans__actions {
+    flex-direction: column;
+  }
+
+  .soul-floorplans__button {
+    width: 100%;
+  }
+}

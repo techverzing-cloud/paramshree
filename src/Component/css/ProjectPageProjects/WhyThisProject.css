@@ -1,0 +1,188 @@
+/* =========================================================
+   WHY THIS PROJECT
+========================================================= */
+
+.soul-why {
+  background: var(--color-plum-light);
+  color: #fff;
+
+  padding: clamp(75px, 9vw, 120px) 0;
+}
+
+.soul-why__container {
+  width: min(1400px, calc(100% - clamp(40px, 10vw, 160px)));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(50px, 8vw, 110px);
+  align-items: center;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.soul-why__content {
+  max-width: 560px;
+}
+
+.soul-why__eyebrow {
+  color: #d7a991;
+}
+
+.soul-why__eyebrow-line {
+  background: #d7a991;
+}
+
+.soul-why__title {
+  margin: 22px 0 22px;
+
+  color: #fff;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(40px, 4.5vw, 62px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.soul-why__description {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.soul-why__button {
+  margin-top: 32px;
+
+  min-height: 46px;
+  padding: 0 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+
+  background: transparent;
+  color: #fff;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.soul-why__button:hover {
+  border-color: #a65f42;
+  background: #a65f42;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.soul-why__features {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.soul-why__feature {
+  display: grid;
+  grid-template-columns: 38px 50px 1fr;
+  gap: 20px;
+  align-items: center;
+
+  min-height: 120px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.soul-why__feature-number {
+  align-self: flex-start;
+  padding-top: 25px;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.soul-why__feature-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  color: #d7a991;
+}
+
+.soul-why__feature-content h3 {
+  margin: 0 0 6px;
+
+  color: #fff;
+
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.soul-why__feature-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .soul-why__container {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-why__content {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .soul-why__container {
+    width: calc(100% - 40px);
+  }
+
+  .soul-why__title {
+    font-size: 40px;
+  }
+
+  .soul-why__feature {
+    grid-template-columns: 28px 42px 1fr;
+    gap: 12px;
+  }
+
+  .soul-why__feature-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .soul-why__feature-content h3 {
+    font-size: 18px;
+  }
+}
