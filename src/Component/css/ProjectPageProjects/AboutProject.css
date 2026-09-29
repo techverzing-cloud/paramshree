@@ -161,7 +161,7 @@
 /* IMAGE 1 */
 
 .soul-about__stack-image--1 {
-  width: 280px;
+  width: 480px;
   height: 360px;
   left: 10px;
   top: 90px;
@@ -172,7 +172,7 @@
 /* IMAGE 2 */
 
 .soul-about__stack-image--2 {
-  width: 300px;
+   width: 480px;
   height: 390px;
   left: 125px;
   top: 40px;
@@ -183,7 +183,7 @@
 /* IMAGE 3 */
 
 .soul-about__stack-image--3 {
-  width: 280px;
+   width: 480px;
   height: 360px;
   left: 275px;
   top: 95px;
@@ -194,7 +194,7 @@
 /* HOVER */
 
 .soul-about__stack-image:hover {
-  width: 360px;
+ width: 480px;
   height: 450px;
   left: 100px;
   top: 25px;
