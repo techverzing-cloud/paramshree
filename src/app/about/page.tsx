@@ -6,6 +6,9 @@ import WhyChooseUs from "@/src/Component/section/About/WhyChooseUs";
 import Partnership from "@/src/Component/section/About/Partnership";
 import OurCommitment from "@/src/Component/section/About/OurCommitment";
 //added nothing
+//nothing to commit
+
+//nothing to commit
 export default function AboutPage() {
   return (
     <main>
