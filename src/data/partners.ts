@@ -82,12 +82,12 @@ export const partnersPageData = {
       href: "/soulagrofarms",
     },
 
-    logo: "/images/partners/soul-agro-logo.png",
+    logo: "/images/partners/soul_logo.svg",
 
     developedBy: {
       label: "DEVELOPED BY",
       name: "ETH Infra Pvt. Ltd.",
-      logo: "/images/partners/eth-infra-logo.png",
+      logo: "/images/partners/eth.png",
     },
 
     benefits: [

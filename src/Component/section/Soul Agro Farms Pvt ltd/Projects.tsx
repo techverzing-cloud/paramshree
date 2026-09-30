@@ -51,7 +51,7 @@ export default function Projects() {
             >
 
               <Link
-                href={project.link}
+                href={project.href}
                 className="soul-project-card__image"
               >
                 <Image
@@ -87,7 +87,7 @@ export default function Projects() {
                 <p>{project.description}</p>
 
                 <Link
-                  href={project.link}
+                  href={project.href}
                   className="soul-project-card__link"
                 >
                   <span>Explore Project</span>

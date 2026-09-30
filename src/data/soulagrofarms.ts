@@ -154,6 +154,8 @@ location: {
   title: "Perfectly Placed,\nNaturally Connected",
   description:
     "A thoughtfully chosen location that brings you closer to nature while keeping the city, essential conveniences and everyday connections within easy reach.",
+    iframeUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.00621794909!2d72.86143957466594!3d19.107383150987623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83804f1db41%3A0x2d7ab263dd9e9b48!2sSilver%20Astra!5e0!3m2!1sen!2sin!4v1790751739045!5m2!1sen!2sin",
 
   highlights: [
     {
@@ -196,7 +198,7 @@ location: {
   ],
 
   buttonText: "Explore Location",
-  buttonLink: "#location",
+  buttonLink: "https://maps.app.goo.gl/m5X6hRftA3pt6VVA6",
 },
 amenities: {
   eyebrow: "THE EXPERIENCE",
@@ -247,23 +249,23 @@ projects: {
   items: [
     {
       number: "01",
-      name: "Soul Prakriti",
-      location: "Gurugram, Haryana",
+      name: "Soul Prakriti Farmhouse",
+      location: "Bhaguwala, Najibabad, Uttar Pradesh",
       type: "Farmhouse Community",
       description:
         "A serene countryside destination designed around open spaces, greenery and a relaxed lifestyle.",
-      image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
-      link: "/soulprakritipage",
+      image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+      href: "/projects/soul-prakriti-farmhouse",
     },
     {
       number: "02",
-      name: "Soul Prakriti",
-      location: "Delhi NCR",
+      name: "Soul Prakriti Villa",
+      location: "Bhaguwala, Najibabad, Uttar Pradesh",
       type: "Luxury Villa",
       description:
         "Private nature-inspired residences that bring together modern comfort and peaceful surroundings.",
       image: "/images/home/featuredimages/soulprakritivilla.jpeg",
-      link: "/projects/soul-greens",
+  href: "/projects/soul-prakriti-villa",
     },
   ],
 

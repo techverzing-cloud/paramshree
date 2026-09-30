@@ -36,12 +36,12 @@ export const projectsPageData = {
       label: "Location",
       options: [
         "All Locations",
-        "Rishikesh",
-        "Dehradun",
-        "Jim Corbett",
-        "Alwar",
-        "Nainital",
-        "Mussoorie",
+        "Delhi",
+        "Uttar Pradesh",
+        "Haryana",
+        "Uttarakhand",
+        "Himachal Pradesh",
+        "Punjab",
       ],
     },
 
@@ -115,7 +115,7 @@ export const projectsPageData = {
 },
 {
   id: 2,
-  name: "Soul Prakriti Villa",
+  name: "Soul Prakriti Farmhouse",
   type: "Villas",
   badge: "Villa",
   location: " Bhaguwala, Najibabad, Uttar Pradesh",

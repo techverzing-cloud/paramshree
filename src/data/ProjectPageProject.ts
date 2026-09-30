@@ -993,9 +993,9 @@ export const ProjectPageProject = {
 
         items: [
           {
-            name: " 600 Sq. Yards Layout Plan",
+            name: " 150 Sq. Yards Layout Plan",
             type: "PDF",
-            href: "/documents/soul-prakriti/150-yards-layout.pdf",
+            href: "/documents/soul-prakriti/ETH_SOUL_PRAKRITI_150_YARDS_LAYOUT_UPDATED_12-06-26.pdf",
           },
           {
             name: "Site Plan",
@@ -1005,7 +1005,7 @@ export const ProjectPageProject = {
           {
             name: "Soul Prakriti Presentation",
             type: "PDF",
-            href: "/documents/soul-prakriti/presentation.pdf",
+            href: "/documents/soul-prakriti/Soul-Prakriti.pdf",
           },
         ],
       },
@@ -1015,6 +1015,22 @@ export const ProjectPageProject = {
         secondary: "Enquire Now",
       },
     },
+     videos: [
+  {
+    id: "video-01",
+    title: "Soul Prakriti",
+    description: "Experience the beauty and lifestyle of Soul Prakriti.",
+    src: "/documents/soulprakriti.mp4",
+    poster: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+  },
+  {
+    id: "video-02",
+    title: "Soul Prakriti Location",
+    description: "This hepls you to find the location of you dream villa",
+    src: "/documents/soulprakritilocation.mp4",
+    poster: "/images/projectpageproject/location.jpg",
+  },
+  ],
   },
 
   "soul-prakriti-villa": {
@@ -1056,7 +1072,11 @@ export const ProjectPageProject = {
           alt: "Soul Prakriti villa concept",
         },
         {
-          src: "/images/projectpageproject/gallery/villa/villa151.jpg",
+          src: "/images/projectpageproject/gallery/villa/villa2.jpeg",
+          alt: "Soul Prakriti landscaped development",
+        },
+        {
+          src: "/images/projectpageproject/gallery/villa/villa1.jpeg",
           alt: "Soul Prakriti landscaped development",
         },
       ],
@@ -1842,6 +1862,22 @@ export const ProjectPageProject = {
           categoryLabel: "FLOOR PLAN 3bhk",
           title: "FLOOR PLAN 3bhk",
         },
+        {
+          id: 59,
+          src: "/images/projectpageproject/gallery/villa/villa1.jpeg",
+          alt: "FLOOR PLAN 1bhk",
+          category: "villa150",
+          categoryLabel: "Soul Prakriti",
+          title: "Soul Prakriti",
+        },
+        {
+          id: 60,
+          src: "/images/projectpageproject/gallery/villa/villa2.jpeg",
+          alt: "FLOOR PLAN 1bhk",
+          category: "villa150",
+          categoryLabel: "Soul Prakriti",
+          title: "Soul Prakriti",
+        },
         
         
       ],
@@ -2051,9 +2087,9 @@ export const ProjectPageProject = {
 
         items: [
           {
-            name: "150 Yards Layout Plan",
+            name: " 150 Sq. Yards Layout Plan",
             type: "PDF",
-            href: "/documents/soul-prakriti/150-yards-layout.pdf",
+            href: "/documents/soul-prakriti/ETH_SOUL_PRAKRITI_150_YARDS_LAYOUT_UPDATED_12-06-26.pdf",
           },
           {
             name: "Site Plan",
@@ -2063,7 +2099,7 @@ export const ProjectPageProject = {
           {
             name: "Soul Prakriti Presentation",
             type: "PDF",
-            href: "/documents/soul-prakriti/presentation.pdf",
+            href: "/documents/soul-prakriti/Soul-Prakriti.pdf",
           },
         ],
       },
@@ -2073,7 +2109,26 @@ export const ProjectPageProject = {
         secondary: "Enquire Now",
       },
     },
+   
+     videos: [
+  {
+    id: "video-01",
+    title: "Soul Prakriti",
+    description: "Experience the beauty and lifestyle of Soul Prakriti.",
+    src: "/documents/soulprakriti.mp4",
+    poster: "/images/projectpageproject/gallery/villa/villa1.jpeg",
   },
+  {
+    id: "video-02",
+    title: "Soul Prakriti Location",
+    description: "This hepls you to find the location of you dream villa",
+    src: "/documents/soulprakritilocation.mp4",
+    poster: "/images/projectpageproject/location.jpg",
+  },
+  ],
+  },
+  
+
 };
 
 export type ProjectSlug = keyof typeof ProjectPageProject;
