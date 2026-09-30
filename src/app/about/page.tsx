@@ -17,4 +17,5 @@ export default function AboutPage() {
       <OurCommitment/>
     </main>
   );
+  //nothing to commit
 }
