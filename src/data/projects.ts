@@ -9,7 +9,7 @@ export const projectsPageData = {
 
     cta: {
       label: "Explore All Projects",
-      href: "#projects",
+      href: "#about",
     },
 
     image: "/images/projects/projects-hero.jpg",
@@ -115,7 +115,7 @@ export const projectsPageData = {
 },
 {
   id: 2,
-  name: "Soul Prakriti Farmhouse",
+  name: "Soul Prakriti Villa",
   type: "Villas",
   badge: "Villa",
   location: " Bhaguwala, Najibabad, Uttar Pradesh",

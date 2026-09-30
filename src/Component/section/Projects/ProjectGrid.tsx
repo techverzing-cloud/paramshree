@@ -24,7 +24,7 @@ export default function ProjectGrid({
   listings,
 }: ProjectGridProps) {
   return (
-    <section className="project-grid">
+    <section className="project-grid" id="about">
       <div className="project-grid__container">
         {listings.length > 0 ? (
           <div className="project-grid__list">
