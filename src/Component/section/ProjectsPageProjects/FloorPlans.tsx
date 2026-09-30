@@ -14,7 +14,7 @@ import {
 import type { ProjectPageProject } from "../../../data/ProjectPageProject";
 import InquiryModal from "../Contact/InquiryModal";
 
-import "@/src/component/css/ProjectPageProjects/FloorPlans.css";
+import "../../css/ProjectPageProjects/FloorPlans.css";
 
 type FloorPlansProps = {
   project: ProjectPageProject;

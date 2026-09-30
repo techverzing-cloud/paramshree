@@ -6,7 +6,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 import type { ProjectPageProject } from "../../../data/ProjectPageProject";
 
-import "@/src/component/css/ProjectPageProjects/Gallery.css";
+import "../../css/ProjectPageProjects/Gallery.css";
 
 type GalleryProps = {
   project: ProjectPageProject;
