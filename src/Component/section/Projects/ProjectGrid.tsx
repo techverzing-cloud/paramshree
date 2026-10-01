@@ -126,7 +126,7 @@ export default function ProjectGrid({
                     ) : (
                       <div className="project-card__price">
                         <span className="project-card__price-placeholder">
-                          Pricing on request
+                          Pricing On Request Pricing
                         </span>
                       </div>
                     )}

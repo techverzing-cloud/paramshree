@@ -845,7 +845,7 @@ export const ProjectPageProject = {
           {
             configuration: "Luxury FarmHouse",
             area: "600 Sq. Yards",
-            price: "On Request",
+            price: "On Request Pricing",
             status: "Available",
           },
           
@@ -975,16 +975,16 @@ export const ProjectPageProject = {
           type: "Farmhouse",
           area: " 600 Sq. Yards",
           configuration: "2 BHK",
-          price: "On Request",
+          price: "On Request Pricing",
           image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
         }, 
       ],
 
       startingFrom: {
         label: "Pricing",
-        value: "On Request",
+        value: "On Request Pricing",
         description:
-          "On Request",
+          "On Request Pricing",
       },
 
       documents: {
@@ -1933,13 +1933,13 @@ export const ProjectPageProject = {
           {
             configuration: "Villa",
             area: "150 Sq. Yards",
-            price: "On Request",
+            price: "On Request Pricing",
             status: "Available",
           },
           {
             configuration: "Villa",
             area: "200 Sq. Yards",
-            price: "On Request",
+            price: "On Request Pricing",
             status: "Available",
           },
         ],
@@ -2059,7 +2059,7 @@ export const ProjectPageProject = {
           type: "Villa",
           area: "150 Sq. Yards",
           configuration: "Villa",
-          price: "On Request",
+          price: "On Request Pricing",
           image: "/images/projectpageproject/gallery/villa/villa151.jpg",
         },
 
@@ -2069,14 +2069,14 @@ export const ProjectPageProject = {
           type: "Villa",
           area: "200 Sq. Yards",
           configuration: "Villa",
-          price: "On Request",
+          price: "On Request Pricing",
           image: "/images/projectpageproject/gallery/villa/villa201.png",
         },
       ],
 
       startingFrom: {
         label: "Pricing",
-        value: "On Request",
+        value: "On Request Pricing",
         description:
           "Pricing and current availability are not mentioned in the supplied project documents.",
       },

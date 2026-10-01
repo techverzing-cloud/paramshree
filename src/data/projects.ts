@@ -106,9 +106,9 @@ export const projectsPageData = {
   area: "600 Sq Yards",
   category: "Premium Farmhouse",
   view: "Nature Facing",
-  price: "On Request",
-  priceSuffix: "onwards",
-  priceCr: 1.25,
+  price: "On Request Pricing",
+  priceSuffix: null,
+  priceCr: null,
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
   href: "/projects/soul-prakriti-farmhouse",
@@ -122,14 +122,14 @@ export const projectsPageData = {
   area: "150-200 Sq Yards",
   category: "Luxury Villas",
   view: "River View",
-  price: null,
+  price: "On Request Pricing",
   priceSuffix: null,
-  priceCr: 2.5,
+  priceCr: null,
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/home/featuredimages/soulprakritivilla.jpeg",
   href: "/projects/soul-prakriti-villa",
 },
-  ],
+  ],                                                                                                                                                                                                                                                                                                                                                                                                           
   whyInvest: {
   eyebrow: "WHY INVEST WITH US",
 
@@ -178,6 +178,6 @@ ctaBanner: {
     href: "#projects",
   },
 
-  image: "/images/projects/projects-cta.jpg",
+  image: "/images/projects/projects-ct.jpg",
 },
 };

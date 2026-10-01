@@ -66,7 +66,7 @@ export default function ProjectPage() {
     let matchesPrice = true;
 
     if (selectedFilters.priceRange !== filters.priceRange.options[0]) {
-      // "On Request" properties don't belong to a specific price range
+      // "On Request Pricing" properties don't belong to a specific price range
       if (typeof price !== "number") {
         matchesPrice = false;
       } else {
