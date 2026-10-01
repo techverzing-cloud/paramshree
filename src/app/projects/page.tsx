@@ -45,6 +45,7 @@ export default function ProjectPage() {
   };
 
   
+  
   const filteredListings = useMemo(() => {
   return listings.filter((project) => {
     // Property Type
