@@ -43,12 +43,12 @@ export default function FAQ() {
 
             {/* Decorative Illustration */}
 
-            <div className="contact-faq__illustration">
+            {/* <div className="contact-faq__illustration">
               <img
                 src={data.illustration}
                 alt={data.illustrationAlt}
               />
-            </div>
+            </div> */}
           </div>
 
           {/* =====================================

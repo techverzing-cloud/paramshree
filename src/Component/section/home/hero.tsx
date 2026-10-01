@@ -38,7 +38,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <Link
-              href="#projects"
+              href="/projects"
               className="button button-primary hero-primary-button"
             >
               Explore Projects

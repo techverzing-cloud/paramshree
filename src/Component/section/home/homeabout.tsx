@@ -98,7 +98,7 @@ export default function About() {
 
             <div className="about-action about-reveal">
               <Link
-                href="#projects"
+                href="/projects"
                 className="button button-outline about-button"
               >
                 Explore Properties

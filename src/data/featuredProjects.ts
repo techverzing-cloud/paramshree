@@ -11,22 +11,22 @@ export interface FeaturedProject {
 export const featuredProjects: FeaturedProject[] = [
   {
     id: 1,
-    name: "Soul Prakriti",
-    category: "Villa Project",
+    name: "Soul Prakriti Farmhouse",
+    category: "Farmhouse Project",
     description:
       "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
-    image: "/images/home/featuredimages/soulprakritivilla.jpeg",
-    href: "/soulprakritipage",
+    image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
+    href: "/projects/soul-prakriti-farmhouse",
   },
 
   {
     id: 2,
-    name: "Soul Prakriti",
-    category: "Farmhouse Project",
+    name: "Soul Prakriti Villa",
+    category: "Villa Project",
     description:
       "Explore Soul Prakriti, a project by Soul Agro Farms Pvt. Ltd.",
-    image: "/images/home/featuredimages/soulprakritifarmhouse.jpeg",
-    href: "https://soulprakriti.com",
+    image: "/images/home/featuredimages/soulprakritivilla.jpeg",
+    href: "/projects/soul-prakriti-villa",
   },
 
   // {

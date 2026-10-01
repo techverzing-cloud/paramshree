@@ -44,57 +44,64 @@ export default function ProjectPage() {
     setSelectedFilters(getDefaultFilters());
   };
 
+  
   const filteredListings = useMemo(() => {
-    return listings.filter((project) => {
-      const matchesPropertyType =
-        selectedFilters.propertyType ===
-          filters.propertyType.options[0] ||
-        project.type === selectedFilters.propertyType;
+  return listings.filter((project) => {
+    // Property Type
+    const matchesPropertyType =
+      selectedFilters.propertyType === filters.propertyType.options[0] ||
+      project.type === selectedFilters.propertyType;
 
-      const matchesLocation =
-        selectedFilters.location ===
-          filters.location.options[0] ||
-        project.location
-          .toLowerCase()
-          .split(",")[0]
-          .trim() === selectedFilters.location.toLowerCase();
+    // Location
+    const matchesLocation =
+  selectedFilters.location === filters.location.options[0] ||
+  project.location
+    .toLowerCase()
+    .includes(selectedFilters.location.toLowerCase());
 
-      const price = project.priceCr;
+    // Price
+    const price = project.priceCr;
 
-      let matchesPrice = true;
+    let matchesPrice = true;
 
-      switch (selectedFilters.priceRange) {
-        case "Under ₹1 Cr":
-          matchesPrice = price < 1;
-          break;
+    if (selectedFilters.priceRange !== filters.priceRange.options[0]) {
+      // "On Request" properties don't belong to a specific price range
+      if (typeof price !== "number") {
+        matchesPrice = false;
+      } else {
+        switch (selectedFilters.priceRange) {
+          case "Under ₹1 Cr":
+            matchesPrice = price < 1;
+            break;
 
-        case "₹1 Cr – ₹2 Cr":
-          matchesPrice = price >= 1 && price < 2;
-          break;
+          case "₹1 Cr – ₹2 Cr":
+            matchesPrice = price >= 1 && price < 2;
+            break;
 
-        case "₹2 Cr – ₹3 Cr":
-          matchesPrice = price >= 2 && price <= 3;
-          break;
+          case "₹2 Cr – ₹3 Cr":
+            matchesPrice = price >= 2 && price <= 3;
+            break;
 
-        case "Above ₹3 Cr":
-          matchesPrice = price > 3;
-          break;
+          case "Above ₹3 Cr":
+            matchesPrice = price > 3;
+            break;
+        }
       }
+    }
 
-      const matchesDeveloper =
-        selectedFilters.developer ===
-          filters.developer.options[0] ||
-        project.developer === selectedFilters.developer;
+    // Developer
+    const matchesDeveloper =
+      selectedFilters.developer === filters.developer.options[0] ||
+      project.developer === selectedFilters.developer;
 
-      return (
-        matchesPropertyType &&
-        matchesLocation &&
-        matchesPrice &&
-        matchesDeveloper
-      );
-    });
-  }, [listings, filters, selectedFilters]);
-
+    return (
+      matchesPropertyType &&
+      matchesLocation &&
+      matchesPrice &&
+      matchesDeveloper
+    );
+  });
+}, [listings, filters, selectedFilters]);
   return (
     <main>
       <ProjectsHero />

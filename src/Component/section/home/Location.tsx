@@ -175,7 +175,7 @@ export default function Location() {
             the right place.
           </p>
 
-          <Link href="#contact" aria-label="Contact ParamShree">
+          <Link href="/contact" aria-label="">
             <ArrowUpRight size={19} />
           </Link>
 
