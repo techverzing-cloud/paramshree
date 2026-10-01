@@ -34,7 +34,7 @@ export const partnersPageData = {
 
     imageSecondary: "/images/partners/paramshree-project-2.jpg",
 
-    logo: "/images/partners/paramshree-logo.png",
+    logo: "/images/logo.png",
 
     benefits: [
       {

@@ -13,7 +13,7 @@ export const ProjectPageProject = {
         "Soul Prakriti is envisioned as a 30-acre holistic landscape that brings together modern living, Vedic wellness, nature and thoughtfully planned recreational spaces.",
       primaryButton: "Enquire Now",
       secondaryButton: "View Project",
-      heroImage: "/images/projectpageproject/hero.jpg",
+      heroImage: "/images/projectpageproject/hero1.png",
       imageAlt: "Soul Prakriti farmhouse and landscaped surroundings",
       tagline: {
         small: "Nature",
@@ -1045,7 +1045,7 @@ export const ProjectPageProject = {
         "The Soul Prakriti project presentation includes villa configurations of 150 sq. yards and 200 sq. yards within its larger 30-acre master plan.",
       primaryButton: "Enquire Now",
       secondaryButton: "View Floor Plans",
-      heroImage: "/images/projectpageproject/hero.jpg",
+      heroImage: "/images/projectpageproject/hero1.png",
       imageAlt: "Soul Prakriti villa concept",
       tagline: {
         small: "Thoughtfully",
