@@ -12,7 +12,7 @@ export const projectsPageData = {
       href: "#about",
     },
 
-    image: "/images/projects/projects-hero.jpg",
+    image: "/images/projects/projects-hero.png",
 
     tagline: {
       line1: "Nature",
@@ -103,12 +103,12 @@ export const projectsPageData = {
   type: "Farmhouses",
   badge: "Farmhouse",
   location: "Bhaguwala, Najibabad, Uttar Pradesh",
-  area: "1 – 3 Acres",
+  area: "600 Sq. Yards",
   category: "Premium Farmhouse",
   view: "Nature Facing",
-  price: "₹1.25 Cr",
-  priceSuffix: "onwards",
-  priceCr: 1.25,
+  price: "On Request",
+  priceSuffix: null,
+  priceCr: "On Request",
   developer: "Soul Agro Farms Pvt. Ltd.",
   image: "/images/projectpageproject/gallery/farmhouse/farmhouse1.png",
   href: "/projects/soul-prakriti-farmhouse",
@@ -119,10 +119,10 @@ export const projectsPageData = {
   type: "Villas",
   badge: "Villa",
   location: " Bhaguwala, Najibabad, Uttar Pradesh",
-  area: "2.5 Cr onwards",
+  area: "150 Sq. Yards",
   category: "Luxury Villas",
   view: "River View",
-  price: null,
+  price: "On Request",
   priceSuffix: null,
   priceCr: 2.5,
   developer: "Soul Agro Farms Pvt. Ltd.",
@@ -178,6 +178,6 @@ ctaBanner: {
     href: "#projects",
   },
 
-  image: "/images/projects/projects-cta.jpg",
+  image: "/images/projects/projects-cta.png",
 },
 };

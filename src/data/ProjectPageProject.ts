@@ -993,7 +993,7 @@ export const ProjectPageProject = {
 
         items: [
           {
-            name: " 150 Sq. Yards Layout Plan",
+            name: "Layout Plan",
             type: "PDF",
             href: "/documents/soul-prakriti/ETH_SOUL_PRAKRITI_150_YARDS_LAYOUT_UPDATED_12-06-26.pdf",
           },
@@ -1003,9 +1003,9 @@ export const ProjectPageProject = {
             href: "/documents/soul-prakriti/site-plan.pdf",
           },
           {
-            name: "Soul Prakriti Presentation",
+            name: "Amenities",
             type: "PDF",
-            href: "/documents/soul-prakriti/Soul-Prakriti.pdf",
+            href: "/documents/soul-prakriti/amenities-guide.pdf",
           },
         ],
       },

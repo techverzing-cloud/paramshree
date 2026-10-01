@@ -144,7 +144,7 @@ export default function Amenities() {
 
           <div className="amenities-feature-image">
             <Image
-              src="/images/home/homehero/hero-landscape.jpg"
+              src="/images/home/homehero/hero-landsca.jpg"
               alt="Landscaped farmhouse surroundings"
               fill
               sizes="(max-width: 760px) 100vw, 60vw"

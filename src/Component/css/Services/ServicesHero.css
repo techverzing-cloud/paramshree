@@ -4,7 +4,7 @@
 
 .services-hero {
   position: relative;
-  min-height: 380px;
+  min-height: 680px;
   height: clamp(380px, 30vw, 470px);
   overflow: hidden;
   isolation: isolate;

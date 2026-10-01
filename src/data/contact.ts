@@ -9,7 +9,7 @@ export const contactPageData = {
 
     buttonText: "Talk to Our Team",
 
-    backgroundImage: "/images/contact/hero.jpg",
+    backgroundImage: "/images/contact/hero1.png",
 
     imageAlt:
       "Luxury farmhouse surrounded by nature and mountains",

@@ -10,7 +10,7 @@ export const partnersPageData = {
     description:
       "At ParamShree, we believe in the power of trusted partnerships. We work closely with industry leaders like Soul Agro Farms Pvt. Ltd. to bring you premium farmhouses, villas and plots in nature's most beautiful locations.",
 
-    image: "/images/partners/partners-hero.jpg",
+    image: "/images/partners/partners-hero1.png",
 
     sideText: [
     "Trusted",
@@ -140,7 +140,7 @@ export const partnersPageData = {
       href: "/contact",
     },
 
-    image: "/images/partners/why-partner.jpg",
+    image: "/images/partners/why-partners.png",
 
     benefits: [
       {
