@@ -10,9 +10,9 @@ export default function ProjectsHero() {
   const { hero } = projectsPageData;
 
   return (
-    <section className="projects-hero" aria-labelledby="projects-hero-title">
+    <section className="projects-hero" aria-labelledby="projects-hero-title" >
       {/* Background Image */}
-      <div className="projects-hero__image-wrapper">
+      <div className="projects-hero__image-wrapper" id="projects">
         <Image
           src={hero.image}
           alt="Premium farmhouses, villas and plots"

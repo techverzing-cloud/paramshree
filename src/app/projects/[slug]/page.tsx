@@ -10,6 +10,7 @@ import WhyThisProject from "@/src/Component/section/ProjectsPageProjects/WhyThis
 import { ProjectPageProject } from "@/src/data/ProjectPageProject";
 import EmailSubscription from "@/src/Component/section/Contact/EmailSubscription";
 import ProjectsCTA from "@/src/Component/section/Projects/ProjectsCTA";
+import Videos from "../../../Component/section/ProjectsPageProjects/Videos";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -46,6 +47,7 @@ export default async function ProjectDetailPage({
       <Amenities project={project} />
 
       <Gallery project={project} />
+      <Videos project={project}/>
 
       <CraftedDetails project={project} />
 

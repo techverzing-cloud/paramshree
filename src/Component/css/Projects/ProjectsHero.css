@@ -5,7 +5,7 @@
 .projects-hero {
   position: relative;
   isolation: isolate;
-  min-height: 285px;
+  min-height: 585px;
   overflow: hidden;
   background: var(--color-ivory-dark);
 }

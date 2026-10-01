@@ -10,7 +10,7 @@ export const partnersPageData = {
     description:
       "At ParamShree, we believe in the power of trusted partnerships. We work closely with industry leaders like Soul Agro Farms Pvt. Ltd. to bring you premium farmhouses, villas and plots in nature's most beautiful locations.",
 
-    image: "/images/partners/partners-hero.jpg",
+    image: "/images/partners/partners-hero1.png",
 
     sideText: [
     "Trusted",
@@ -34,7 +34,7 @@ export const partnersPageData = {
 
     imageSecondary: "/images/partners/paramshree-project-2.jpg",
 
-    logo: "/images/partners/paramshree-logo.png",
+    logo: "/images/logo.png",
 
     benefits: [
       {
@@ -82,12 +82,12 @@ export const partnersPageData = {
       href: "/soulagrofarms",
     },
 
-    logo: "/images/partners/soul-agro-logo.png",
+    logo: "/images/partners/soul_logo.svg",
 
     developedBy: {
       label: "DEVELOPED BY",
       name: "ETH Infra Pvt. Ltd.",
-      logo: "/images/partners/eth-infra-logo.png",
+      logo: "/images/partners/eth.png",
     },
 
     benefits: [
@@ -140,7 +140,7 @@ export const partnersPageData = {
       href: "/contact",
     },
 
-    image: "/images/partners/why-partner.jpg",
+    image: "/images/partners/why-partners.png",
 
     benefits: [
       {

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
 
 import { soulAgroFarmsData } from "../../../data/soulagrofarms";
@@ -11,8 +12,7 @@ export default function Location() {
 
   return (
     <section className="soul-location" id="location">
-      <div className="soul-location__decor soul-location__decor--top" />
-      <div className="soul-location__decor soul-location__decor--bottom" />
+      <div className="soul-location__decor" />
 
       <div className="container soul-location__container">
 
@@ -52,61 +52,35 @@ export default function Location() {
             ))}
           </div>
 
+          <Link
+            href={location.buttonLink}
+            className="button button-primary soul-location__button"
+          >
+            <span>{location.buttonText}</span>
+            <ArrowRight size={15} strokeWidth={1.6} />
+          </Link>
         </div>
 
-        {/* RIGHT MAP PANEL */}
-        <div className="soul-location__visual">
+        {/* RIGHT MAP */}
+        <div className="soul-location__map-wrapper">
 
           <div className="soul-location__map">
-
-            <div className="soul-location__map-grid" />
-
-            <div className="soul-location__road soul-location__road--one" />
-            <div className="soul-location__road soul-location__road--two" />
-            <div className="soul-location__road soul-location__road--three" />
-
-            <div className="soul-location__map-label soul-location__map-label--city">
-              DELHI
-            </div>
-
-            <div className="soul-location__map-label soul-location__map-label--highway">
-              HIGHWAY
-            </div>
-
-            <div className="soul-location__pin">
-              <div className="soul-location__pin-pulse" />
-
-              <div className="soul-location__pin-icon">
-                <MapPin size={20} strokeWidth={1.5} />
-              </div>
-
-              <div className="soul-location__pin-label">
-                <span>SOUL AGRO FARMS</span>
-                <strong>Nature, Within Reach</strong>
-              </div>
-            </div>
-
+            <iframe
+              src={location.iframeUrl}
+              title="Soul Agro Farms Location"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
-          {/* DISTANCE CARD */}
-          <div className="soul-location__distances">
+          <div className="soul-location__map-label">
+            <MapPin size={15} strokeWidth={1.5} />
 
-            <div className="soul-location__distance-heading">
-              <span>CONNECTED TO WHAT MATTERS</span>
+            <div>
+              <span>SOUL AGRO FARMS</span>
+              <small>LOCATION</small>
             </div>
-
-            <div className="soul-location__distance-grid">
-              {location.distances.map((item) => (
-                <div
-                  className="soul-location__distance"
-                  key={item.place}
-                >
-                  <span>{item.place}</span>
-                  <strong>{item.distance}</strong>
-                </div>
-              ))}
-            </div>
-
           </div>
 
         </div>
